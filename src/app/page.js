@@ -3,6 +3,8 @@ import HeroSlider from "@/components/HeroSlider/HeroSlider";
 import NewsSection from "@/components/NewsSection/NewsSection";
 import EventList from "@/components/EventList/EventList";
 import TeamList from "@/components/TeamList/TeamList";
+import Partners from "@/components/Partners/Partners";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <NewsSection />
       <EventList />
       <TeamList />
+      <Partners />
+      <Footer />
     </main>
   );
 }

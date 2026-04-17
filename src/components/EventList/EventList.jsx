@@ -79,14 +79,11 @@ export default function EventList() {
           </p> */}
         </div>
         
-        {/* <div className={styles.filters}>
-          <span className={styles.filterLabel}>Filter Programming:</span>
-          <div className={styles.filterTabs}>
-            <button className={`${styles.filterBtn} ${styles.active}`}>All Performances</button>
-            <button className={styles.filterBtn}>Symphonic</button>
-            <button className={styles.filterBtn}>Chamber</button>
-          </div>
-        </div> */}
+        <div className={styles.viewAllWrapper}>
+          <a href="#" className={styles.viewAllBtn}>
+            Barchasini ko'rish <span className="material-symbols-outlined" style={{ fontSize: '20px' }}>arrow_forward</span>
+          </a>
+        </div>
       </header>
 
       {/* Asymmetric Event Grid */}

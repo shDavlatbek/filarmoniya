@@ -51,7 +51,7 @@ export default function NewsSection() {
                   className={styles.image} 
                   style={{ backgroundImage: `url(${article.image})` }}
                 />
-                <div className={styles.tag}>{article.tag}</div>
+                {/* <div className={styles.tag}>{article.tag}</div> */}
               </div>
               <div className={styles.content}>
                 <span className={styles.date}>{article.date}</span>

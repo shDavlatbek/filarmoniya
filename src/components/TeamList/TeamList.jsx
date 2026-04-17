@@ -44,12 +44,12 @@ export default function TeamList() {
     <section className={styles.section}>
       <div className={styles.headerContainer}>
         {/* Decorative background flare */}
-        <div className={styles.brushStroke}></div>
+        {/* <div className={styles.brushStroke}></div> */}
         
         <header className={styles.headerContent}>
           <h2 className={styles.title}>
-            The Architects <br/>
-            <span className={styles.titleAccent}>of Sound</span>
+            Bizning
+            <span className={styles.titleAccent}> Jamoa</span>
           </h2>
           <p className={styles.description}>
             Meet the virtuosos defining the next era of classical performance. A convergence of technical mastery and artistic rebellion.
@@ -59,12 +59,10 @@ export default function TeamList() {
 
       <div className={styles.filtersContainer}>
         <div className={styles.filters}>
-          <button className={`${styles.filterBtn} ${styles.active}`}>All</button>
-          <button className={styles.filterBtn}>Conductors</button>
-          <button className={styles.filterBtn}>Strings</button>
-          <button className={styles.filterBtn}>Woodwinds</button>
-          <button className={styles.filterBtn}>Brass</button>
-          <button className={styles.filterBtn}>Percussion</button>
+          <button className={`${styles.filterBtn} ${styles.active}`}>Hamma</button>
+          <button className={styles.filterBtn}>Rahbariyat</button>
+          <button className={styles.filterBtn}>Markaziy apparat</button>
+          <button className={styles.filterBtn}>Hududiy bo'linmalar</button>
         </div>
       </div>
 

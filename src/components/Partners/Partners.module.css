@@ -1,0 +1,85 @@
+.section {
+  padding: 10rem 0; /* Expanded outer space */
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: var(--surface);
+  overflow: hidden;
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  text-align: center;
+  margin-bottom: 6rem; /* Expanded title space */
+}
+
+.marqueeContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Gradient fade at edges */
+.marqueeContainer::before,
+.marqueeContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 15vw;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeContainer::before {
+  left: 0;
+  background: linear-gradient(to right, var(--surface) 0%, transparent 100%);
+}
+
+.marqueeContainer::after {
+  right: 0;
+  background: linear-gradient(to left, var(--surface) 0%, transparent 100%);
+}
+
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: swim 25s linear infinite;
+}
+
+/* (Animation pausing removed by user request) */
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8rem; /* Expanded distance between partners */
+  cursor: pointer;
+}
+
+.partnerImg {
+  height: 50px; /* Locked architectural sizing */
+  width: auto;
+  opacity: 0.4;
+  filter: grayscale(100%);
+  transition: opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease;
+}
+
+.logoBox:hover .partnerImg {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
