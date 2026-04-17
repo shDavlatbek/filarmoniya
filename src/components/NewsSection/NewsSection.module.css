@@ -1,6 +1,25 @@
 .newsSection {
   padding: 6rem 3rem;
   background-color: var(--background);
+  position: relative;
+  z-index: 1;
+}
+
+.newsSection::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; 
+  height: 150%; /* Deliberate out-of-bounds bleed into EventList */
+  background-image: url('/images/geom-news.png');
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: -1;
+  /* Mathematical linear fade downwards into transparency */
+  mask-image: linear-gradient(to bottom, black 35%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 35%, transparent 100%);
 }
 
 .container {

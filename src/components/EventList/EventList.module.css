@@ -4,7 +4,11 @@
   margin: 0 auto;
   padding: 0 2rem;
   margin-bottom: 8rem;
+  position: relative;
+  z-index: 1;
 }
+
+/* Events section background inherently inherits the bleeding overlay from NewsSection due to z-index structure. */
 
 @media (min-width: 640px) {
   .section { padding: 0 4rem; }
