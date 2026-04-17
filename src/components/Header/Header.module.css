@@ -8,6 +8,7 @@
   width: 100%;
   z-index: 50;
   padding: 1rem 2rem;
+  padding-right: calc(2rem + var(--scrollbar-width, 0px));
   font-family: var(--font-headline);
   color: var(--inverse-primary);
 }
@@ -22,6 +23,7 @@
   width: 100%;
   z-index: 55;
   padding: 0.75rem 2rem;
+  padding-right: calc(2rem + var(--scrollbar-width, 0px));
   font-family: var(--font-headline);
   color: var(--inverse-primary);
   background-color: rgba(12, 14, 16, 0.92);
@@ -278,10 +280,22 @@
   visibility: hidden;
   transition: opacity 0.4s ease, visibility 0.4s;
   overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: var(--scrollbar-width, 0px);
 }
 .menuOverlayOpen {
   opacity: 1;
   visibility: visible;
+}
+
+.overlayLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.2, 1, 0.4, 1);
 }
 
 .navFull {
@@ -292,6 +306,7 @@
   transform: translateY(30px);
   opacity: 0;
   transition: transform 0.5s ease 0.1s, opacity 0.5s ease 0.1s;
+  width: 100%;
 }
 .menuOverlayOpen .navFull {
   transform: translateY(0);
@@ -302,6 +317,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .linkFull, .activeLinkFull {
@@ -316,19 +332,33 @@
   padding: 0.5rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 .linkFull:hover {
   color: var(--secondary);
+}
+.linkFull:hover .innerLink {
   transform: translateX(8px);
+}
+.innerLink {
+  transition: transform 0.3s ease;
 }
 .linkFullExpanded { color: var(--secondary); }
 .activeLinkFull  { color: var(--secondary); }
 
-.activeLinkFull::before {
+/* Old absolute tracker replaced by innerLink pseudo */
+
+/* Use innerLink tracking so underline always moves fluidly with the text offset */
+.activeLinkFull .innerLink {
+  position: relative;
+}
+
+.activeLinkFull .innerLink::before {
   content: '';
   position: absolute;
   left: -1.5rem;
@@ -339,7 +369,15 @@
   transform: translateY(-50%);
 }
 
-/* ===== Submenus ===== */
+/* Base states for desktop submenu and icons */
+.desktopSubmenuPanel {
+  display: none;
+}
+.chevronDesktop {
+  display: none !important;
+}
+
+/* ===== Mobile Submenus ===== */
 .submenu {
   display: flex;
   flex-direction: column;
@@ -390,6 +428,128 @@
   transition: color 0.3s ease;
 }
 .overlayIcon:hover { color: var(--inverse-primary); }
+
+/* ===== Desktop Layout Modifiers ===== */
+@media (min-width: 1024px) {
+  .overlayLayout {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex; /* Restore stable Flexbox */
+    gap: 0;
+    transform: none;
+  }
+
+  .navFull {
+    width: 100%; /* Initially fills overlay */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    transition: width 0.6s cubic-bezier(0.2, 1, 0.4, 1);
+  }
+  
+  .overlayLayout.hasExpanded .navFull {
+    width: 50%; /* Smoothly squeezes to half */
+  }
+
+  .navFullItem {
+    width: 100%;
+  }
+  
+  .linkFull, .activeLinkFull {
+    display: flex; /* Restored Flex row */
+    width: 100%;
+    justify-content: unset;
+    padding: 0.5rem 0;
+  }
+  
+  /* Safe animatable layout centering using invisible flex blocks */
+  .linkFull::before, .activeLinkFull::before {
+    content: '';
+    flex: 1 1 0%;
+    transition: flex 0.6s cubic-bezier(0.2, 1, 0.4, 1);
+    /* In case mobile left residue */
+    position: relative; left: auto; top: auto; width: auto; height: auto; background-color: transparent; transform: none;
+  }
+  
+  .linkFull::after, .activeLinkFull::after {
+    content: '';
+    flex: 1 1 0%;
+    transition: flex 0.6s cubic-bezier(0.2, 1, 0.4, 1);
+  }
+  
+  /* Flex interpolation animates perfectly down to a fixed padding distance */
+  .overlayLayout.hasExpanded .linkFull::after,
+  .overlayLayout.hasExpanded .activeLinkFull::after {
+    flex: 0 0 3.5rem;
+  }
+
+  .innerLink {
+    display: flex;
+    align-items: center;
+  }
+
+  .desktopSubmenuPanel {
+    display: flex;
+    position: relative;
+    width: 0%; /* Initially invisible structurally */
+    height: 100%;
+    align-items: center;
+    transition: width 0.6s cubic-bezier(0.2, 1, 0.4, 1);
+  }
+  
+  .overlayLayout.hasExpanded .desktopSubmenuPanel {
+    width: 50%; /* Smoothly expands into structural space */
+  }
+  
+  .desktopSubmenuGroup {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(-20px);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.2, 1, 0.4, 1), visibility 0.4s;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 3rem;
+  }
+  
+  .desktopSubmenuGroupActive {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0);
+  }
+  
+  .desktopSubmenuLink {
+    font-family: var(--font-headline);
+    font-size: 1.8rem;
+    color: var(--inverse-on-surface);
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .desktopSubmenuLink:hover {
+    color: var(--inverse-primary);
+    transform: translateX(8px);
+  }
+
+  .submenu { 
+    display: none !important; 
+  }
+  
+  .chevronMobile {
+    display: none !important;
+  }
+  
+  .chevronDesktop {
+    display: inline-block !important;
+  }
+}
 
 /* ===== Mobile ===== */
 @media (max-width: 768px) {

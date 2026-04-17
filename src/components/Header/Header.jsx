@@ -154,12 +154,21 @@ export default function Header() {
 
   useEffect(() => {
     if (menuOpen) {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
       document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+      document.body.style.removeProperty('--scrollbar-width');
       setExpandedItem(null);
     }
-    return () => { document.body.style.overflow = 'auto'; };
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+      document.body.style.removeProperty('--scrollbar-width');
+    };
   }, [menuOpen]);
 
   const sharedProps = { menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, languages };
@@ -184,34 +193,61 @@ export default function Header() {
 
       {/* Full Screen Menu Overlay */}
       <div className={`${styles.menuOverlay} ${menuOpen ? styles.menuOverlayOpen : ''}`}>
-        <nav className={styles.navFull}>
-          {navItems.map((item) => (
-            <div key={item.label} className={styles.navFullItem}>
-              {item.children ? (
-                <>
-                  <button
-                    className={`${styles.linkFull} ${expandedItem === item.label ? styles.linkFullExpanded : ''}`}
-                    onClick={() => setExpandedItem(expandedItem === item.label ? null : item.label)}
+        <div className={`${styles.overlayLayout} ${expandedItem ? styles.hasExpanded : ''}`}>
+          <nav className={styles.navFull}>
+            {navItems.map((item) => (
+              <div key={item.label} className={styles.navFullItem}>
+                {item.children ? (
+                  <>
+                    <button
+                      className={`${styles.linkFull} ${expandedItem === item.label ? styles.linkFullExpanded : ''}`}
+                      onClick={() => setExpandedItem(expandedItem === item.label ? null : item.label)}
+                    >
+                      <span className={styles.innerLink}>
+                        {item.label}
+                        <span className={`material-symbols-outlined ${styles.chevronMobile}`} style={{ fontSize: '20px', marginLeft: '0.5rem', transform: expandedItem === item.label ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}>expand_more</span>
+                        <span className={`material-symbols-outlined ${styles.chevronDesktop}`} style={{ fontSize: '24px', marginLeft: '1rem', opacity: expandedItem === item.label ? 1 : 0.6, transform: expandedItem === item.label ? 'translateX(4px)' : 'translateX(0)', transition: 'all 0.3s' }}>chevron_right</span>
+                      </span>
+                    </button>
+                    <div className={`${styles.submenu} ${expandedItem === item.label ? styles.submenuOpen : ''}`}>
+                      {item.children.map((child) => (
+                        <Link key={child.label} href={child.href} className={styles.submenuLink} onClick={() => setMenuOpen(false)}>
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <Link href={item.href} className={item.active ? styles.activeLinkFull : styles.linkFull} onClick={() => setMenuOpen(false)}>
+                    <span className={styles.innerLink}>
+                      {item.label}
+                    </span>
+                  </Link>
+                )}
+              </div>
+            ))}
+          </nav>
+          
+          <div className={styles.desktopSubmenuPanel}>
+            {navItems.map((item) => {
+              if (item.children) {
+                return (
+                  <div 
+                    key={`desktop-${item.label}`} 
+                    className={`${styles.desktopSubmenuGroup} ${expandedItem === item.label ? styles.desktopSubmenuGroupActive : ''}`}
                   >
-                    {item.label}
-                    <span className="material-symbols-outlined" style={{ fontSize: '20px', marginLeft: '0.5rem', transform: expandedItem === item.label ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}>expand_more</span>
-                  </button>
-                  <div className={`${styles.submenu} ${expandedItem === item.label ? styles.submenuOpen : ''}`}>
                     {item.children.map((child) => (
-                      <Link key={child.label} href={child.href} className={styles.submenuLink} onClick={() => setMenuOpen(false)}>
+                      <Link key={`desktop-child-${child.label}`} href={child.href} className={styles.desktopSubmenuLink} onClick={() => setMenuOpen(false)}>
                         {child.label}
                       </Link>
                     ))}
                   </div>
-                </>
-              ) : (
-                <Link href={item.href} className={item.active ? styles.activeLinkFull : styles.linkFull} onClick={() => setMenuOpen(false)}>
-                  {item.label}
-                </Link>
-              )}
-            </div>
-          ))}
-        </nav>
+                )
+              }
+              return null;
+            })}
+          </div>
+        </div>
         <div className={styles.overlayFooter}>
           <a href="#" className={styles.overlayIcon}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.96-.64-.34-1 .22-1.58.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.19-.07-.05-.16-.03-.23-.01-.1.02-1.74 1.11-4.92 3.25-.46.32-.88.48-1.26.47-.42-.01-1.22-.24-1.82-.43-.49-.16-.88-.24-.85-.51.02-.14.22-.29.61-.45 2.39-1.04 7.97-3.4 9.38-3.99 1.34-.56 1.62-.66 1.8-.66.04 0 .14.01.21.06.06.04.1.1.11.16.01.07.03.22.01.44z"/></svg>
