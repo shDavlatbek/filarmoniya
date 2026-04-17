@@ -1,0 +1,400 @@
+/* =======================================================
+   1. ORIGINAL HEADER — absolute, transparent, on the hero
+   ======================================================= */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  padding: 1rem 2rem;
+  font-family: var(--font-headline);
+  color: var(--inverse-primary);
+}
+
+/* =======================================================
+   2. STICKY HEADER — separate fixed element, slides in/out
+   ======================================================= */
+.stickyHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 55;
+  padding: 0.75rem 2rem;
+  font-family: var(--font-headline);
+  color: var(--inverse-primary);
+  background-color: rgba(12, 14, 16, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: none;
+}
+
+.stickyVisible {
+  animation: slideDown 0.4s ease forwards;
+  pointer-events: auto;
+}
+
+.stickyLeaving {
+  animation: slideUp 0.4s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(0);     opacity: 1; }
+  to   { transform: translateY(-100%); opacity: 0; }
+}
+
+/* =======================================================
+   SHARED INNER LAYOUT
+   ======================================================= */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+/* Hide elements when overlay menu is open */
+.hiddenWhenOpen {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s;
+  pointer-events: none;
+}
+
+/* ===== Logo ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.logoIcon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logoTextTop {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--inverse-primary);
+}
+
+.logoTextBottom {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--tertiary);
+}
+
+/* ===== Inline Nav (Progressive Disclosure) ===== */
+.inlineNav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 1;
+  min-width: 0;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.link, .activeLink {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  position: relative;
+  transition: opacity 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.link { opacity: 0.75; }
+.link:hover { opacity: 1; }
+.activeLink { opacity: 1; }
+
+.activeLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--inverse-primary);
+}
+
+/* Progressive breakpoints */
+.inlineNav { display: none; }
+
+@media (min-width: 768px) {
+  .inlineNav { display: flex; }
+  .navItem4, .navItem5, .navItem6, .navItem7, .navItem8 { display: none; }
+}
+@media (min-width: 1024px) {
+  .navItem4, .navItem5 { display: inline; }
+  .navItem6, .navItem7, .navItem8 { display: none; }
+}
+@media (min-width: 1280px) {
+  .navItem6 { display: inline; }
+  .navItem7, .navItem8 { display: none; }
+}
+@media (min-width: 1440px) {
+  .navItem7, .navItem8 { display: inline; }
+}
+
+/* ===== Right Actions ===== */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.actionGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--inverse-primary);
+  z-index: 60;
+  transition: color 0.3s ease;
+}
+.hamburger:hover { color: var(--secondary); }
+
+.iconLink {
+  color: var(--inverse-primary);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+.iconLink:hover { opacity: 1; }
+
+@media (max-width: 640px) {
+  .iconLink { display: none; }
+}
+
+/* ===== Language Selector ===== */
+.langWrapper { position: relative; }
+
+.langBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--tertiary);
+  color: var(--inverse-primary);
+  padding: 0.45rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.langBtn:hover { background-color: #614800; }
+
+.langMenu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  background-color: var(--surface-container-lowest);
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  z-index: 100;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.langMenuOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.langMenuItem {
+  padding: 0.75rem 1rem;
+  color: var(--on-surface);
+  font-size: 0.85rem;
+  text-align: left;
+  transition: background-color 0.2s, color 0.2s;
+  font-family: var(--font-body);
+}
+.langMenuItem:hover {
+  background-color: var(--secondary);
+  color: var(--inverse-primary);
+}
+
+/* =======================================================
+   FULL SCREEN MENU OVERLAY
+   ======================================================= */
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--inverse-surface);
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s;
+  overflow-y: auto;
+}
+.menuOverlayOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navFull {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.5s ease 0.1s, opacity 0.5s ease 0.1s;
+}
+.menuOverlayOpen .navFull {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navFullItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkFull, .activeLinkFull {
+  font-size: 1.4rem;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--inverse-primary);
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.linkFull:hover {
+  color: var(--secondary);
+  transform: translateX(8px);
+}
+.linkFullExpanded { color: var(--secondary); }
+.activeLinkFull  { color: var(--secondary); }
+
+.activeLinkFull::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  width: 8px;
+  height: 2px;
+  background-color: var(--secondary);
+  transform: translateY(-50%);
+}
+
+/* ===== Submenus ===== */
+.submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+  padding: 0;
+}
+.submenuOpen {
+  max-height: 300px;
+  opacity: 1;
+  padding: 0.5rem 0 0.75rem;
+}
+
+.submenuLink {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--inverse-on-surface);
+  padding: 0.4rem 1.5rem;
+  transition: color 0.3s ease;
+  letter-spacing: 0.04em;
+}
+.submenuLink:hover { color: var(--secondary); }
+
+/* ===== Overlay Footer ===== */
+.overlayFooter {
+  display: flex;
+  gap: 2rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.5s ease 0.25s, opacity 0.5s ease 0.25s;
+}
+.menuOverlayOpen .overlayFooter {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.overlayIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--inverse-on-surface);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+.overlayIcon:hover { color: var(--inverse-primary); }
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .header, .stickyHeader { padding: 1rem; }
+  .linkFull, .activeLinkFull { font-size: 1.1rem; }
+  .logoText { display: none; }
+  .submenuLink { font-size: 0.85rem; }
+}

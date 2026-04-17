@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Axborot Xizmati - Aetheric Resonance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ecb200",
+                        "on-secondary-fixed": "#620e92",
+                        "primary-fixed-dim": "#d6d4d3",
+                        "on-surface-variant": "#596065",
+                        "on-primary-container": "#525151",
+                        "on-tertiary-container": "#553e00",
+                        "inverse-primary": "#ffffff",
+                        "primary": "#5f5e5e",
+                        "tertiary-fixed": "#fdc003",
+                        "on-primary-fixed": "#403f3f",
+                        "surface-bright": "#f9f9fb",
+                        "primary-container": "#e5e2e1",
+                        "secondary-fixed-dim": "#ecc7ff",
+                        "background": "#f9f9fb",
+                        "surface-container": "#ebeef2",
+                        "error-dim": "#4f0116",
+                        "surface-container-high": "#e4e9ee",
+                        "on-tertiary-fixed-variant": "#604700",
+                        "secondary-container": "#f4d9ff",
+                        "tertiary": "#795a00",
+                        "on-tertiary-fixed": "#3d2b00",
+                        "secondary-fixed": "#f4d9ff",
+                        "outline-variant": "#acb3b8",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-dim": "#d3dbe2",
+                        "on-surface": "#2d3338",
+                        "surface": "#f9f9fb",
+                        "inverse-surface": "#0c0e10",
+                        "on-error-container": "#782232",
+                        "secondary-dim": "#782ca8",
+                        "outline": "#757c81",
+                        "on-secondary": "#fff6fd",
+                        "on-tertiary": "#fff8f0",
+                        "on-primary": "#faf7f6",
+                        "surface-tint": "#5f5e5e",
+                        "error-container": "#ff8b9a",
+                        "secondary": "#853bb5",
+                        "inverse-on-surface": "#9c9d9f",
+                        "surface-container-highest": "#dde3e9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#2d3338",
+                        "tertiary-container": "#fdc003",
+                        "on-primary-fixed-variant": "#5c5b5b",
+                        "tertiary-dim": "#6a4f00",
+                        "surface-container-low": "#f2f4f6",
+                        "on-error": "#fff7f7",
+                        "surface-variant": "#dde3e9",
+                        "primary-dim": "#535252",
+                        "on-secondary-container": "#762ba6",
+                        "error": "#9e3f4e",
+                        "on-secondary-fixed-variant": "#8137b1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .no-corners { border-radius: 0px !important; }
+        .ghost-border { border: 1px solid rgba(172, 179, 184, 0.15); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col no-corners antialiased selection:bg-secondary selection:text-white">
+<!-- TopNavBar -->
+<nav class="bg-white/70 backdrop-blur-xl fixed top-0 w-full z-50 rounded-none bg-zinc-100 flex justify-between items-center px-12 py-6 w-full max-w-none">
+<div class="text-2xl font-bold tracking-tighter text-zinc-900">
+            Aetheric Resonance
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-zinc-600 hover:text-purple-600 transition-colors font-['Space_Grotesk'] font-bold uppercase tracking-widest text-sm hover:text-purple-700 transition-all duration-400 scale-100 active:scale-95 transition-transform ease-out" href="#">Bosh Sahifa</a>
+<a class="text-zinc-600 hover:text-purple-600 transition-colors font-['Space_Grotesk'] font-bold uppercase tracking-widest text-sm hover:text-purple-700 transition-all duration-400 scale-100 active:scale-95 transition-transform ease-out" href="#">Filarmaniya</a>
+<a class="text-purple-700 border-b-2 border-purple-700 pb-1 font-['Space_Grotesk'] font-bold uppercase tracking-widest text-sm hover:text-purple-700 transition-all duration-400 scale-100 active:scale-95 transition-transform ease-out" href="#">Axborot Xizmati</a>
+<a class="text-zinc-600 hover:text-purple-600 transition-colors font-['Space_Grotesk'] font-bold uppercase tracking-widest text-sm hover:text-purple-700 transition-all duration-400 scale-100 active:scale-95 transition-transform ease-out" href="#">Ijodiy Jamoalar</a>
+<a class="text-zinc-600 hover:text-purple-600 transition-colors font-['Space_Grotesk'] font-bold uppercase tracking-widest text-sm hover:text-purple-700 transition-all duration-400 scale-100 active:scale-95 transition-transform ease-out" href="#">Xalqaro Aloqalar</a>
+<a class="text-zinc-600 hover:text-purple-600 transition-colors font-['Space_Grotesk'] font-bold uppercase tracking-widest text-sm hover:text-purple-700 transition-all duration-400 scale-100 active:scale-95 transition-transform ease-out" href="#">Afisha</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-zinc-800 font-['Space_Grotesk'] font-bold uppercase tracking-widest text-sm hover:text-purple-700 transition-all duration-400 scale-100 active:scale-95 transition-transform ease-out">Aloqa</button>
+<button aria-label="language" class="text-zinc-800 hover:text-purple-700 transition-all duration-400 scale-100 active:scale-95 transition-transform ease-out">
+<span class="material-symbols-outlined">language</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 max-w-[1600px] mx-auto w-full">
+<!-- Page Header -->
+<header class="mb-16 md:mb-24 flex flex-col md:flex-row justify-between items-start md:items-end gap-8 relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-secondary-fixed-dim/20 mix-blend-multiply blur-3xl z-0 pointer-events-none"></div>
+<div class="max-w-2xl relative z-10">
+<h1 class="font-headline text-5xl md:text-7xl font-light text-on-surface tracking-tight mb-6">Axborot <br/><span class="font-bold">Xizmati</span></h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed">
+                    The latest insights, announcements, and cultural dialogues from the Aetheric Resonance Philharmonic.
+                </p>
+</div>
+<div class="relative z-10">
+<div class="relative ghost-border bg-surface p-1 flex">
+<input class="bg-transparent border-none focus:ring-0 text-on-surface font-body w-full md:w-64 py-3 px-4 outline-none placeholder:text-outline" placeholder="Search journal..." type="text"/>
+<button class="bg-primary text-on-primary px-4 py-3 hover:bg-secondary transition-colors duration-400 ease-out no-corners">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Top News Article (Hero Feature) -->
+<section class="mb-24 relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0 ghost-border bg-surface-container-lowest">
+<div class="lg:col-span-8 relative min-h-[400px] md:min-h-[600px] overflow-hidden">
+<img alt="Symphony orchestra performing in a grand modern concert hall" class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Wide shot of a modern minimalist symphony hall with dramatic overhead lighting illuminating the orchestra mid-performance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxEMZMX4WoV4DU25qHFKtq9tyBxrTcz0wPo7MO89qdKkGVH6CESVBPoVO8ODWYv2i7NLMc-Uu1ztPmvjBX04H9AekY-qluM4ievhMyYDw6mq6sutL5vF24mVrjNlPC5wpyOsXD4rgMIQbD8frBf4Naf9x6qfoW-SOrC7FwMtn7vs7LMT3Ct9Q4Axt9r2Papb0oZT70ih_e4MvLItkQcLwbEH9uuvFkJB70vH07bXfGnCwjM6fNwFW7oXUc_97689Da-BQpWZwwvQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 w-full lg:hidden">
+<span class="font-headline text-tertiary-fixed-dim text-sm uppercase tracking-[0.2em] mb-4 block">Asosiy Yangilik</span>
+<h2 class="font-headline text-3xl md:text-4xl text-inverse-primary mb-4 leading-tight">Symphonic Innovations: The 2024 Autumn Season Premiere</h2>
+</div>
+</div>
+<div class="lg:col-span-4 p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-surface-container-low relative z-10">
+<div class="hidden lg:block mb-8">
+<span class="font-headline text-secondary text-xs uppercase tracking-[0.2em] font-bold">Asosiy Yangilik</span>
+</div>
+<h2 class="hidden lg:block font-headline text-4xl text-on-surface mb-6 leading-tight font-medium">Symphonic Innovations: The 2024 Autumn Season Premiere</h2>
+<p class="font-body text-on-surface-variant leading-relaxed mb-10 text-lg">
+                        Exploring the boundaries of classical acoustics and modern architectural resonance in our upcoming series. A deep dive into the compositional techniques defining this season.
+                    </p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-body text-sm text-outline uppercase tracking-wider">Oktabr 12, 2024</span>
+<a class="group flex items-center gap-2 font-headline text-on-surface font-bold text-sm uppercase tracking-widest hover:text-secondary transition-colors" href="#">
+                            O'qish <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Artistic Overlay -->
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-secondary/10 mix-blend-multiply rounded-full blur-2xl z-0 pointer-events-none"></div>
+</section>
+<!-- Journal Grid -->
+<div class="flex items-center justify-between mb-12">
+<h3 class="font-headline text-2xl text-on-surface font-light">So'nggi Maqolalar</h3>
+<div class="flex gap-4">
+<button class="text-on-surface hover:text-secondary transition-colors"><span class="material-symbols-outlined text-3xl">grid_view</span></button>
+<button class="text-outline hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-3xl">view_list</span></button>
+</div>
+</div>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Article Card 1 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden mb-6 aspect-[4/3] bg-surface-container">
+<img alt="Close up of piano keys being played" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-out grayscale" data-alt="Close up black and white photography of hands playing a grand piano with dramatic contrast and lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzF-omxrKlQE-OfrSygmLyszIGzsTI3lxu4xxCU7eSANRlZb-lIp7naq5iXpZWrF-03U_XQMDcV00fVb4nJFTklBq44ar4jB6-vq1-bmyg-XQULESBCtcPdzM_cydcqF-U-GQW4QLE2N_QubeGIOdhnl5Z2nB3n7jwnMUDoEXpwW3onCmENvvewFzoDrJjQ-zE1itTs5ktLIlQYzXD_cqpp7ZGSfSZTLzgJuROn9DFQHD0WBd4seFUobh-fBmH4KsAkt84emreQQ"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 font-headline text-xs uppercase tracking-widest text-on-surface">Intervyu</div>
+</div>
+<div class="flex flex-col">
+<span class="font-body text-xs text-outline uppercase tracking-wider mb-3">Oktabr 08, 2024</span>
+<h4 class="font-headline text-xl text-on-surface mb-3 leading-snug group-hover:text-secondary transition-colors">The Masterclass: Conversations with Maestro Valeriy</h4>
+<p class="font-body text-on-surface-variant text-sm line-clamp-3 mb-4">An exclusive interview discussing the interpretation of Mahler's 5th Symphony and the emotional toll of conducting epic works.</p>
+<div class="mt-auto pt-4 border-t border-surface-variant flex justify-between items-center">
+<span class="font-body text-xs font-bold text-on-surface uppercase tracking-wider">Davomi</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-sm">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden mb-6 aspect-[4/3] bg-surface-container">
+<img alt="Abstract architectural detail of a concert hall" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-out grayscale" data-alt="Abstract geometric architectural details of a modern concert hall interior focusing on acoustic wood paneling and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEKaVxM31zmORCJZfSrkhiTPMKdz9qbsM0owp_cbGXX744EG_mxwKUoORnTUAV9LYnSG55Ce3SRqNyAHxIXuSEXjs7gMgMOj2fOFhakpqmgE_gnjwrydgspKzKBzaEpdvVTTiznF1RyLSHMo_NZlIzzo2Dw2uulJTt8gt4J_XRxQz04u96ySDj0JhLbWc1BrgeitpmkzkYOYjGH0qpE_UgXdsItWAi0xmxAPcbVbK10yugNj0UabUGCeZmidBhRiKHRxBQj7EpYw"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 font-headline text-xs uppercase tracking-widest text-on-surface">Arxitektura</div>
+</div>
+<div class="flex flex-col">
+<span class="font-body text-xs text-outline uppercase tracking-wider mb-3">Sentabr 29, 2024</span>
+<h4 class="font-headline text-xl text-on-surface mb-3 leading-snug group-hover:text-secondary transition-colors">Acoustic Landscapes: Designing for the Perfect Note</h4>
+<p class="font-body text-on-surface-variant text-sm line-clamp-3 mb-4">How the new Aetheric Resonance hall utilizes variable acoustic geometry to adapt to different symphonic requirements.</p>
+<div class="mt-auto pt-4 border-t border-surface-variant flex justify-between items-center">
+<span class="font-body text-xs font-bold text-on-surface uppercase tracking-wider">Davomi</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-sm">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="group cursor-pointer">
+<div class="relative overflow-hidden mb-6 aspect-[4/3] bg-surface-container">
+<img alt="Sheet music on a stand" class="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-out grayscale" data-alt="Vintage sheet music resting on a dark metal stand with shallow depth of field and soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKXE3_1RbekgD9Hb_wfEQSlO1x0bYpikbWnBgrZju-PXq6-ri4cEpNjueGsfAG3ASzTuh4GFvvvia06xXwBfuXA-WA275U5Zc9j-_hJs1m9a7XCFdG6_Fsldwra2-cLDYvPMBMa_iGds0KNOdm1AAWaHEf8mzh7bEuLrmuAUCRY3FFxNigLosC26Gzt8GNoHhgve-k6qCiwTuCT5aQHEE3_8pvySAwO6u3C6tb7YPAu6dAWhNS4K9G7H637uS_0A5scvFl-8Sl5g"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest px-3 py-1 font-headline text-xs uppercase tracking-widest text-on-surface">Tarix</div>
+</div>
+<div class="flex flex-col">
+<span class="font-body text-xs text-outline uppercase tracking-wider mb-3">Sentabr 15, 2024</span>
+<h4 class="font-headline text-xl text-on-surface mb-3 leading-snug group-hover:text-secondary transition-colors">Unearthing the Archives: Lost Manuscripts Recovered</h4>
+<p class="font-body text-on-surface-variant text-sm line-clamp-3 mb-4">A remarkable discovery in the philharmonic's basement reveals previously unknown sketches by a 19th-century composer.</p>
+<div class="mt-auto pt-4 border-t border-surface-variant flex justify-between items-center">
+<span class="font-body text-xs font-bold text-on-surface uppercase tracking-wider">Davomi</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-sm">arrow_outward</span>
+</div>
+</div>
+</article>
+</section>
+<!-- Load More CTA -->
+<div class="mt-20 flex justify-center">
+<button class="group font-headline text-on-surface text-sm uppercase tracking-[0.2em] font-bold border-b-2 border-secondary pb-2 hover:text-secondary transition-colors flex items-center gap-3">
+                Ko'proq Yuklash <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">expand_more</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-50 flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full rounded-none border-t-0 tonal-layering bg-zinc-100">
+<div class="font-['Space_Grotesk'] font-black text-xl text-zinc-900 mb-8 md:mb-0">
+            Aetheric Resonance
+        </div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="text-zinc-500 underline decoration-purple-500 underline-offset-8 transition-all opacity-100 hover:opacity-80 duration-300 font-['Manrope'] text-sm tracking-wide" href="#">Telegram</a>
+<a class="text-zinc-500 underline decoration-purple-500 underline-offset-8 transition-all opacity-100 hover:opacity-80 duration-300 font-['Manrope'] text-sm tracking-wide" href="#">Instagram</a>
+<a class="text-zinc-500 underline decoration-purple-500 underline-offset-8 transition-all opacity-100 hover:opacity-80 duration-300 font-['Manrope'] text-sm tracking-wide" href="#">Hujjatlar</a>
+<a class="text-zinc-500 underline decoration-purple-500 underline-offset-8 transition-all opacity-100 hover:opacity-80 duration-300 font-['Manrope'] text-sm tracking-wide" href="#">Maxfiylik Siyosati</a>
+</div>
+<div class="font-['Manrope'] text-sm tracking-wide text-zinc-900">
+            © 2024 Aetheric Resonance Philharmonic. All Rights Reserved.
+        </div>
+</footer>
+</body></html>
