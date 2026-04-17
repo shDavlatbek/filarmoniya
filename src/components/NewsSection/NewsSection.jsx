@@ -32,15 +32,15 @@ export default function NewsSection() {
     <section className={styles.newsSection}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h3 className={styles.title}>So'nggi Maqolalar</h3>
-          <div className={styles.viewToggles}>
+          <h3 className={styles.title}>So'nggi Yangiliklar</h3>
+          {/* <div className={styles.viewToggles}>
             <button className={`${styles.toggleBtn} ${styles.activeToggle}`}>
               <span className="material-symbols-outlined">grid_view</span>
             </button>
             <button className={styles.toggleBtn}>
               <span className="material-symbols-outlined">view_list</span>
             </button>
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.grid}>

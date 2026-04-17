@@ -1,0 +1,356 @@
+.section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-bottom: 8rem;
+}
+
+@media (min-width: 640px) {
+  .section { padding: 0 4rem; }
+}
+
+.header {
+  /* margin-bottom: 6rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-bottom: 1px solid var(--outline-variant);
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.headerContent {
+  max-width: 600px;
+}
+
+.seasonLabel {
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .title { font-size: 5rem; }
+}
+
+.description {
+  font-family: var(--font-body);
+  color: var(--on-surface-variant);
+  font-size: 1.125rem;
+  font-weight: 300;
+  max-width: 500px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--font-headline);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.filterLabel {
+  color: var(--on-surface-variant);
+  font-size: 0.75rem;
+}
+
+.filterTabs {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.filterBtn {
+  color: var(--on-surface);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.filterBtn.active {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.filterBtn:hover:not(.active) {
+  color: var(--primary);
+}
+
+/* Base Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* Card Wrappers */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface-container);
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .card { padding: 2rem; }
+}
+
+.card:hover {
+  background-color: var(--surface-variant);
+}
+
+/* Sizing spans for desktop */
+@media (min-width: 768px) {
+  .col12 { grid-column: span 12; }
+  .col6 { grid-column: span 6; }
+}
+
+@media (min-width: 1024px) {
+  .col8 { grid-column: span 8; }
+  .col4 { grid-column: span 4; }
+}
+
+/* Image Wrappers */
+.imgBox {
+  position: relative;
+  width: 100%;
+  background-color: #e0e0e0;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  flex-shrink: 0;
+}
+
+.cardFeatured .imgBox {
+  height: 350px;
+}
+
+@media (min-width: 768px) {
+  .cardFeatured {
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem;
+    gap: 3rem;
+  }
+  .cardFeatured .imgBox {
+    height: 400px;
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.cardStandard .imgBox {
+  height: 250px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(120%);
+  transition: transform 0.7s ease, filter 0.7s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardFeatured .content {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cardFeatured .content { width: 50%; justify-content: center; }
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.cardFeatured .date { font-size: 2rem; }
+
+.dateAccent {
+  color: var(--primary);
+}
+
+.hallLabel {
+  font-family: var(--font-headline);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 0.5rem;
+}
+
+.cardFeatured .hallLabel {
+  border: none;
+  font-size: 0.75rem;
+  padding: 0;
+}
+
+.cardFeatured .hallLine {
+  height: 1px;
+  width: 3rem;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.eventTitle {
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--on-surface);
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.cardFeatured .eventTitle {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .cardFeatured .eventTitle { font-size: 3rem; }
+}
+
+.card:hover .eventTitle {
+  color: var(--primary);
+}
+
+.eventDesc {
+  font-family: var(--font-body);
+  color: var(--on-surface-variant);
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.cardFeatured .eventDesc {
+  font-size: 1.125rem;
+}
+
+.cta {
+  margin-top: auto;
+}
+
+.ctaText {
+  display: inline-block;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.25rem;
+  font-family: var(--font-headline);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--on-surface);
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.card:hover .ctaText {
+  color: var(--primary);
+}
+
+/* Text Heavy Variant */
+.cardTextHeavy {
+  background-color: var(--inverse-surface);
+  color: var(--inverse-on-surface);
+  padding: 2rem;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .cardTextHeavy { padding: 4rem; }
+}
+
+.cardTextHeavy:hover {
+  background-color: #000;
+}
+
+.bgMonth {
+  position: absolute;
+  right: -2rem;
+  top: -4rem;
+  font-size: 12rem;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  color: var(--primary);
+  opacity: 0.1;
+  pointer-events: none;
+  line-height: 1;
+  user-select: none;
+}
+
+.cardTextHeavy .date { color: var(--inverse-on-surface); }
+.cardTextHeavy .eventTitle { color: var(--inverse-on-surface); margin-bottom: 1.5rem; }
+.cardTextHeavy .eventTitle:hover { color: var(--inverse-on-surface); }
+.cardTextHeavy .eventDesc { color: rgba(255, 255, 255, 0.8); font-size: 1.125rem; margin-bottom: 2.5rem; line-height: 1.6; }
+.cardTextHeavy .hallLabel { border-color: rgba(255, 255, 255, 0.3); color: rgba(255, 255, 255, 0.7); }
+
+.ctaTextHeavy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-headline);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--inverse-on-surface);
+  transition: padding-left 0.3s ease;
+}
+
+.cardTextHeavy:hover .ctaTextHeavy {
+  padding-left: 0.5rem;
+}

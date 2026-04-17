@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aetheric Resonance - Concerts</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#f9f9fb",
+                      "tertiary-fixed-dim": "#ecb200",
+                      "surface-container-highest": "#dde3e9",
+                      "on-error": "#fff7f7",
+                      "on-tertiary": "#fff8f0",
+                      "on-surface": "#2d3338",
+                      "error-dim": "#4f0116",
+                      "surface-tint": "#5f5e5e",
+                      "on-secondary-fixed": "#620e92",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#8137b1",
+                      "inverse-on-surface": "#9c9d9f",
+                      "on-primary-container": "#525151",
+                      "secondary-dim": "#782ca8",
+                      "inverse-surface": "#0c0e10",
+                      "primary-fixed": "#e5e2e1",
+                      "surface-container-low": "#f2f4f6",
+                      "secondary-fixed": "#f4d9ff",
+                      "secondary-fixed-dim": "#ecc7ff",
+                      "inverse-primary": "#ffffff",
+                      "error": "#9e3f4e",
+                      "on-tertiary-fixed": "#3d2b00",
+                      "tertiary": "#795a00",
+                      "primary-dim": "#535252",
+                      "on-error-container": "#782232",
+                      "outline": "#757c81",
+                      "on-primary": "#faf7f6",
+                      "surface": "#f9f9fb",
+                      "on-primary-fixed-variant": "#5c5b5b",
+                      "secondary": "#853bb5",
+                      "on-background": "#2d3338",
+                      "surface-dim": "#d3dbe2",
+                      "on-secondary-container": "#762ba6",
+                      "secondary-container": "#f4d9ff",
+                      "on-tertiary-fixed-variant": "#604700",
+                      "on-primary-fixed": "#403f3f",
+                      "on-secondary": "#fff6fd",
+                      "primary-fixed-dim": "#d6d4d3",
+                      "tertiary-container": "#fdc003",
+                      "surface-container-high": "#e4e9ee",
+                      "error-container": "#ff8b9a",
+                      "outline-variant": "#acb3b8",
+                      "surface-container": "#ebeef2",
+                      "primary": "#5f5e5e",
+                      "tertiary-fixed": "#fdc003",
+                      "tertiary-dim": "#6a4f00",
+                      "surface-bright": "#f9f9fb",
+                      "on-tertiary-container": "#553e00",
+                      "surface-variant": "#dde3e9",
+                      "on-surface-variant": "#596065",
+                      "primary-container": "#e5e2e1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "0px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Space Grotesk"
+                      ],
+                      "body": [
+                              "Manrope"
+                      ],
+                      "label": [
+                              "Manrope"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .no-radius { border-radius: 0px !important; }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col relative antialiased selection:bg-secondary selection:text-white">
+<!-- Brush Stroke Overlays (Artistic Flourish) -->
+<div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0">
+<svg class="absolute top-[10%] -left-[10%] w-[50%] h-[50%] opacity-10 text-secondary" fill="currentColor" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0,50 Q25,20 50,50 T100,50 L100,100 L0,100 Z"></path>
+</svg>
+<svg class="absolute top-[60%] -right-[5%] w-[40%] h-[60%] opacity-15 text-secondary-fixed-dim" fill="currentColor" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M100,20 Q75,80 50,50 T0,80 L0,0 L100,0 Z"></path>
+</svg>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl no-border tonal-shift bg-zinc-50 flat no shadows hidden md:block">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-zinc-900 uppercase font-headline">Aetheric Resonance</div>
+<div class="flex items-center gap-8 font-headline tracking-tight">
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 opacity-80 scale-95 transition-transform" href="#">Concerts</a>
+<a class="text-zinc-500 hover:text-zinc-900 transition-colors hover:bg-zinc-100/50 transition-all duration-400 ease-out px-4 py-2" href="#">Education</a>
+<a class="text-zinc-500 hover:text-zinc-900 transition-colors hover:bg-zinc-100/50 transition-all duration-400 ease-out px-4 py-2" href="#">Support</a>
+<a class="text-zinc-500 hover:text-zinc-900 transition-colors hover:bg-zinc-100/50 transition-all duration-400 ease-out px-4 py-2" href="#">About</a>
+</div>
+<button class="bg-primary text-on-primary font-headline tracking-tight px-6 py-3 hover:bg-secondary transition-colors duration-400 ease-out no-radius text-sm uppercase">Tickets</button>
+</div>
+</nav>
+<!-- SideNavBar (Mobile/Tablet) -->
+<nav class="md:hidden fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-surface-variant flex justify-between items-center px-4 py-4">
+<div class="font-headline font-bold text-lg tracking-tighter uppercase text-zinc-900">Aetheric Resonance</div>
+<button class="text-zinc-900">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main class="flex-grow pt-24 md:pt-40 relative z-10 w-full max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16">
+<!-- Header Section -->
+<header class="mb-24 md:mb-32 flex flex-col md:flex-row justify-between items-start md:items-end border-b border-outline-variant/20 pb-12 gap-8">
+<div class="max-w-2xl">
+<span class="font-headline text-xs tracking-[0.2em] uppercase text-on-surface-variant mb-4 block">Current Season</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface leading-[0.9] mb-6 uppercase">Sonic<br/>Architectures</h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-xl font-light">A curated exploration of spatial audio and classical brutalism. Experience the intersection of physical sound and digital precision.</p>
+</div>
+<!-- Filters (Editorial Style) -->
+<div class="flex flex-col gap-4 font-headline text-sm tracking-widest uppercase">
+<span class="text-on-surface-variant text-xs mb-2">Filter Programming:</span>
+<div class="flex gap-6">
+<button class="text-secondary border-b-2 border-secondary pb-1 text-left">All Performances</button>
+<button class="text-on-surface hover:text-secondary transition-colors pb-1 text-left">Symphonic</button>
+<button class="text-on-surface hover:text-secondary transition-colors pb-1 text-left">Chamber</button>
+</div>
+</div>
+</header>
+<!-- Events Grid (Asymmetric Bento) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-32">
+<!-- Featured Event (Spans full or large portion) -->
+<article class="md:col-span-12 lg:col-span-8 group cursor-pointer relative flex flex-col md:flex-row bg-surface-container-low transition-colors duration-400 hover:bg-surface-variant p-8 md:p-12 gap-8 md:gap-16 items-center">
+<div class="w-full md:w-1/2 relative h-[400px] overflow-hidden bg-surface-dim">
+<img alt="Monochromatic abstract architecture representing symphonic structure" class="w-full h-full object-cover filter grayscale contrast-125 transition-transform duration-700 group-hover:scale-105" data-alt="high contrast monochromatic abstract architecture with sharp angles and deep shadows representing symphonic structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-G90sWNr6qVVwQQzt9jBP8kEiOxl-EVBjVDfOGwA7PkG8BvujwQA50gGsaH600dtlMVDQx7v9Ax3eYd4492LojX7G2NUjwU77jzawn8LW6QH2aDWkkBnWOw7DPpfL1RzL7T-_DHAlK6viKSu3iKHu1D2BSC-jufKTnhT-bvTJ7k6C4StxP8rKSbIeFaUlFc7Swgnca-z81WaijV3Jw58DtqM72dkLGeYM3gVVwTaGEXp9uYbJJpSGcgvIjtvs2-DvCpTUS7p9eQ"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-6 mb-6">
+<div class="font-headline text-3xl font-bold text-on-surface">OCT <span class="text-secondary">24</span></div>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+<div class="font-headline text-xs tracking-[0.1em] uppercase text-on-surface-variant">Main Hall</div>
+</div>
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tighter text-on-surface leading-none mb-6 uppercase group-hover:text-secondary transition-colors">Symphonic Singularity</h2>
+<p class="font-body text-on-surface-variant mb-10 text-lg font-light">An immersive journey into high-density orchestral textures, featuring the world premiere of 'Vertex' by A. K. Vasser.</p>
+<div class="mt-auto">
+<span class="inline-block border-b-2 border-secondary pb-1 font-headline text-sm uppercase tracking-widest text-on-surface group-hover:text-secondary transition-colors">Reserve Access</span>
+</div>
+</div>
+</article>
+<!-- Secondary Event 1 -->
+<article class="md:col-span-6 lg:col-span-4 group cursor-pointer flex flex-col bg-surface-container-low transition-colors duration-400 hover:bg-surface-variant p-8 relative">
+<div class="absolute top-0 right-0 w-16 h-16 bg-surface flex items-center justify-center border-b border-l border-surface-variant z-10 hidden lg:flex">
+<span class="material-symbols-outlined text-on-surface-variant">arrow_outward</span>
+</div>
+<div class="w-full relative h-[250px] overflow-hidden bg-surface-dim mb-8">
+<img alt="Monochromatic close up of a cello strings and bridge" class="w-full h-full object-cover filter grayscale contrast-125 transition-transform duration-700 group-hover:scale-105" data-alt="high contrast monochromatic close up of cello strings and bridge with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgt5xfwWRGqbz126udnrIgNPmAfyJvWIoCIV7qWEzqhzySI6ZV_W517SKi--RsZbHLL3jjcgA2S7vm3RnXST_4fqdxyPKzngm7OJn2gLo9M1H7unlTIioG23Xzx38GxvCa9wORqPZhOAlHSKa34vGpdRxQ20QI_R7Gy4qwdmgUR49RpJQc_rsCi3wdEdxNBPn9WQhMBnOLJKgJJhryiDxNW_QXcrkHLQ-8AyYuY4Y8UVwwyWrVqHT-1EebnAAAe_2FCmVf1pu9dQ"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<div class="font-headline text-2xl font-bold text-on-surface">NOV <span class="text-secondary">02</span></div>
+<div class="font-headline text-[10px] tracking-[0.1em] uppercase text-on-surface-variant border border-outline-variant/20 px-2 py-1">Chamber</div>
+</div>
+<h3 class="font-headline text-2xl font-bold tracking-tight text-on-surface mb-4 uppercase group-hover:text-secondary transition-colors">Resonant Frequencies</h3>
+<p class="font-body text-on-surface-variant text-sm font-light mb-8">A minimalist study in acoustic decay, featuring solo strings and subtle electronic manipulation in an intimate setting.</p>
+</div>
+</article>
+<!-- Secondary Event 2 -->
+<article class="md:col-span-6 lg:col-span-4 group cursor-pointer flex flex-col bg-surface-container-lowest transition-colors duration-400 hover:bg-surface-variant p-8 relative border border-outline-variant/10">
+<div class="w-full relative h-[250px] overflow-hidden bg-surface-dim mb-8">
+<img alt="Monochromatic abstract geometric shapes in concrete" class="w-full h-full object-cover filter grayscale contrast-125 transition-transform duration-700 group-hover:scale-105" data-alt="high contrast monochromatic abstract geometric shapes in concrete forming architectural patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdSTssH5sJvXEP_V3LBIQ8xOv-C1-ADDjGuCq-sRZnd90UqGOKK2yjqzkhRkTcdyWmCPBOeeMk_odD10Q2fIfEX2-s6guwLrWaX-1mVFLM93F4A7YmMIT9Rr-yWzuoxrTesaukLtOnZ8YMGol7pno7VVDioNftnuJcB-kT8qOoAPhsZHHNXRpfBqBSU1fSoTM9tYHHxeOZF4oPsvxew1fWyN3p21oLlkh0EJrjtMiIr91yhOgprRt18yOpXsHUKUE-e_LX3VOcpg"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<div class="font-headline text-2xl font-bold text-on-surface">NOV <span class="text-secondary">15</span></div>
+<div class="font-headline text-[10px] tracking-[0.1em] uppercase text-on-surface-variant border border-outline-variant/20 px-2 py-1">Guest Artist</div>
+</div>
+<h3 class="font-headline text-2xl font-bold tracking-tight text-on-surface mb-4 uppercase group-hover:text-secondary transition-colors">Fractal Harmony</h3>
+<p class="font-body text-on-surface-variant text-sm font-light mb-8">Pianist Elara Vance interprets complex mathematical structures through the lens of late 20th-century avant-garde.</p>
+</div>
+</article>
+<!-- Text-Heavy Entry (Asymmetric pacing) -->
+<article class="md:col-span-12 lg:col-span-8 group cursor-pointer bg-primary text-on-primary p-8 md:p-16 flex flex-col justify-center hover:bg-secondary transition-colors duration-500 relative overflow-hidden">
+<div class="absolute -right-20 -top-20 text-[200px] font-headline font-bold text-primary-dim opacity-20 pointer-events-none leading-none select-none">DEC</div>
+<div class="relative z-10 max-w-2xl">
+<div class="flex items-center gap-4 mb-6">
+<div class="font-headline text-3xl font-bold">DEC 05-08</div>
+<div class="font-headline text-[10px] tracking-[0.2em] uppercase text-on-primary/70 border border-on-primary/30 px-3 py-1">Festival</div>
+</div>
+<h2 class="font-headline text-4xl md:text-6xl font-bold tracking-tighter leading-none mb-6 uppercase">The Brutalist<br/>Winter Solstice</h2>
+<p class="font-body text-on-primary/80 text-lg md:text-xl font-light mb-10 leading-relaxed">A four-day immersion into cold soundscapes and industrial acoustics. Features three full orchestral performances and site-specific installations throughout the venue.</p>
+<span class="inline-flex items-center gap-2 font-headline text-sm uppercase tracking-widest hover:pl-2 transition-all">
+                        View Schedule <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</article>
+<!-- New Event 1: Aetheric Echoes -->
+<article class="md:col-span-6 lg:col-span-4 group cursor-pointer flex flex-col bg-surface-container-low transition-colors duration-400 hover:bg-surface-variant p-8 relative">
+<div class="w-full relative h-[250px] overflow-hidden bg-surface-dim mb-8">
+<img alt="Monochromatic image of abstract waves" class="w-full h-full object-cover filter grayscale contrast-125 transition-transform duration-700 group-hover:scale-105" data-alt="high contrast monochromatic abstract waves representing sound echoes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBedCx0mrawTHYf9vBohrW30tYgERZ7ZK4dYYKd93w-KrQcqGKArF-t57m5iM0PKGxnzA08uhoTANmoFedNDknhBgxcqZbGGmAsFeODWbSppRIyidVYUf6IGP_AfqxP8omwfkxm9IGFKHeT1aogWyXK7mNKRV6cYld7YPwpkSx1BQIS-HS_dmys64_iBmQc-KrHd3_Uox4w5rsiBsWUTs3-Y1eWsx2XU2jYE57pfPMjddCaQIvGlRmtxVfjltokUFYdv1MP7WpCEQ"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<div class="font-headline text-2xl font-bold text-on-surface">DEC <span class="text-secondary">12</span></div>
+<div class="font-headline text-[10px] tracking-[0.1em] uppercase text-on-surface-variant border border-outline-variant/20 px-2 py-1">Chamber</div>
+</div>
+<h3 class="font-headline text-2xl font-bold tracking-tight text-on-surface mb-4 uppercase group-hover:text-secondary transition-colors">Aetheric Echoes</h3>
+<p class="font-body text-on-surface-variant text-sm font-light mb-8">A sonic exploration of reverberation and space, combining traditional acoustics with modern synthesis techniques.</p>
+</div>
+</article>
+<!-- New Event 2: The Glass Pavilion -->
+<article class="md:col-span-6 lg:col-span-4 group cursor-pointer flex flex-col bg-surface-container-lowest transition-colors duration-400 hover:bg-surface-variant p-8 relative border border-outline-variant/10">
+<div class="w-full relative h-[250px] overflow-hidden bg-surface-dim mb-8">
+<img alt="Monochromatic image of a glass structure" class="w-full h-full object-cover filter grayscale contrast-125 transition-transform duration-700 group-hover:scale-105" data-alt="high contrast monochromatic glass architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD08MNvDphzkuuSAk3b5XQY4zGQQqeCWO2YPXKvIK4rnNq5tKZhGoe5b0vNsc2IOHwhZ0YTu6zlbxonuTG6OX2bG5l560GjcjAWfxXIEXPQ_WtD4nDKHDuokEtoQgWs11Ktf6hsW5wL-6FXFaQSLsW-eh1AtrNAi1ESgQ_y0XDPeyNBBVEeALppTW8-IiJuQ0dakNDe6xHQGDhxH17QhMZoCoRo362cfy1UWl7yU7R6KH6ljBkkYDpay2MpL2FXxRE1rcdeaemhNg"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<div class="font-headline text-2xl font-bold text-on-surface">JAN <span class="text-secondary">05</span></div>
+<div class="font-headline text-[10px] tracking-[0.1em] uppercase text-on-surface-variant border border-outline-variant/20 px-2 py-1">Main Hall</div>
+</div>
+<h3 class="font-headline text-2xl font-bold tracking-tight text-on-surface mb-4 uppercase group-hover:text-secondary transition-colors">The Glass Pavilion</h3>
+<p class="font-body text-on-surface-variant text-sm font-light mb-8">A multidisciplinary performance exploring fragility and transparency through contemporary classical composition.</p>
+</div>
+</article>
+<!-- New Event 3: Neural Nocturnes -->
+<article class="md:col-span-6 lg:col-span-4 group cursor-pointer flex flex-col bg-surface-container-low transition-colors duration-400 hover:bg-surface-variant p-8 relative">
+<div class="w-full relative h-[250px] overflow-hidden bg-surface-dim mb-8">
+<img alt="Monochromatic image of abstract lines" class="w-full h-full object-cover filter grayscale contrast-125 transition-transform duration-700 group-hover:scale-105" data-alt="high contrast monochromatic abstract network lines representing neural pathways" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ9NqqKZsO4c-TWoq5NwR311CR5VvmA3W-Zkw1-eb3yulr2Bt5zoJhTInXNQYNpy-iu4__JxcONTGV-4PtQacvaOXNMeV-BeUb4t-5mhQAUoKhGgJfAWVc5WLdUjRZj4_OJyWb2-Rb7vCv6xFEcrbGtd1u6hpnY90rs0PGhSrK8YcIFwbRf9TK2v6QuI49DKNLCHEmoiUijA08lLvXJE1tiD3eG2zBe2AVqMCKTWInyGUWnPbtdBmdc0Kb41OIkrMr0PmIn0p0yA"/>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<div class="font-headline text-2xl font-bold text-on-surface">JAN <span class="text-secondary">22</span></div>
+<div class="font-headline text-[10px] tracking-[0.1em] uppercase text-on-surface-variant border border-outline-variant/20 px-2 py-1">Experimental</div>
+</div>
+<h3 class="font-headline text-2xl font-bold tracking-tight text-on-surface mb-4 uppercase group-hover:text-secondary transition-colors">Neural Nocturnes</h3>
+<p class="font-body text-on-surface-variant text-sm font-light mb-8">An algorithmic symphony where AI-generated structures meet organic orchestration in an evolving soundscape.</p>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-100 w-full py-16 px-8 mt-24 tonal-shift from surface to surface-container-low flat grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+<div>
+<div class="font-space-grotesk font-bold text-2xl text-zinc-900 mb-6 uppercase tracking-tighter">Aetheric Resonance</div>
+<p class="font-manrope text-sm text-zinc-400">© 2024 Aetheric Resonance Philharmonic. All Rights Reserved.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:justify-end font-manrope text-sm">
+<div class="flex flex-col gap-4">
+<a class="text-zinc-500 hover:text-purple-600 transition-all duration-300 hover:underline underline-offset-4 decoration-purple-500" href="#">Privacy Policy</a>
+<a class="text-zinc-500 hover:text-purple-600 transition-all duration-300 hover:underline underline-offset-4 decoration-purple-500" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-zinc-500 hover:text-purple-600 transition-all duration-300 hover:underline underline-offset-4 decoration-purple-500" href="#">Press Room</a>
+<a class="text-zinc-500 hover:text-purple-600 transition-all duration-300 hover:underline underline-offset-4 decoration-purple-500" href="#">Accessibility</a>
+</div>
+</div>
+</footer>
+</body></html>

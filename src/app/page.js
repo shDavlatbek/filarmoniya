@@ -1,6 +1,8 @@
 import Header from "@/components/Header/Header";
 import HeroSlider from "@/components/HeroSlider/HeroSlider";
 import NewsSection from "@/components/NewsSection/NewsSection";
+import EventList from "@/components/EventList/EventList";
+import TeamList from "@/components/TeamList/TeamList";
 
 export default function Home() {
   return (
@@ -8,6 +10,8 @@ export default function Home() {
       <Header />
       <HeroSlider />
       <NewsSection />
+      <EventList />
+      <TeamList />
     </main>
   );
 }
