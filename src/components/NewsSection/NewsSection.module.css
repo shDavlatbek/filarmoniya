@@ -17,31 +17,42 @@
 
 .title {
   font-family: var(--font-headline);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--on-surface);
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
-.viewToggles {
+.viewAllWrapper {
   display: flex;
-  gap: 1rem;
+  align-items: center;
 }
 
-.toggleBtn {
-  color: var(--outline);
-  transition: color 0.3s ease;
-}
-
-.toggleBtn:hover {
+.viewAllBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-headline);
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--on-surface);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
-.activeToggle {
-  color: var(--on-surface);
+.viewAllBtn span {
+  transition: transform 0.3s ease;
 }
 
-.activeToggle:hover {
+.viewAllBtn:hover {
   color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.viewAllBtn:hover span {
+  transform: translateX(4px);
 }
 
 .grid {

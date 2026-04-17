@@ -1,12 +1,15 @@
 .footer {
-  background-color: var(--surface-container-low);
-  color: var(--on-surface-variant);
+  background-color: var(--inverse-surface);
+  color: var(--inverse-on-surface);
   font-family: var(--font-body);
   font-size: 0.875rem;
   letter-spacing: 0.05em;
   width: 100%;
   padding: 4rem 2rem;
   border-top: 1px solid var(--outline-variant);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .container {
@@ -29,7 +32,7 @@
   font-family: var(--font-headline);
   font-weight: 700;
   font-size: 1.25rem;
-  color: var(--on-surface);
+  color: var(--inverse-on-surface);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -58,5 +61,5 @@
 
 .copyright {
   font-size: 0.75rem;
-  opacity: 0.8;
+  opacity: 0.6;
 }

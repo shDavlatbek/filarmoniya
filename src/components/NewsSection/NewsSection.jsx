@@ -33,14 +33,11 @@ export default function NewsSection() {
       <div className={styles.container}>
         <div className={styles.header}>
           <h3 className={styles.title}>So'nggi Yangiliklar</h3>
-          {/* <div className={styles.viewToggles}>
-            <button className={`${styles.toggleBtn} ${styles.activeToggle}`}>
-              <span className="material-symbols-outlined">grid_view</span>
-            </button>
-            <button className={styles.toggleBtn}>
-              <span className="material-symbols-outlined">view_list</span>
-            </button>
-          </div> */}
+        <div className={styles.viewAllWrapper}>
+          <a href="#" className={styles.viewAllBtn}>
+            Barchasini ko'rish <span className="material-symbols-outlined" style={{ fontSize: '20px' }}>arrow_forward</span>
+          </a>
+        </div>
         </div>
 
         <div className={styles.grid}>

@@ -39,9 +39,12 @@ const TEAM_MEMBERS = [
   }
 ];
 
+import HalftoneCanvas from '../HalftoneCanvas/HalftoneCanvas';
+
 export default function TeamList() {
   return (
     <section className={styles.section}>
+      <HalftoneCanvas />
       <div className={styles.headerContainer}>
         {/* Decorative background flare */}
         {/* <div className={styles.brushStroke}></div> */}
