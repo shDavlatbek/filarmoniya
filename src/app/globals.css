@@ -1,32 +1,27 @@
 /* Fonts loaded via link tags in layout.js */
 
 :root {
-  --primary: #5f5e5e;
-  --secondary: #853bb5;
-  --tertiary: #795a00;
+  --primary: #D4AF37;
+  --secondary: #D4AF37;
+  --tertiary: #D4AF37;
   
-  --surface-bright: #f9f9fb;
   --background: #f9f9fb;
-  --surface-container: #ebeef2;
-  --surface-container-high: #e4e9ee;
-  --surface-container-highest: #dde3e9;
-  --surface-container-lowest: #ffffff;
-  --surface-container-low: #f2f4f6;
-  --surface-variant: #dde3e9;
-  --surface-dim: #d3dbe2;
-  --surface: #f9f9fb;
+  --surface: #ffffff;
+  --surface-bright: #ffffff;
+  --surface-container: #f2f4f6;
+  --surface-variant: #e4e9ee;
   
   --on-surface: #2d3338;
   --on-background: #2d3338;
   --on-surface-variant: #596065;
+  
   --inverse-surface: #0c0e10;
-  --inverse-on-surface: #9c9d9f;
-  --outline: #757c81;
-  --outline-variant: #acb3b8;
+  --inverse-on-surface: #ffffff;
+  --outline: #acb3b8;
   
   --inverse-primary: #ffffff;
-  --on-primary: #faf7f6;
-  --on-secondary: #fff6fd;
+  --on-primary: #ffffff;
+  --on-secondary: #ffffff;
   
   --font-headline: 'Space Grotesk', sans-serif;
   --font-body: 'Manrope', sans-serif;

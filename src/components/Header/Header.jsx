@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import styles from './Header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navItems = [
   { label: 'BOSH SAHIFA', href: '#', active: true },
@@ -42,31 +43,40 @@ function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, 
   return (
     <div className={styles.container}>
       {/* Logo */}
-      <div className={`${styles.logo} ${menuOpen ? styles.hiddenWhenOpen : ''}`}>
-        <div className={styles.logoIcon}>
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="11" stroke="var(--tertiary)" strokeWidth="2"/>
-            <path d="M8 12C8 12 10 7 14 7C14 7 12 17 18 17" stroke="var(--tertiary)" strokeWidth="2" strokeLinecap="round"/>
-            <circle cx="16" cy="7" r="1.5" fill="var(--tertiary)"/>
-          </svg>
-        </div>
-        <div className={styles.logoText}>
-          <span className={styles.logoTextTop}>O'ZBEKISTON</span>
-          <span className={styles.logoTextBottom}>DAVLAT FILARMONIYASI</span>
-        </div>
-      </div>
+      <Link href="/" className={`${styles.logo} ${menuOpen ? styles.hiddenWhenOpen : ''}`}>
+        <Image src="/images/logo.webp" alt="O'zbekiston Davlat Filarmoniyasi" width={220} height={50} className={styles.logoImage} />
+      </Link>
 
       {/* Inline Nav */}
       <nav className={`${styles.inlineNav} ${menuOpen ? styles.hiddenWhenOpen : ''}`}>
-        {navItems.map((item, i) => (
-          <Link
-            key={item.label}
-            href={item.href}
-            className={`${item.active ? styles.activeLink : styles.link} ${styles[`navItem${i}`]}`}
-          >
-            {item.label}
-          </Link>
-        ))}
+        {navItems.map((item, i) => {
+          if (item.children) {
+            return (
+              <div key={item.label} className={`${styles.inlineNavDropdownGroup} ${styles[`navItem${i}`]}`}>
+                <button className={`${item.active ? styles.activeLink : styles.link} ${styles.inlineNavDropdownBtn}`}>
+                  {item.label}
+                  <span className="material-symbols-outlined" style={{ fontSize: '14px', marginLeft: '2px' }}>expand_more</span>
+                </button>
+                <div className={styles.inlineNavDropdownMenu}>
+                  {item.children.map(child => (
+                    <Link key={child.label} href={child.href} className={styles.inlineNavDropdownItem}>
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+          return (
+            <Link
+              key={item.label}
+              href={item.href}
+              className={`${item.active ? styles.activeLink : styles.link} ${styles[`navItem${i}`]}`}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
       </nav>
 
       {/* Right actions */}
@@ -95,13 +105,13 @@ function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, 
 
           <div className={styles.langWrapper}>
             <button
-              className={styles.langBtn}
+              className={`${styles.link} ${styles.langBtn}`}
               onClick={() => setLangOpen(!langOpen)}
               onBlur={() => setTimeout(() => setLangOpen(false), 200)}
             >
-              <span className="material-symbols-outlined" style={{ fontSize: '18px' }}>language</span>
+              <span className="material-symbols-outlined" style={{ fontSize: '18px', marginRight: '4px' }}>language</span>
               {currentLang}
-              <span className="material-symbols-outlined" style={{ fontSize: '16px', transform: langOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}>expand_more</span>
+              <span className={`material-symbols-outlined ${styles.langChevron}`} style={{ fontSize: '16px', marginLeft: '2px', transform: langOpen ? 'rotate(180deg)' : 'none' }}>expand_more</span>
             </button>
             <div className={`${styles.langMenu} ${langOpen ? styles.langMenuOpen : ''}`}>
               {languages.map((lang) => (
@@ -153,21 +163,22 @@ export default function Header() {
   }, [handleScroll]);
 
   useEffect(() => {
+    let timeoutId;
     if (menuOpen) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
       document.body.style.overflow = 'hidden';
       document.body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
-      document.body.style.overflow = '';
-      document.body.style.paddingRight = '';
-      document.body.style.removeProperty('--scrollbar-width');
       setExpandedItem(null);
+      timeoutId = setTimeout(() => {
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+        document.body.style.removeProperty('--scrollbar-width');
+      }, 500); // Wait for CSS transition to complete before enabling scroll
     }
     return () => {
-      document.body.style.overflow = '';
-      document.body.style.paddingRight = '';
-      document.body.style.removeProperty('--scrollbar-width');
+      clearTimeout(timeoutId);
     };
   }, [menuOpen]);
 

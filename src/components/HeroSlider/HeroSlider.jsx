@@ -70,14 +70,14 @@ export default function HeroSlider() {
 
         <div className={styles.controls}>
           <button ref={prevRef} className={styles.navBtn}>
-            <span className={styles.arrow}>&larr;</span> KEYINGI
+            <span className={`material-symbols-outlined ${styles.arrow}`}>arrow_back</span> OLDINGI
           </button>
           
-          {/* Aesthetic purple brush overlay on the right */}
+          {/* Aesthetic gold brush overlay on the right */}
           <div className={styles.artisticOverlay}></div>
           
           <button ref={nextRef} className={styles.navBtn}>
-            OLDINGI <span className={styles.arrow}>&rarr;</span>
+            KEYINGI <span className={`material-symbols-outlined ${styles.arrow}`}>arrow_forward</span>
           </button>
         </div>
       </Swiper>
