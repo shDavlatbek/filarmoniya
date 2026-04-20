@@ -1,5 +1,5 @@
 export const navItems = [
-  { label: 'BOSH SAHIFA', href: '/', active: true },
+  { label: 'BOSH SAHIFA', href: '/' },
   {
     label: 'FILARMONIYA',
     href: '#',

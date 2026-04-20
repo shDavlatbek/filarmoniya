@@ -1,0 +1,313 @@
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  background-color: var(--inverse-surface);
+  color: var(--inverse-primary);
+  padding: 11rem 2rem 5rem;
+  overflow: hidden;
+}
+
+.brushStroke {
+  position: absolute;
+  right: -10%;
+  top: -20%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, transparent 60%);
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  max-width: 1000px;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.6;
+  color: var(--inverse-on-surface);
+  max-width: 720px;
+}
+
+/* ===== Body ===== */
+.body {
+  background-color: var(--background);
+  padding: 5rem 2rem 7rem;
+}
+
+.bodyInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Toolbar ===== */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--surface-variant);
+}
+
+.searchWrap {
+  position: relative;
+  flex: 1 1 340px;
+  max-width: 620px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  font-size: 22px;
+  color: var(--on-surface-variant);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  background-color: var(--surface-container);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchInput:focus {
+  background-color: var(--surface);
+  box-shadow: inset 0 -2px 0 var(--secondary);
+}
+
+.searchInput::placeholder {
+  color: var(--on-surface-variant);
+}
+
+.clearBtn {
+  position: absolute;
+  right: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: var(--on-surface-variant);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.clearBtn:hover {
+  color: var(--on-surface);
+  background-color: var(--surface-variant);
+}
+
+.clearBtn .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.count {
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+}
+
+/* ===== List ===== */
+.empty {
+  padding: 5rem 0;
+  text-align: center;
+  font-family: var(--font-body);
+  color: var(--on-surface-variant);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.75rem 1rem;
+  border-bottom: 1px solid var(--surface-variant);
+  transition: background-color 0.3s ease;
+}
+
+.item:first-child {
+  border-top: 1px solid var(--surface-variant);
+}
+
+.item:hover {
+  background-color: var(--surface-container);
+}
+
+/* ===== Format badge ===== */
+.formatBadge {
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--inverse-primary);
+  background-color: var(--inverse-surface);
+  padding: 0.85rem 0.9rem;
+  min-width: 72px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.item:hover .formatBadge {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
+/* ===== Item body ===== */
+.itemBody {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.itemMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.itemType {
+  color: var(--secondary);
+}
+
+.itemNumber {
+  color: var(--on-surface-variant);
+}
+
+.dotSep {
+  color: var(--outline);
+  font-size: 0.6rem;
+}
+
+.itemTitle {
+  font-family: var(--font-headline);
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--on-surface);
+  transition: color 0.3s ease;
+}
+
+.item:hover .itemTitle {
+  color: var(--secondary);
+}
+
+.itemFooter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--on-surface-variant);
+}
+
+/* ===== Download button ===== */
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  background-color: var(--inverse-surface);
+  color: var(--inverse-primary);
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.downloadBtn:hover {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+  transform: translateY(-2px);
+}
+
+.downloadBtn .material-symbols-outlined {
+  font-size: 20px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .item {
+    grid-template-columns: auto 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0.75rem;
+  }
+
+  .downloadBtn {
+    grid-column: 1 / -1;
+    justify-content: center;
+    padding: 0.9rem 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero { padding: 8rem 1.25rem 3rem; }
+  .body { padding: 3rem 1.25rem 5rem; }
+  .toolbar { gap: 1rem; }
+
+  .formatBadge {
+    min-width: 56px;
+    padding: 0.65rem 0.5rem;
+    font-size: 0.65rem;
+  }
+
+  .itemTitle { font-size: 1rem; }
+}

@@ -214,6 +214,11 @@
   color: var(--primary); /* Gold hover! */
 }
 
+.inlineNavDropdownItemActive {
+  color: var(--primary);
+  background: rgba(212, 175, 55, 0.08);
+}
+
 /* ===== Right Actions ===== */
 .actions {
   display: flex;
@@ -473,6 +478,22 @@
 }
 .submenuLink:hover { color: var(--secondary); }
 
+.submenuLinkActive {
+  color: var(--inverse-primary);
+  position: relative;
+}
+
+.submenuLinkActive::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  width: 6px;
+  height: 2px;
+  background-color: var(--secondary);
+  transform: translateY(-50%);
+}
+
 /* ===== Overlay Footer ===== */
 .overlayFooter {
   display: flex;
@@ -604,6 +625,22 @@
   .desktopSubmenuLink:hover {
     color: var(--inverse-primary);
     transform: translateX(8px);
+  }
+
+  .desktopSubmenuLinkActive {
+    color: var(--inverse-primary);
+    position: relative;
+  }
+
+  .desktopSubmenuLinkActive::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 50%;
+    width: 12px;
+    height: 2px;
+    background-color: var(--secondary);
+    transform: translateY(-50%);
   }
 
   .submenu { 

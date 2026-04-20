@@ -4,10 +4,24 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import styles from './Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { navItems, languages } from '@/data/navigation';
 
+function isHrefActive(href, pathname) {
+  if (!href || href === '#') return false;
+  if (href === '/') return pathname === '/';
+  return pathname === href || pathname.startsWith(href + '/');
+}
+
+function isItemActive(item, pathname) {
+  if (item.children) {
+    return item.children.some((child) => isHrefActive(child.href, pathname));
+  }
+  return isHrefActive(item.href, pathname);
+}
+
 /* Shared inner bar — used in both headers */
-function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, isSticky }) {
+function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, isSticky, pathname }) {
   return (
     <div className={styles.container}>
       {/* Logo */}
@@ -18,19 +32,27 @@ function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, 
       {/* Inline Nav */}
       <nav className={`${styles.inlineNav} ${menuOpen ? styles.hiddenWhenOpen : ''}`}>
         {navItems.map((item, i) => {
+          const active = isItemActive(item, pathname);
           if (item.children) {
             return (
               <div key={item.label} className={`${styles.inlineNavDropdownGroup} ${styles[`navItem${i}`]}`}>
-                <button className={`${item.active ? styles.activeLink : styles.link} ${styles.inlineNavDropdownBtn}`}>
+                <button className={`${active ? styles.activeLink : styles.link} ${styles.inlineNavDropdownBtn}`}>
                   {item.label}
                   <span className="material-symbols-outlined" style={{ fontSize: '14px', marginLeft: '2px' }}>expand_more</span>
                 </button>
                 <div className={styles.inlineNavDropdownMenu}>
-                  {item.children.map(child => (
-                    <Link key={child.label} href={child.href} className={styles.inlineNavDropdownItem}>
-                      {child.label}
-                    </Link>
-                  ))}
+                  {item.children.map(child => {
+                    const childActive = isHrefActive(child.href, pathname);
+                    return (
+                      <Link
+                        key={child.label}
+                        href={child.href}
+                        className={`${styles.inlineNavDropdownItem} ${childActive ? styles.inlineNavDropdownItemActive : ''}`}
+                      >
+                        {child.label}
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
             );
@@ -39,7 +61,7 @@ function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, 
             <Link
               key={item.label}
               href={item.href}
-              className={`${item.active ? styles.activeLink : styles.link} ${styles[`navItem${i}`]}`}
+              className={`${active ? styles.activeLink : styles.link} ${styles[`navItem${i}`]}`}
             >
               {item.label}
             </Link>
@@ -103,6 +125,7 @@ function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, 
 }
 
 export default function Header() {
+  const pathname = usePathname() || '/';
   const [langOpen, setLangOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState('Русский');
@@ -148,7 +171,7 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  const sharedProps = { menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang };
+  const sharedProps = { menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, pathname };
 
   const stickyClasses = [
     styles.stickyHeader,
@@ -172,52 +195,71 @@ export default function Header() {
       <div className={`${styles.menuOverlay} ${menuOpen ? styles.menuOverlayOpen : ''}`}>
         <div className={`${styles.overlayLayout} ${expandedItem ? styles.hasExpanded : ''}`}>
           <nav className={styles.navFull}>
-            {navItems.map((item) => (
-              <div key={item.label} className={styles.navFullItem}>
-                {item.children ? (
-                  <>
-                    <button
-                      className={`${styles.linkFull} ${expandedItem === item.label ? styles.linkFullExpanded : ''}`}
-                      onClick={() => setExpandedItem(expandedItem === item.label ? null : item.label)}
-                    >
+            {navItems.map((item) => {
+              const active = isItemActive(item, pathname);
+              return (
+                <div key={item.label} className={styles.navFullItem}>
+                  {item.children ? (
+                    <>
+                      <button
+                        className={`${active ? styles.activeLinkFull : styles.linkFull} ${expandedItem === item.label ? styles.linkFullExpanded : ''}`}
+                        onClick={() => setExpandedItem(expandedItem === item.label ? null : item.label)}
+                      >
+                        <span className={styles.innerLink}>
+                          {item.label}
+                          <span className={`material-symbols-outlined ${styles.chevronMobile}`} style={{ fontSize: '20px', marginLeft: '0.5rem', transform: expandedItem === item.label ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}>expand_more</span>
+                          <span className={`material-symbols-outlined ${styles.chevronDesktop}`} style={{ fontSize: '24px', marginLeft: '1rem', opacity: expandedItem === item.label ? 1 : 0.6, transform: expandedItem === item.label ? 'translateX(4px)' : 'translateX(0)', transition: 'all 0.3s' }}>chevron_right</span>
+                        </span>
+                      </button>
+                      <div className={`${styles.submenu} ${expandedItem === item.label ? styles.submenuOpen : ''}`}>
+                        {item.children.map((child) => {
+                          const childActive = isHrefActive(child.href, pathname);
+                          return (
+                            <Link
+                              key={child.label}
+                              href={child.href}
+                              className={`${styles.submenuLink} ${childActive ? styles.submenuLinkActive : ''}`}
+                              onClick={() => setMenuOpen(false)}
+                            >
+                              {child.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </>
+                  ) : (
+                    <Link href={item.href} className={active ? styles.activeLinkFull : styles.linkFull} onClick={() => setMenuOpen(false)}>
                       <span className={styles.innerLink}>
                         {item.label}
-                        <span className={`material-symbols-outlined ${styles.chevronMobile}`} style={{ fontSize: '20px', marginLeft: '0.5rem', transform: expandedItem === item.label ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}>expand_more</span>
-                        <span className={`material-symbols-outlined ${styles.chevronDesktop}`} style={{ fontSize: '24px', marginLeft: '1rem', opacity: expandedItem === item.label ? 1 : 0.6, transform: expandedItem === item.label ? 'translateX(4px)' : 'translateX(0)', transition: 'all 0.3s' }}>chevron_right</span>
                       </span>
-                    </button>
-                    <div className={`${styles.submenu} ${expandedItem === item.label ? styles.submenuOpen : ''}`}>
-                      {item.children.map((child) => (
-                        <Link key={child.label} href={child.href} className={styles.submenuLink} onClick={() => setMenuOpen(false)}>
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <Link href={item.href} className={item.active ? styles.activeLinkFull : styles.linkFull} onClick={() => setMenuOpen(false)}>
-                    <span className={styles.innerLink}>
-                      {item.label}
-                    </span>
-                  </Link>
-                )}
-              </div>
-            ))}
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
           </nav>
-          
+
           <div className={styles.desktopSubmenuPanel}>
             {navItems.map((item) => {
               if (item.children) {
                 return (
-                  <div 
-                    key={`desktop-${item.label}`} 
+                  <div
+                    key={`desktop-${item.label}`}
                     className={`${styles.desktopSubmenuGroup} ${expandedItem === item.label ? styles.desktopSubmenuGroupActive : ''}`}
                   >
-                    {item.children.map((child) => (
-                      <Link key={`desktop-child-${child.label}`} href={child.href} className={styles.desktopSubmenuLink} onClick={() => setMenuOpen(false)}>
-                        {child.label}
-                      </Link>
-                    ))}
+                    {item.children.map((child) => {
+                      const childActive = isHrefActive(child.href, pathname);
+                      return (
+                        <Link
+                          key={`desktop-child-${child.label}`}
+                          href={child.href}
+                          className={`${styles.desktopSubmenuLink} ${childActive ? styles.desktopSubmenuLinkActive : ''}`}
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          {child.label}
+                        </Link>
+                      );
+                    })}
                   </div>
                 )
               }
