@@ -124,23 +124,42 @@
   background-color: var(--inverse-primary);
 }
 
-/* Progressive breakpoints */
+/* Progressive breakpoints
+   NOTE: all hide/show rules are scoped to `.inlineNav .navItemN` so their
+   specificity (0,2,0) beats `.inlineNavDropdownGroup { display: flex }` (0,1,0).
+   Show rules use `display: flex` — works for both plain <a> (single child)
+   and the dropdown group, which needs flex for its internal layout. */
 .inlineNav { display: none; }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .inlineNav { display: flex; }
-  .navItem4, .navItem5, .navItem6, .navItem7, .navItem8 { display: none; }
-}
+  .inlineNav .navItem2, .inlineNav .navItem3, .inlineNav .navItem4,
+  .inlineNav .navItem5, .inlineNav .navItem6, .inlineNav .navItem7,
+  .inlineNav .navItem8 { display: none; }
+} */
+
 @media (min-width: 1024px) {
-  .navItem4, .navItem5 { display: inline; }
-  .navItem6, .navItem7, .navItem8 { display: none; }
+  .inlineNav { display: flex; }
+  /* Dropdown items 2, 3, 4 (AXBOROT / IJODIY / XALQARO) always show at 1024+.
+     Only plain links 5–8 follow the progressive ladder below. */
+  .inlineNav .navItem5,
+  .inlineNav .navItem6,
+  .inlineNav .navItem7,
+  .inlineNav .navItem8 { display: none; }
 }
-@media (min-width: 1280px) {
-  .navItem6 { display: inline; }
-  .navItem7, .navItem8 { display: none; }
+
+@media (min-width: 1140px) {
+  .inlineNav .navItem8 { display: flex; }
 }
+
 @media (min-width: 1440px) {
-  .navItem7, .navItem8 { display: inline; }
+  .inlineNav .navItem5,
+  .inlineNav .navItem6 { display: flex; }
+  .inlineNav .navItem7 { display: none; }
+}
+
+@media (min-width: 1640px) {
+  .inlineNav .navItem7 { display: flex; }
 }
 
 /* ===== Inline Nav Dropdown ===== */
