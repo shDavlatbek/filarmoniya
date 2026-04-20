@@ -34,20 +34,6 @@
   transition: transform 0.7s ease-out, filter 0.7s ease-out;
 }
 
-.tag {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background-color: var(--surface-container-lowest);
-  padding: 0.35rem 0.85rem;
-  font-family: var(--font-headline);
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--on-surface);
-}
-
 .content {
   display: flex;
   flex-direction: column;

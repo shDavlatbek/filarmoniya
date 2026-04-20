@@ -1,0 +1,168 @@
+export const afishaMeta = {
+  eyebrow: 'Afisha',
+  title: 'Afisha',
+  description:
+    "Yaqinlashib kelayotgan konsert va tomoshalarning tanlab olingan dasturi. Mumtoz klassik va zamonaviy avangard sadolarining uyg'unligini his eting.",
+  category: 'afisha',
+};
+
+export const afishaFilters = [
+  { value: 'all', label: 'Hamma' },
+  { value: 'symphony', label: 'Simfonik' },
+  { value: 'chamber', label: 'Kamerali' },
+  { value: 'opera', label: 'Opera' },
+  { value: 'festival', label: 'Festival' },
+];
+
+export const afishaEvents = [
+  {
+    id: 1,
+    slug: 'mahler-tiriklanish',
+    day: '24',
+    month: 'Oktabr',
+    monthShort: 'OKT',
+    year: '2025',
+    time: '19:00',
+    venue: 'Bosh zal',
+    category: 'symphony',
+    categoryLabel: 'Simfonik',
+    title: "Mahler — Tiriklanish",
+    subtitle: '2-simfoniya',
+    excerpt:
+      "Butun simfonik orkestr va ikki xor ishtirokida bajariladigan monumental asar. Hayot, o'lim va tiriklanish g'oyalarini o'zida mujassam etgan kechlik.",
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAZJMrYVCx4OZLY9l5xVMWOYRcTTxc_3pAlZjEPI3DZrnK0N-Lu6Z_yEYddq3TOcKaUd37hBWc_iKT47BvJF2W89pl8vnooanPV8ByrggTxIWE0esK5JFrKKgKgIMi6QpSuqBDk-DqD-mn_ZfI1i7PjaeZ6f9RHm_aN9kkQrurkzcLED1Ti3e5n3bpkRefhftjLtQmENyuylo5cclPWe8bYtbFJNWI_9sfoUYJhHfKX-n6jICdQ7E_h1MIV9t4hqjy8fbTaZBi_xQ',
+    conductor: 'Maestro Valeriy Xalilov',
+    price: "150 000 so'mdan",
+    duration: "1 soat 45 daqiqa (tanaffus bilan)",
+    about: [
+      "Gustav Mahlerning 2-simfoniyasi — kompozitor merosining markaziy asarlaridan biri. U hayotning mazmuni, o'lim va qayta tug'ilish haqidagi falsafiy savollarga musiqa tilida javob beradi.",
+      "Ushbu kechada sahnada 120 nafardan ortiq musiqachi va 80 nafarlik xor ishtirok etadi. Maestroning talqinida asar ichki kuchi va yorqin finali bilan o'z cho'qqisiga chiqadi.",
+    ],
+  },
+  {
+    id: 2,
+    slug: 'shostakovich-string-kvartetlari',
+    day: '28',
+    month: 'Oktabr',
+    monthShort: 'OKT',
+    year: '2025',
+    time: '20:00',
+    venue: 'Kamera zali',
+    category: 'chamber',
+    categoryLabel: 'Kamerali',
+    title: "Shostakovich kvartetlari",
+    subtitle: "O'rta davr asarlari",
+    excerpt:
+      "Dmitriy Shostakovichning o'rta davrdagi ichki kuch va hissiy dunyolarga boy kvartetlari bilan tanishish kechasi.",
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCvgiDDGKk5kGRy0MjIAfmh-9j1nRSOck6LetUSTuyGkK888nhQp5oK4aD9eVJQGNXaa46LPv_xj5a5SJ4E8u9sWvThFnv1nYnWPfOVJewI4q7i-EH9uNiE_peNqhgCkYo_eSom0M-q7mVleH2MFPvvFcVVYNzBHib1cB1Wj5MRY6s4COkKCBVqKP68HZZMMEcBKG3TGkPOqc0uESFTjhcez91dVUS34aJLbForndX9C6QHYvuQpFxEO6hhQQbTputsitOkb4p6mQ',
+    conductor: 'Aetheric kvarteti',
+    price: "80 000 so'mdan",
+    duration: '1 soat 30 daqiqa',
+    about: [
+      "Shostakovichning 8- va 9-kvartetlari — 20-asr kamer musiqasining eng dramatik sahifalari. Kompozitor ularga o'zining shaxsiy iztiroblarini va zamon haqidagi mulohazalarini singdirgan.",
+      "Aetheric kvarteti — respublikaning yetakchi kamer ansambllaridan biri bo'lib, Shostakovich merosini zamonaviy talqinda taqdim etadi.",
+    ],
+  },
+  {
+    id: 3,
+    slug: 'la-traviata',
+    day: '05',
+    month: 'Noyabr',
+    monthShort: 'NOY',
+    year: '2025',
+    time: '18:30',
+    venue: 'Katta opera sahnasi',
+    category: 'opera',
+    categoryLabel: 'Opera',
+    title: 'La Traviata',
+    subtitle: "Verdi fojiasi",
+    excerpt:
+      "Verdining fojiaviy durdonasi zamonaviy, minimalist sahnalashtiruv va jahon darajasidagi solistlar ijrosida jonlanadi.",
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDVSN5pcR-nn9P00SGJDqTjgpcPZhS1FmdM8k_hYOZ0ryOGBdQcwFHLPRfbyl3pQ6uekaVATygGQN68wzLalmrDNRDKd2T9GV2d42X6SzPW5JqQf8Os-gpWSWjylh5huwLbDF4yKSxMzgQnDWLOcInpUIGNuybUzvzNw8IhJZejvbBdr-flXg1uZZ_5ggw_ZeSazZ1tZSF6lf0BP6o8LHUM9AxT2ZMsX0XFsIl3kaOkmeaMeKAslGwn4i7u1YnwMs2lIFef7JqbAg',
+    conductor: "Dilnoza Yusupova (rejissor)",
+    price: "200 000 so'mdan",
+    duration: '2 soat 40 daqiqa (ikki tanaffus bilan)',
+    about: [
+      "Giuseppe Verdining \"La Traviata\" operasi — jahon opera repertuarining eng ijro etiladigan asarlaridan biri. Bu sevgi, qurbonlik va zamonaviy jamiyatdagi shaxs haqida hikoya.",
+      "Yangi sahnalashtiruv asarning asl dramaturgik chizig'ini saqlagan holda, sahna dizaynida minimalizm va yorug'lik bilan ishlashning zamonaviy uslublaridan foydalanadi.",
+    ],
+  },
+  {
+    id: 4,
+    slug: 'yosh-ijrochilar-tanlovi',
+    day: '14',
+    month: 'Noyabr',
+    monthShort: 'NOY',
+    year: '2025',
+    time: '17:00',
+    venue: 'Bosh zal',
+    category: 'festival',
+    categoryLabel: 'Festival',
+    title: "Yosh ijrochilar gala-kontserti",
+    subtitle: "Xalqaro tanlov laureatlari",
+    excerpt:
+      "Respublika va xalqaro tanlovlar g'oliblarining bir sahnada jamlangan chiqishi. Kelgusi avlod ovozi — bugun.",
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuD-G90sWNr6qVVwQQzt9jBP8kEiOxl-EVBjVDfOGwA7PkG8BvujwQA50gGsaH600dtlMVDQx7v9Ax3eYd4492LojX7G2NUjwU77jzawn8LW6QH2aDWkkBnWOw7DPpfL1RzL7T-_DHAlK6viKSu3iKHu1D2BSC-jufKTnhT-bvTJ7k6C4StxP8rKSbIeFaUlFc7Swgnca-z81WaijV3Jw58DtqM72dkLGeYM3gVVwTaGEXp9uYbJJpSGcgvIjtvs2-DvCpTUS7p9eQ',
+    conductor: "Orkestr bilan hamkorlikda",
+    price: "Bepul (oldindan ro'yxatdan o'tish)",
+    duration: '2 soat',
+    about: [
+      "Filarmoniyaning \"Yosh avlod\" dasturi doirasida o'tkaziladigan an'anaviy gala-kontsert. Unda oxirgi bir yil davomida xalqaro tanlovlarda muvaffaqiyat qozongan 10 nafar yosh solistlar ishtirok etadi.",
+      "Konsert dasturida klassik repertuar va zamonaviy o'zbek kompozitorlarining asarlari jamlangan.",
+    ],
+  },
+  {
+    id: 5,
+    slug: 'beethoven-9',
+    day: '21',
+    month: 'Noyabr',
+    monthShort: 'NOY',
+    year: '2025',
+    time: '19:00',
+    venue: 'Bosh zal',
+    category: 'symphony',
+    categoryLabel: 'Simfonik',
+    title: 'Beethoven — 9-simfoniya',
+    subtitle: '"Shodlikka qasida"',
+    excerpt:
+      "Klassik musiqa tarixidagi eng ulug' asarlardan biri. Orkestr, xor va to'rt solist birlikda insoniy birodarlik gimnini yangratadi.",
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBedCx0mrawTHYf9vBohrW30tYgERZ7ZK4dYYKd93w-KrQcqGKArF-t57m5iM0PKGxnzA08uhoTANmoFedNDknhBgxcqZbGGmAsFeODWbSppRIyidVYUf6IGP_AfqxP8omwfkxm9IGFKHeT1aogWyXK7mNKRV6cYld7YPwpkSx1BQIS-HS_dmys64_iBmQc-KrHd3_Uox4w5rsiBsWUTs3-Y1eWsx2XU2jYE57pfPMjddCaQIvGlRmtxVfjltokUFYdv1MP7WpCEQ',
+    conductor: 'Maestro Valeriy Xalilov',
+    price: "180 000 so'mdan",
+    duration: '1 soat 15 daqiqa',
+    about: [
+      "Ludwig van Beethovenning 9-simfoniyasi — insoniyat musiqa merosining eng muhim asarlaridan biri bo'lib, finalidagi Shiller matniga asoslangan \"Shodlikka qasida\" qismi bugungi kunda Yevropaning rasmiy madhiyasiga aylangan.",
+      "Asar birinchi marta 1824-yilda Vena shahrida ijro etilganidan beri u konsert sahnalarining eng kutib olinadigan dasturlari qatoridan o'rin oladi.",
+    ],
+  },
+  {
+    id: 6,
+    slug: 'piano-trio-kechasi',
+    day: '02',
+    month: 'Dekabr',
+    monthShort: 'DEK',
+    year: '2025',
+    time: '20:00',
+    venue: 'Kamera zali',
+    category: 'chamber',
+    categoryLabel: 'Kamerali',
+    title: 'Piano trio kechasi',
+    subtitle: 'Brahms va Ravel',
+    excerpt:
+      "Ikki davr, ikki estetika — Brahmsning romantik kengligi va Ravelning frantsuz oydinligi bir kechada uchrashadi.",
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCgt5xfwWRGqbz126udnrIgNPmAfyJvWIoCIV7qWEzqhzySI6ZV_W517SKi--RsZbHLL3jjcgA2S7vm3RnXST_4fqdxyPKzngm7OJn2gLo9M1H7unlTIioG23Xzx38GxvCa9wORqPZhOAlHSKa34vGpdRxQ20QI_R7Gy4qwdmgUR49RpJQc_rsCi3wdEdxNBPn9WQhMBnOLJKgJJhryiDxNW_QXcrkHLQ-8AyYuY4Y8UVwwyWrVqHT-1EebnAAAe_2FCmVf1pu9dQ',
+    conductor: 'Aetheric trio',
+    price: "90 000 so'mdan",
+    duration: '1 soat 20 daqiqa',
+    about: [
+      "Johannes Brahmsning si-major trios va Maurice Ravelning la-minor triosi — piano-trio janrining ikki cho'qqisi. Ular birga bir kechada jaranglashining o'zi — katta voqea.",
+      "Aetheric trio — respublika va xalqaro sahnalarda faol ishtirok etayotgan kamer-ansambli. Ularning repertuarida mumtoz va zamonaviy asarlar muvozanatda.",
+    ],
+  },
+];

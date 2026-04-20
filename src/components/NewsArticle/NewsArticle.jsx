@@ -79,7 +79,6 @@ export default function NewsArticle({ article, related = [] }) {
           </Link>
 
           <div className={styles.heroBody}>
-            {article.tag && <span className={styles.tag}>{article.tag}</span>}
             <h1 className={styles.title}>{article.title}</h1>
             <div className={styles.meta}>
               <span className={styles.metaDate}>{article.date}</span>

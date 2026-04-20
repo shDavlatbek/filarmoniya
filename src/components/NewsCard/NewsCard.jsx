@@ -9,7 +9,6 @@ export default function NewsCard({ article }) {
           className={styles.image}
           style={{ backgroundImage: `url(${article.image})` }}
         />
-        {article.tag && <div className={styles.tag}>{article.tag}</div>}
       </div>
       <div className={styles.content}>
         <span className={styles.date}>{article.date}</span>

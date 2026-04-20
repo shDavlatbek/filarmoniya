@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Afisha - Aetheric Resonance Philharmonic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ecb200",
+                        "on-secondary-fixed": "#620e92",
+                        "primary-fixed-dim": "#d6d4d3",
+                        "on-surface-variant": "#596065",
+                        "on-primary-container": "#525151",
+                        "on-tertiary-container": "#553e00",
+                        "inverse-primary": "#ffffff",
+                        "primary": "#5f5e5e",
+                        "tertiary-fixed": "#fdc003",
+                        "on-primary-fixed": "#403f3f",
+                        "surface-bright": "#f9f9fb",
+                        "primary-container": "#e5e2e1",
+                        "secondary-fixed-dim": "#ecc7ff",
+                        "background": "#f9f9fb",
+                        "surface-container": "#ebeef2",
+                        "error-dim": "#4f0116",
+                        "surface-container-high": "#e4e9ee",
+                        "on-tertiary-fixed-variant": "#604700",
+                        "secondary-container": "#f4d9ff",
+                        "tertiary": "#795a00",
+                        "on-tertiary-fixed": "#3d2b00",
+                        "secondary-fixed": "#f4d9ff",
+                        "outline-variant": "#acb3b8",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-dim": "#d3dbe2",
+                        "on-surface": "#2d3338",
+                        "surface": "#f9f9fb",
+                        "inverse-surface": "#0c0e10",
+                        "on-error-container": "#782232",
+                        "secondary-dim": "#782ca8",
+                        "outline": "#757c81",
+                        "on-secondary": "#fff6fd",
+                        "on-tertiary": "#fff8f0",
+                        "on-primary": "#faf7f6",
+                        "surface-tint": "#5f5e5e",
+                        "error-container": "#ff8b9a",
+                        "secondary": "#853bb5",
+                        "inverse-on-surface": "#9c9d9f",
+                        "surface-container-highest": "#dde3e9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#2d3338",
+                        "tertiary-container": "#fdc003",
+                        "on-primary-fixed-variant": "#5c5b5b",
+                        "tertiary-dim": "#6a4f00",
+                        "surface-container-low": "#f2f4f6",
+                        "on-error": "#fff7f7",
+                        "surface-variant": "#dde3e9",
+                        "primary-dim": "#535252",
+                        "on-secondary-container": "#762ba6",
+                        "error": "#9e3f4e",
+                        "on-secondary-fixed-variant": "#8137b1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .dark .glass-nav { background: rgba(24, 24, 27, 0.7); }
+        
+        /* Brush stroke overlay class */
+        .brush-overlay {
+            position: absolute;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+            fill: #853bb5; /* secondary color */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar Component from JSON -->
+<header class="glass-nav fixed top-0 w-full z-50 rounded-none bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-none">
+<!-- Brand -->
+<div class="text-2xl font-bold tracking-tighter text-zinc-900 dark:text-white font-headline">
+                Aetheric Resonance
+            </div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold uppercase tracking-widest text-sm text-zinc-600 dark:text-zinc-400 hover:text-purple-600 transition-colors" href="#">Bosh Sahifa</a>
+<a class="font-headline font-bold uppercase tracking-widest text-sm text-zinc-600 dark:text-zinc-400 hover:text-purple-600 transition-colors" href="#">Filarmaniya</a>
+<a class="font-headline font-bold uppercase tracking-widest text-sm text-zinc-600 dark:text-zinc-400 hover:text-purple-600 transition-colors" href="#">Axborot Xizmati</a>
+<a class="font-headline font-bold uppercase tracking-widest text-sm text-zinc-600 dark:text-zinc-400 hover:text-purple-600 transition-colors" href="#">Ijodiy Jamoalar</a>
+<a class="font-headline font-bold uppercase tracking-widest text-sm text-zinc-600 dark:text-zinc-400 hover:text-purple-600 transition-colors" href="#">Xalqaro Aloqalar</a>
+<a class="font-headline font-bold uppercase tracking-widest text-sm text-purple-700 dark:text-purple-400 border-b-2 border-purple-700 pb-1" href="#">Afisha</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-6">
+<button aria-label="Language" class="text-zinc-600 dark:text-zinc-400 hover:text-purple-700 dark:hover:text-purple-400 transition-all duration-400 scale-100 active:scale-95 ease-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">language</span>
+</button>
+<a class="font-headline font-bold uppercase tracking-widest text-sm text-zinc-800 dark:text-zinc-100 hover:text-purple-700 dark:hover:text-purple-400 transition-all duration-400 scale-100 active:scale-95 ease-out" href="#">
+                    Aloqa
+                </a>
+</div>
+</div>
+<!-- Separation Logic (No line, tonal shift) -->
+<div class="h-px w-full bg-zinc-100 dark:bg-zinc-800/50"></div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 relative overflow-hidden">
+<!-- Background Decorative Element (Brush Stroke) -->
+<svg class="brush-overlay w-[800px] h-[800px] -top-20 -right-40" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M45.7,-76.3C58.9,-69.3,69.1,-55.3,77.5,-40.5C85.9,-25.7,92.5,-10.1,91.8,5.1C91.1,20.3,83,35.1,72.4,47.4C61.8,59.7,48.7,69.5,34.4,75.9C20.1,82.3,4.6,85.3,-10.5,84.1C-25.6,82.9,-40.3,77.5,-53.4,68.8C-66.5,60.1,-78,48.1,-84.9,33.9C-91.8,19.7,-94.1,3.3,-91.3,-12.3C-88.5,-27.9,-80.6,-42.7,-68.9,-53.4C-57.2,-64.1,-41.7,-70.7,-27.5,-74.6C-13.3,-78.5,0.6,-79.7,15.5,-78.3C30.4,-76.9,45.7,-76.3,45.7,-76.3Z" transform="translate(100 100)"></path>
+</svg>
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12 relative z-10">
+<!-- Page Header -->
+<div class="mb-20 flex flex-col md:flex-row justify-between items-end gap-10">
+<div class="max-w-2xl">
+<h1 class="text-[3.5rem] leading-none font-headline font-bold text-on-surface mb-6 tracking-tighter uppercase">
+                        Afisha
+                    </h1>
+<p class="text-lg font-body text-on-surface-variant max-w-xl">
+                        A curated selection of upcoming performances. Experience the tension between classical formality and futuristic precision.
+                    </p>
+</div>
+<!-- Filters -->
+<div class="flex flex-wrap gap-4 items-center">
+<button class="px-6 py-3 bg-primary text-on-primary font-headline text-sm uppercase tracking-widest hover:bg-secondary transition-colors duration-400 ease-out">
+                        All
+                    </button>
+<button class="px-6 py-3 bg-surface-container-high text-on-surface font-headline text-sm uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-colors duration-400 ease-out">
+                        Symphony
+                    </button>
+<button class="px-6 py-3 bg-surface-container-high text-on-surface font-headline text-sm uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-colors duration-400 ease-out">
+                        Chamber
+                    </button>
+<button class="px-6 py-3 bg-surface-container-high text-on-surface font-headline text-sm uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-colors duration-400 ease-out">
+                        Opera
+                    </button>
+<!-- Date Filter -->
+<div class="relative ml-4">
+<button class="flex items-center gap-2 px-4 py-3 border-b-2 border-outline-variant hover:border-secondary transition-colors group">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary transition-colors">calendar_month</span>
+<span class="font-headline text-sm uppercase tracking-widest text-on-surface">Select Date</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Events List (Architectural Brutalism / Editorial Asymmetry) -->
+<div class="space-y-32">
+<!-- Event Item 1 -->
+<div class="group relative flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
+<!-- Date Block -->
+<div class="w-full lg:w-1/4 flex flex-col items-start lg:items-end text-left lg:text-right">
+<span class="font-headline text-8xl font-bold text-primary tracking-tighter leading-none group-hover:text-secondary transition-colors duration-500">
+                            24
+                        </span>
+<span class="font-headline text-xl uppercase tracking-widest text-on-surface-variant mt-2">
+                            October
+                        </span>
+<span class="font-body text-sm text-outline mt-1">
+                            19:00 / Main Hall
+                        </span>
+</div>
+<!-- Image Block -->
+<div class="w-full lg:w-1/2 relative h-[400px] bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 bg-inverse-surface/20 z-10 group-hover:bg-transparent transition-colors duration-700"></div>
+<img alt="Philharmonic Orchestra Performance" class="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-700 ease-out" data-alt="wide shot of a full symphony orchestra on stage performing under warm dramatic spotlights in a grand concert hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZJMrYVCx4OZLY9l5xVMWOYRcTTxc_3pAlZjEPI3DZrnK0N-Lu6Z_yEYddq3TOcKaUd37hBWc_iKT47BvJF2W89pl8vnooanPV8ByrggTxIWE0esK5JFrKKgKgIMi6QpSuqBDk-DqD-mn_ZfI1i7PjaeZ6f9RHm_aN9kkQrurkzcLED1Ti3e5n3bpkRefhftjLtQmENyuylo5cclPWe8bYtbFJNWI_9sfoUYJhHfKX-n6jICdQ7E_h1MIV9t4hqjy8fbTaZBi_xQ"/>
+</div>
+<!-- Content Block -->
+<div class="w-full lg:w-1/4 flex flex-col items-start">
+<span class="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4">Symphony</span>
+<h2 class="font-headline text-3xl font-bold text-on-surface mb-6 leading-tight uppercase">
+                            Mahler's Resurrection
+                        </h2>
+<p class="font-body text-on-surface-variant text-base mb-8">
+                            A monumental performance featuring the full orchestra and dual choirs, exploring themes of life, death, and transcendence.
+                        </p>
+<a class="inline-block relative font-headline text-sm uppercase tracking-widest text-on-surface pb-1 group/btn" href="#">
+                            Tickets
+                            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-secondary origin-left scale-x-100 group-hover/btn:scale-x-0 transition-transform duration-300"></span>
+<span class="absolute bottom-0 left-0 w-full h-[2px] bg-primary origin-right scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 delay-100"></span>
+</a>
+</div>
+</div>
+<!-- Event Item 2 -->
+<div class="group relative flex flex-col lg:flex-row-reverse gap-12 lg:gap-24 items-center">
+<!-- Date Block -->
+<div class="w-full lg:w-1/4 flex flex-col items-start text-left">
+<span class="font-headline text-8xl font-bold text-primary tracking-tighter leading-none group-hover:text-secondary transition-colors duration-500">
+                            28
+                        </span>
+<span class="font-headline text-xl uppercase tracking-widest text-on-surface-variant mt-2">
+                            October
+                        </span>
+<span class="font-body text-sm text-outline mt-1">
+                            20:00 / Chamber Room
+                        </span>
+</div>
+<!-- Image Block -->
+<div class="w-full lg:w-1/2 relative h-[400px] bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 bg-inverse-surface/20 z-10 group-hover:bg-transparent transition-colors duration-700"></div>
+<img alt="String Quartet" class="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-700 ease-out" data-alt="close up of a cellist hands playing a wooden cello with dramatic side lighting against a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvgiDDGKk5kGRy0MjIAfmh-9j1nRSOck6LetUSTuyGkK888nhQp5oK4aD9eVJQGNXaa46LPv_xj5a5SJ4E8u9sWvThFnv1nYnWPfOVJewI4q7i-EH9uNiE_peNqhgCkYo_eSom0M-q7mVleH2MFPvvFcVVYNzBHib1cB1Wj5MRY6s4COkKCBVqKP68HZZMMEcBKG3TGkPOqc0uESFTjhcez91dVUS34aJLbForndX9C6QHYvuQpFxEO6hhQQbTputsitOkb4p6mQ"/>
+</div>
+<!-- Content Block -->
+<div class="w-full lg:w-1/4 flex flex-col items-start lg:items-end text-left lg:text-right">
+<span class="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4">Chamber</span>
+<h2 class="font-headline text-3xl font-bold text-on-surface mb-6 leading-tight uppercase">
+                            Shostakovich String Quartets
+                        </h2>
+<p class="font-body text-on-surface-variant text-base mb-8">
+                            An intimate evening delving into the intense and emotional landscapes of Shostakovich's mid-period quartets.
+                        </p>
+<a class="inline-block relative font-headline text-sm uppercase tracking-widest text-on-surface pb-1 group/btn" href="#">
+                            Tickets
+                            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-secondary origin-left scale-x-100 group-hover/btn:scale-x-0 transition-transform duration-300"></span>
+<span class="absolute bottom-0 left-0 w-full h-[2px] bg-primary origin-right scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 delay-100"></span>
+</a>
+</div>
+</div>
+<!-- Event Item 3 -->
+<div class="group relative flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
+<!-- Date Block -->
+<div class="w-full lg:w-1/4 flex flex-col items-start lg:items-end text-left lg:text-right">
+<span class="font-headline text-8xl font-bold text-primary tracking-tighter leading-none group-hover:text-secondary transition-colors duration-500">
+                            05
+                        </span>
+<span class="font-headline text-xl uppercase tracking-widest text-on-surface-variant mt-2">
+                            November
+                        </span>
+<span class="font-body text-sm text-outline mt-1">
+                            18:30 / Grand Opera House
+                        </span>
+</div>
+<!-- Image Block -->
+<div class="w-full lg:w-1/2 relative h-[400px] bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 bg-inverse-surface/20 z-10 group-hover:bg-transparent transition-colors duration-700"></div>
+<img alt="Opera Singer" class="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-700 ease-out" data-alt="female opera singer in a grand costume performing passionately on a dimly lit stage with a single bright spotlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVSN5pcR-nn9P00SGJDqTjgpcPZhS1FmdM8k_hYOZ0ryOGBdQcwFHLPRfbyl3pQ6uekaVATygGQN68wzLalmrDNRDKd2T9GV2d42X6SzPW5JqQf8Os-gpWSWjylh5huwLbDF4yKSxMzgQnDWLOcInpUIGNuybUzvzNw8IhJZejvbBdr-flXg1uZZ_5ggw_ZeSazZ1tZSF6lf0BP6o8LHUM9AxT2ZMsX0XFsIl3kaOkmeaMeKAslGwn4i7u1YnwMs2lIFef7JqbAg"/>
+</div>
+<!-- Content Block -->
+<div class="w-full lg:w-1/4 flex flex-col items-start">
+<span class="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4">Opera</span>
+<h2 class="font-headline text-3xl font-bold text-on-surface mb-6 leading-tight uppercase">
+                            La Traviata
+                        </h2>
+<p class="font-body text-on-surface-variant text-base mb-8">
+                            Verdi's tragic masterpiece brought to life with a modern, minimalist stage design and world-class vocalists.
+                        </p>
+<a class="inline-block relative font-headline text-sm uppercase tracking-widest text-on-surface pb-1 group/btn" href="#">
+                            Tickets
+                            <span class="absolute bottom-0 left-0 w-full h-[2px] bg-secondary origin-left scale-x-100 group-hover/btn:scale-x-0 transition-transform duration-300"></span>
+<span class="absolute bottom-0 left-0 w-full h-[2px] bg-primary origin-right scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 delay-100"></span>
+</a>
+</div>
+</div>
+</div>
+<!-- Load More (Asymmetric placement) -->
+<div class="mt-32 flex justify-end">
+<button class="px-8 py-4 bg-transparent border-b-2 border-primary text-on-surface font-headline text-sm uppercase tracking-widest hover:border-secondary hover:text-secondary transition-colors duration-400 ease-out flex items-center gap-4">
+                    Load More Performances
+                    <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 0;">arrow_downward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-zinc-50 dark:bg-zinc-950 w-full rounded-none border-t-0 bg-zinc-100 dark:bg-zinc-900 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto gap-8">
+<!-- Brand Logo -->
+<div class="font-['Space_Grotesk'] font-black text-xl text-zinc-900 dark:text-white uppercase tracking-tighter">
+                Aetheric Resonance
+            </div>
+<!-- Links -->
+<nav class="flex flex-wrap gap-8 justify-center items-center">
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-500 dark:text-zinc-400 underline decoration-purple-500 underline-offset-8 transition-all opacity-100 hover:opacity-80 duration-300" href="#">Telegram</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-500 dark:text-zinc-400 underline decoration-purple-500 underline-offset-8 transition-all opacity-100 hover:opacity-80 duration-300" href="#">Instagram</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-500 dark:text-zinc-400 underline decoration-purple-500 underline-offset-8 transition-all opacity-100 hover:opacity-80 duration-300" href="#">Hujjatlar</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-zinc-500 dark:text-zinc-400 underline decoration-purple-500 underline-offset-8 transition-all opacity-100 hover:opacity-80 duration-300" href="#">Maxfiylik Siyosati</a>
+</nav>
+<!-- Copyright -->
+<div class="font-['Manrope'] text-sm tracking-wide text-zinc-500 dark:text-zinc-400 text-center md:text-right">
+                © 2024 Aetheric Resonance Philharmonic. All Rights Reserved.
+            </div>
+</div>
+</footer>
+</body></html>

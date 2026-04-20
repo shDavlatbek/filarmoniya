@@ -10,7 +10,6 @@ export const newsArticles = [
   {
     id: 1,
     slug: 'maestro-valeriy-bilan-suhbat',
-    tag: 'Intervyu',
     date: 'Oktabr 08, 2024',
     publishedAt: '2024-10-08',
     title: 'Maestro Valeriy bilan suhbat: Maler va konsert sahnasidagi izlanishlar',
@@ -59,7 +58,6 @@ export const newsArticles = [
   {
     id: 2,
     slug: 'akustik-landshaftlar',
-    tag: 'Arxitektura',
     date: 'Sentabr 29, 2024',
     publishedAt: '2024-09-29',
     title: 'Akustik landshaftlar: ideal tovush uchun loyihalash',
@@ -92,7 +90,6 @@ export const newsArticles = [
   {
     id: 3,
     slug: 'arxiv-topilmalari',
-    tag: 'Tarix',
     date: 'Sentabr 15, 2024',
     publishedAt: '2024-09-15',
     title: "Arxivlardan: 19-asrga oid yo'qolgan qo'lyozmalar topildi",
@@ -110,7 +107,6 @@ export const newsArticles = [
   {
     id: 4,
     slug: 'qishki-festival-eloni',
-    tag: "E'lon",
     date: 'Sentabr 02, 2024',
     publishedAt: '2024-09-02',
     title: "Qishki Solstitsiya festivali: 5–8 dekabr kunlari to'rt kunlik dastur",
@@ -128,7 +124,6 @@ export const newsArticles = [
   {
     id: 5,
     slug: 'yoshlar-orkestri-tanlovi',
-    tag: 'Yoshlar',
     date: 'Avgust 21, 2024',
     publishedAt: '2024-08-21',
     title: "Yoshlar simfonik orkestri uchun tanlov e'lon qilindi",
@@ -146,7 +141,6 @@ export const newsArticles = [
   {
     id: 6,
     slug: 'kamera-ansambli-yangi-mavsum',
-    tag: 'Konsert',
     date: 'Avgust 12, 2024',
     publishedAt: '2024-08-12',
     title: "Kamera ansambli yangi mavsumni mumtoz dastur bilan ochadi",
@@ -164,7 +158,6 @@ export const newsArticles = [
   {
     id: 7,
     slug: 'xalqaro-tanlovda-galaba',
-    tag: 'Yutuq',
     date: 'Iyul 30, 2024',
     publishedAt: '2024-07-30',
     title: "Filarmoniya yakkaxon ijrochisi xalqaro tanlovda 1-o'rinni egalladi",
@@ -182,7 +175,6 @@ export const newsArticles = [
   {
     id: 8,
     slug: 'oyna-pavilon-multidisiplinar',
-    tag: 'Premyera',
     date: 'Iyul 14, 2024',
     publishedAt: '2024-07-14',
     title: "\"Oyna Pavilon\" — yangi multidisiplinar loyiha sahnaga olib chiqiladi",
