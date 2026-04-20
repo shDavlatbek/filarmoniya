@@ -38,7 +38,7 @@ export const navItems = [
       { label: 'Xalqaro tanlovlar', href: '/competitions' },
     ],
   },
-  { label: 'AFISHA', href: '/events' },
+  { label: 'AFISHA', href: '/afisha' },
   { label: "ME'YORIY HUJJATLAR", href: '/documents' },
   { label: "OCHIQ MA'LUMOTLAR", href: '/open-data' },
   { label: 'ALOQA', href: '/contact' },
