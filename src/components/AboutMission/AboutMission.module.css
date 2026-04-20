@@ -1,0 +1,59 @@
+.section {
+  position: relative;
+  background-color: var(--inverse-surface);
+  color: var(--inverse-primary);
+  padding: 7rem 2rem;
+  overflow: hidden;
+}
+
+.brushStroke {
+  position: absolute;
+  left: -10%;
+  top: -20%;
+  width: 70vw;
+  height: 70vw;
+  background: radial-gradient(circle, rgba(133, 59, 181, 0.35) 0%, transparent 60%);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quoteMark {
+  font-family: var(--font-headline);
+  font-size: 8rem;
+  line-height: 0.6;
+  color: var(--secondary);
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: clamp(0.75rem, 1vw, 0.85rem);
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-family: var(--font-headline);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  color: var(--inverse-primary);
+}
+
+@media (max-width: 768px) {
+  .section { padding: 5rem 1.25rem; }
+  .quoteMark { font-size: 5rem; margin-bottom: 1rem; }
+}

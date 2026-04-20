@@ -4,42 +4,10 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import styles from './Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-
-const navItems = [
-  { label: 'BOSH SAHIFA', href: '#', active: true },
-  {
-    label: 'FILARMONIYA', href: '#',
-    children: [
-      { label: 'Tarix', href: '#' },
-      { label: 'Rahbariyat', href: '#' },
-      { label: 'Tuzilma', href: '#' },
-    ],
-  },
-  {
-    label: 'AXBOROT XIZMATI', href: '#',
-    children: [
-      { label: 'Yangiliklar', href: '#' },
-      { label: 'E\'lonlar', href: '#' },
-      { label: 'Media', href: '#' },
-    ],
-  },
-  {
-    label: 'IJODIY JAMOALAR', href: '#',
-    children: [
-      { label: 'Simfonik orkestr', href: '#' },
-      { label: 'Xor jamoasi', href: '#' },
-      { label: 'Kamera ansambli', href: '#' },
-    ],
-  },
-  { label: 'XALQARO ALOQALAR', href: '#' },
-  { label: 'AFISHA', href: '#' },
-  { label: "ME'YORIY HUJJATLAR", href: '#' },
-  { label: "OCHIQ MA'LUMOTLAR", href: '#' },
-  { label: 'ALOQA', href: '#' },
-];
+import { navItems, languages } from '@/data/navigation';
 
 /* Shared inner bar — used in both headers */
-function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, languages, isSticky }) {
+function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, isSticky }) {
   return (
     <div className={styles.container}>
       {/* Logo */}
@@ -142,8 +110,6 @@ export default function Header() {
   const [expandedItem, setExpandedItem] = useState(null);
   const wasScrolled = useRef(false);
 
-  const languages = ["O'zbek", 'Русский', 'English'];
-
   const handleScroll = useCallback(() => {
     const isPast = window.scrollY > 200;
 
@@ -182,7 +148,7 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  const sharedProps = { menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, languages };
+  const sharedProps = { menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang };
 
   const stickyClasses = [
     styles.stickyHeader,

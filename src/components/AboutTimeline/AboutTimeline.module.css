@@ -1,0 +1,114 @@
+.section {
+  background-color: var(--surface-container);
+  padding: 6rem 2rem;
+  color: var(--on-surface);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.eyebrow {
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  color: var(--on-background);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  background-color: var(--surface-container);
+  transition: background-color 0.3s ease;
+}
+
+.item + .item {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.item:hover {
+  background-color: var(--surface-container-high);
+}
+
+.marker {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 1.25rem;
+}
+
+.index {
+  font-family: var(--font-headline);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--outline);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 780px;
+}
+
+.year {
+  font-family: var(--font-headline);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--tertiary);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.itemTitle {
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  margin-bottom: 0.75rem;
+  color: var(--on-background);
+}
+
+.itemDesc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--on-surface-variant);
+}
+
+@media (max-width: 768px) {
+  .section { padding: 4rem 1.25rem; }
+  .item { grid-template-columns: 60px 1fr; gap: 1rem; padding: 2rem 0; }
+  .marker { padding-right: 0; justify-content: flex-start; padding-top: 0.75rem; }
+  .year { font-size: 2rem; }
+}

@@ -8,21 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 
 import styles from './HeroSlider.module.css';
-
-const slides = [
-  {
-    id: 1,
-    image: '/images/hero_slider_1.png',
-    subtext: 'UT IPSUM AUTEM QUI VOLUPTATEM',
-    title: 'DOLOREM EOS SED OPTIO NEQUE'
-  },
-  {
-    id: 2,
-    image: '/images/hero_slider_2.png',
-    subtext: 'SYMPHONIC INNOVATIONS SERIES',
-    title: 'THE 2024 AUTUMN PREMIERE'
-  }
-];
+import { heroSlides as slides } from '@/data/hero';
 
 export default function HeroSlider() {
   const prevRef = useRef(null);
