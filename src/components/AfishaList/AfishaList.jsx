@@ -71,7 +71,7 @@ export default function AfishaList({ meta, events = afishaEvents }) {
                 </div>
 
                 <Link
-                  href={`/afisha/${event.slug}`}
+                  href={`/concerts/${event.slug}`}
                   className={styles.imageBlock}
                   aria-label={event.title}
                 >
@@ -88,7 +88,7 @@ export default function AfishaList({ meta, events = afishaEvents }) {
                   <span className={styles.category}>{event.categoryLabel}</span>
                   <h2 className={styles.eventTitle}>{event.title}</h2>
                   <p className={styles.eventExcerpt}>{event.excerpt}</p>
-                  <Link href={`/afisha/${event.slug}`} className={styles.cta}>
+                  <Link href={`/concerts/${event.slug}`} className={styles.cta}>
                     <span>Chiptalar</span>
                     <span className={styles.ctaLine} aria-hidden="true" />
                   </Link>

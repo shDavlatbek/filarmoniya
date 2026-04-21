@@ -10,11 +10,11 @@ export default function AfishaDetail({ event, related = [] }) {
       >
         <div className={styles.heroOverlay} aria-hidden="true" />
         <div className={styles.heroInner}>
-          <Link href="/afisha" className={styles.backLink}>
+          <Link href="/concerts" className={styles.backLink}>
             <span className="material-symbols-outlined" aria-hidden="true">
               arrow_back
             </span>
-            Afisha
+            Konsertlar
           </Link>
 
           <div className={styles.heroBody}>
@@ -96,7 +96,7 @@ export default function AfishaDetail({ event, related = [] }) {
           <div className={styles.relatedInner}>
             <div className={styles.relatedHeader}>
               <h2 className={styles.relatedTitle}>Boshqa tadbirlar</h2>
-              <Link href="/afisha" className={styles.relatedAll}>
+              <Link href="/concerts" className={styles.relatedAll}>
                 Barchasini ko'rish
                 <span className="material-symbols-outlined" aria-hidden="true">
                   arrow_forward
@@ -108,7 +108,7 @@ export default function AfishaDetail({ event, related = [] }) {
               {related.map((r) => (
                 <Link
                   key={r.id}
-                  href={`/afisha/${r.slug}`}
+                  href={`/concerts/${r.slug}`}
                   className={styles.relatedCard}
                 >
                   <div className={styles.relatedImageWrap}>
