@@ -1,0 +1,471 @@
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  background-color: var(--inverse-surface);
+  color: var(--inverse-primary);
+  padding: 11rem 2rem 5rem;
+  overflow: hidden;
+}
+
+.brushStroke {
+  position: absolute;
+  right: -10%;
+  top: -20%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, transparent 60%);
+  filter: blur(90px);
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-headline);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--tertiary);
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  max-width: 1000px;
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
+  line-height: 1.6;
+  color: var(--inverse-on-surface);
+  max-width: 720px;
+}
+
+/* ===== Body ===== */
+.body {
+  background-color: var(--background);
+  padding: 5rem 2rem 7rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.empty {
+  text-align: center;
+  padding: 4rem 0;
+  color: var(--on-surface-variant);
+}
+
+.listColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gridTwo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .gridTwo { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* =============================================
+   Memorandum card
+   ============================================= */
+.memoCard {
+  background-color: var(--surface-container);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-left: 3px solid var(--secondary);
+}
+
+.memoCard:hover {
+  background-color: var(--surface-variant);
+  transform: translateY(-2px);
+}
+
+.memoHead {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+/* flag-icons renders as a span with aspect-ratio 4:3. We size by height; width auto via aspect-ratio. */
+.flag {
+  display: inline-block;
+  flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.flagSm { width: 22px; height: 16px; }
+.flagMd { width: 32px; height: 24px; }
+.flagLg { width: 48px; height: 36px; }
+
+.flagInline {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.flagFallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: var(--surface-variant);
+  color: var(--on-surface-variant);
+}
+
+.flagFallback .material-symbols-outlined {
+  font-size: 18px;
+}
+
+.flagFallback.flagLg .material-symbols-outlined { font-size: 26px; }
+.flagFallback.flagMd .material-symbols-outlined { font-size: 20px; }
+.flagFallback.flagSm .material-symbols-outlined { font-size: 14px; }
+
+.memoHeadText {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.country {
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.memoTitle {
+  font-family: var(--font-headline);
+  font-size: clamp(1.1rem, 1.4vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--on-surface);
+  text-transform: none;
+}
+
+.docNumber {
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--on-surface-variant);
+  background-color: var(--surface);
+  padding: 0.45rem 0.65rem;
+  white-space: nowrap;
+}
+
+.memoPartner,
+.partner {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--on-surface);
+  flex-wrap: wrap;
+}
+
+.partnerLabel {
+  font-family: var(--font-headline);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+}
+
+.summary {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--on-surface-variant);
+}
+
+.memoFooter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--surface-variant);
+}
+
+.dateCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.dateLabel {
+  font-family: var(--font-headline);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+}
+
+.dateValue {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--on-surface);
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.25rem;
+  background-color: var(--inverse-surface);
+  color: var(--inverse-primary);
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
+.downloadBtn .material-symbols-outlined { font-size: 18px; }
+
+/* =============================================
+   Concert card
+   ============================================= */
+.concertCard {
+  background-color: var(--surface-container);
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.concertCard:hover {
+  background-color: var(--surface-variant);
+  transform: translateY(-4px);
+}
+
+.concertImgWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background-color: var(--surface-variant);
+}
+
+.concertImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.concertCard:hover .concertImg { transform: scale(1.04); }
+
+.flagBadge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  background-color: rgba(12, 14, 16, 0.85);
+  color: var(--inverse-primary);
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.concertBody {
+  padding: 1.75rem 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.concertDate {
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.concertTitle {
+  font-family: var(--font-headline);
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--on-surface);
+}
+
+/* =============================================
+   Competition card
+   ============================================= */
+.compCard {
+  background-color: var(--surface-container);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.compCard:hover {
+  background-color: var(--surface-variant);
+  transform: translateY(-2px);
+}
+
+.compHead {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.yearBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.85rem 1.1rem;
+  background-color: var(--inverse-surface);
+  color: var(--inverse-primary);
+}
+
+.yearLabel {
+  font-family: var(--font-headline);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--inverse-on-surface);
+}
+
+.year {
+  font-family: var(--font-headline);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--tertiary);
+}
+
+.compHeadText {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.compTitle {
+  font-family: var(--font-headline);
+  font-size: clamp(1.1rem, 1.4vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--on-surface);
+}
+
+.compCategory {
+  font-family: var(--font-headline);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+}
+
+.laureateList {
+  padding-top: 1rem;
+  border-top: 1px solid var(--surface-variant);
+}
+
+.laureateHeading {
+  display: block;
+  font-family: var(--font-headline);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.75rem;
+}
+
+.laureateList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.laureateRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.laureateName {
+  font-family: var(--font-headline);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.laureateAward {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--secondary);
+  font-style: italic;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .hero { padding: 8rem 1.25rem 3rem; }
+  .body { padding: 3rem 1.25rem 5rem; }
+  .memoCard { padding: 1.5rem; }
+  .memoHead { grid-template-columns: auto 1fr; }
+  .docNumber { grid-column: 1 / -1; justify-self: start; }
+  .compHead { grid-template-columns: 1fr; }
+  .yearBlock { align-self: flex-start; }
+}

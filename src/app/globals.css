@@ -1,4 +1,5 @@
 /* Fonts loaded via link tags in layout.js */
+@import 'flag-icons/css/flag-icons.min.css';
 
 :root {
   --primary: #D4AF37;
