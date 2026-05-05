@@ -101,7 +101,7 @@
 }
 
 .link, .activeLink {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   position: relative;
@@ -137,24 +137,23 @@
   .inlineNav .navItem5, .inlineNav .navItem6, .inlineNav .navItem7,
   .inlineNav .navItem8 { display: none; }
 } */
-
+.inlineNav .navItem6 { display: none; }
+.inlineNav .navItem8 { display: none; }
 @media (min-width: 1024px) {
   .inlineNav { display: flex; }
   /* Dropdown items 2, 3, 4 (AXBOROT / IJODIY / XALQARO) always show at 1024+.
      Only plain links 5–8 follow the progressive ladder below. */
   .inlineNav .navItem5,
-  .inlineNav .navItem6,
-  .inlineNav .navItem7,
-  .inlineNav .navItem8 { display: none; }
+  /* .inlineNav .navItem6, */
+  .inlineNav .navItem7 { display: none; }
 }
 
-@media (min-width: 1140px) {
+/* @media (min-width: 1140px) {
   .inlineNav .navItem8 { display: flex; }
-}
+} */
 
 @media (min-width: 1440px) {
   .inlineNav .navItem5,
-  .inlineNav .navItem6 { display: flex; }
   .inlineNav .navItem7 { display: none; }
 }
 

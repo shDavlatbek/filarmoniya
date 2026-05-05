@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import styles from './EventList.module.css';
-import { afishaEvents as EVENTS } from '@/data/afisha';
+import { afishaEvents } from '@/data/afisha';
+
+const EVENTS = afishaEvents.slice(0, 5);
 
 export default function EventList() {
   return (
