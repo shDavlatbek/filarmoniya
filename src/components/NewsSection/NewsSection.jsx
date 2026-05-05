@@ -3,7 +3,7 @@ import styles from './NewsSection.module.css';
 import NewsCard from '../NewsCard/NewsCard';
 import { newsArticles } from '@/data/news';
 
-const HOME_LIMIT = 6;
+const HOME_LIMIT = 3;
 
 export default function NewsSection() {
   const articles = newsArticles.slice(0, HOME_LIMIT);

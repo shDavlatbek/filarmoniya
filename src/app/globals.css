@@ -35,6 +35,10 @@
   border-radius: 0px !important;
 }
 
+html {
+  font-size: 15.5px;
+}
+
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;

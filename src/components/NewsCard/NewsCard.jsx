@@ -9,17 +9,16 @@ export default function NewsCard({ article }) {
           className={styles.image}
           style={{ backgroundImage: `url(${article.image})` }}
         />
+        <span className={styles.dateBadge}>
+          <span className={`material-symbols-outlined ${styles.dateIcon}`}>
+            calendar_today
+          </span>
+          {article.date}
+        </span>
       </div>
       <div className={styles.content}>
-        <span className={styles.date}>{article.date}</span>
         <h3 className={styles.articleTitle}>{article.title}</h3>
         <p className={styles.excerpt}>{article.excerpt}</p>
-        <div className={styles.footer}>
-          <span className={styles.readMore}>Davomi</span>
-          <span className={`material-symbols-outlined ${styles.arrowIcon}`}>
-            arrow_outward
-          </span>
-        </div>
       </div>
     </Link>
   );

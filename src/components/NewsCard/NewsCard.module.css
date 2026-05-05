@@ -1,28 +1,39 @@
+/* ===================================================
+   NewsCard — matches ref/image.png design
+   Image top with date badge overlay, title + excerpt below
+   =================================================== */
+
 .card {
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   color: inherit;
   text-decoration: none;
+  background-color: var(--surface);
+  overflow: hidden;
+  border-radius: 12px !important;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+  /* transform: translateY(-6px); */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .card:hover .image {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .card:hover .articleTitle {
-  color: var(--secondary);
+  color: var(--primary);
 }
 
-.card:hover .arrowIcon {
-  color: var(--secondary);
-}
-
+/* ---- Image area ---- */
 .imageWrapper {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 4/3;
-  margin-bottom: 1.5rem;
+  aspect-ratio: 4 / 3;
   background-color: var(--surface-container);
 }
 
@@ -31,65 +42,63 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  transition: transform 0.7s ease-out, filter 0.7s ease-out;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ---- Date badge overlay ---- */
+.dateBadge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 0.85rem;
+  text-transform: uppercase;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.dateIcon {
+  font-size: 14px;
+  color: var(--primary);
+}
+
+/* ---- Content area ---- */
 .content {
   display: flex;
   flex-direction: column;
-  flex: 1;
-}
-
-.date {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  color: var(--outline);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.75rem;
+  padding: 1.25rem 1.25rem 1.5rem;
 }
 
 .articleTitle {
   font-family: var(--font-headline);
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 600;
   color: var(--on-surface);
-  line-height: 1.3;
-  margin-bottom: 0.75rem;
+  line-height: 1.35;
+  margin-bottom: 0.6rem;
   transition: color 0.3s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .excerpt {
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: var(--on-surface-variant);
-  margin-bottom: 1rem;
+  line-height: 1.6;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 1.55;
-}
-
-.footer {
-  margin-top: auto;
-  padding-top: 1rem;
-  border-top: 1px solid var(--surface-variant);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.readMore {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--on-surface);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.arrowIcon {
-  color: var(--outline);
-  font-size: 1rem;
-  transition: color 0.3s ease;
 }

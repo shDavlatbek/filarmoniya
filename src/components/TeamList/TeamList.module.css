@@ -1,115 +1,67 @@
+/* ===================================================
+   TeamList — Centered cards with circular avatars
+   Matches ref/team/image.png
+   =================================================== */
+
 .section {
   width: 100%;
-  padding: 0 0 6rem 0;
+  padding: 5rem 2rem;
+  background-color: var(--surface-container);
   position: relative;
-  overflow-x: hidden;
-  z-index: 1; /* Keep stacking context clean */
 }
 
+/* ---- Header ---- */
 .headerContainer {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  margin-bottom: 5rem;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .headerContainer {
-    padding: 0 4rem;
-  }
-}
-
-.brushStroke {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 16rem;
-  background-color: var(--primary);
-  border-radius: 50%;
-  filter: blur(80px);
-  transform: translateY(-50%) translateX(25%);
-  opacity: 0.15;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.headerContent {
-  max-width: 42rem;
-  border-left: 4px solid var(--primary);
-  padding-left: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  max-width: 1200px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
 }
 
 .title {
   font-family: var(--font-headline);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--on-surface);
-  line-height: 1.1;
-  letter-spacing: -0.05em;
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
-}
-
-.titleAccent {
-  color: var(--primary);
+  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
-.description {
-  color: var(--on-surface-variant);
-  font-family: var(--font-body);
-  font-size: 1.125rem;
-  max-width: 36rem;
-  line-height: 1.6;
-  font-weight: 300;
-}
-
-/* Category Filters */
+/* ---- Filters ---- */
 .filtersContainer {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  margin-bottom: 4rem;
-}
-
-@media (min-width: 768px) {
-  .filtersContainer {
-    padding: 0 4rem;
-  }
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
 }
 
 .filterBtn {
   font-family: var(--font-headline);
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.25rem;
   font-weight: 600;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   border-bottom: 2px solid transparent;
-  color: var(--on-surface);
+  color: var(--on-surface-variant);
 }
 
 .filterBtn.active {
   background-color: var(--primary);
-  color: var(--inverse-primary);
+  color: var(--on-primary);
   border-color: var(--primary);
 }
 
@@ -118,30 +70,19 @@
   border-color: var(--primary);
 }
 
-/* Grid Area (Tonal Shift Container) */
+/* ---- Grid ---- */
 .gridArea {
-  background-color: var(--surface-container-low);
-  padding: 4rem 2rem;
-  position: relative;
-  z-index: 10;
-}
-
-@media (min-width: 768px) {
-  .gridArea {
-    padding: 6rem 4rem;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .grid {
-  max-width: 1440px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 4rem;
-  column-gap: 2rem;
+  gap: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -149,37 +90,11 @@
 
 @media (min-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 8rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* 
-  Staggered Waterfall Effect 
-  - Tablet (2 cols): 2nd items drop 4rem
-  - Desktop (3 cols): 2nd drops 4rem, 3rd drops 8rem
-*/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .card:nth-child(2n+2) { margin-top: 4rem; }
-}
-
-@media (min-width: 1024px) {
-  .card:nth-child(3n+2) { margin-top: 4rem; }
-  .card:nth-child(3n+3) { margin-top: 8rem; }
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  cursor: pointer;
-  color: inherit;
-  text-decoration: none;
-}
-
 .empty {
-  max-width: 1440px;
-  margin: 0 auto;
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--on-surface-variant);
@@ -187,73 +102,77 @@
   padding: 3rem 0;
 }
 
-.imgWrapper {
-  width: 100%;
-  aspect-ratio: 3 / 4;
+/* ---- Card ---- */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
   background-color: var(--surface);
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 1.5rem;
+  padding: 2.5rem 2rem 2rem;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* filter: grayscale(100%) contrast(120%); */
-  transition: transform 0.7s ease-out;
+.card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover .image {
-  transform: scale(1.05);
-}
-
-.imgOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(12, 14, 16, 0.6) 0%, transparent 100%);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  pointer-events: none;
-}
-
-.card:hover .imgOverlay {
-  opacity: 1;
-}
-
-.categoryTag {
-  display: inline-block;
-  font-family: var(--font-headline);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--secondary);
-  margin-bottom: 0.5rem;
-}
-
-.name {
-  font-family: var(--font-headline);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--on-surface);
-  letter-spacing: -0.02em;
-  margin-bottom: 0.25rem;
-  transition: color 0.3s ease;
+.card:hover .avatar {
+  transform: scale(1.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .card:hover .name {
   color: var(--primary);
 }
 
+/* ---- Avatar ---- */
+.avatarWrapper {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+  border-radius: 50% !important;
+  overflow: hidden;
+  background-color: var(--surface-container);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50% !important;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.5s ease;
+}
+
+/* ---- Text ---- */
+.name {
+  font-family: var(--font-headline);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--on-surface);
+  margin-bottom: 0.35rem;
+  transition: color 0.3s ease;
+}
+
 .role {
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.categoryTag {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
   color: var(--on-surface-variant);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 600;
+  font-weight: 400;
 }

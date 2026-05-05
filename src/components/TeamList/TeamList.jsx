@@ -3,7 +3,6 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import styles from './TeamList.module.css';
-import HalftoneCanvas from '../HalftoneCanvas/HalftoneCanvas';
 import { managementContent } from '@/data/management';
 import { centralApparatusContent } from '@/data/centralApparatus';
 import { regionalDivisionsContent } from '@/data/regionalDivisions';
@@ -27,43 +26,42 @@ const FILTERS = [
   ...SOURCES.map((s) => ({ value: s.meta.category, label: s.meta.title })),
 ];
 
-export default function TeamList() {
+export default function TeamList({ limit, hideFilters = false }) {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const visibleMembers = useMemo(() => {
-    if (activeFilter === 'all') return ALL_MEMBERS;
-    return ALL_MEMBERS.filter((m) => m._category === activeFilter);
-  }, [activeFilter]);
+    let members = ALL_MEMBERS;
+    if (activeFilter !== 'all') {
+      members = members.filter((m) => m._category === activeFilter);
+    }
+    if (limit) {
+      members = members.slice(0, limit);
+    }
+    return members;
+  }, [activeFilter, limit]);
 
   return (
     <section className={styles.section}>
-      <HalftoneCanvas />
       <div className={styles.headerContainer}>
-        <header className={styles.headerContent}>
-          <h2 className={styles.title}>
-            Bizning
-            <span className={styles.titleAccent}> Jamoa</span>
-          </h2>
-          <p className={styles.description}>
-            Filarmoniya rahbariyati, markaziy apparat va hududiy bo'linmalar — bir ko'rinishda. Har bir xodimning batafsil ma'lumotini bir bosish bilan ko'ring.
-          </p>
-        </header>
+        <h2 className={styles.title}>Bizning Jamoamiz bilan tanishing</h2>
       </div>
 
-      <div className={styles.filtersContainer}>
-        <div className={styles.filters}>
-          {FILTERS.map((filter) => (
-            <button
-              key={filter.value}
-              type="button"
-              onClick={() => setActiveFilter(filter.value)}
-              className={`${styles.filterBtn} ${activeFilter === filter.value ? styles.active : ''}`}
-            >
-              {filter.label}
-            </button>
-          ))}
+      {!hideFilters && (
+        <div className={styles.filtersContainer}>
+          <div className={styles.filters}>
+            {FILTERS.map((filter) => (
+              <button
+                key={filter.value}
+                type="button"
+                onClick={() => setActiveFilter(filter.value)}
+                className={`${styles.filterBtn} ${activeFilter === filter.value ? styles.active : ''}`}
+              >
+                {filter.label}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       <div className={styles.gridArea}>
         {visibleMembers.length === 0 ? (
@@ -76,18 +74,17 @@ export default function TeamList() {
                 href={`/${member._category}/${member.slug}`}
                 className={styles.card}
               >
-                <div className={styles.imgWrapper}>
+                <div className={styles.avatarWrapper}>
                   <img
                     src={member.img}
                     alt={member.fullname}
-                    className={styles.image}
+                    className={styles.avatar}
                     loading="lazy"
                   />
-                  <div className={styles.imgOverlay}></div>
                 </div>
-                <span className={styles.categoryTag}>{member._categoryLabel}</span>
                 <h3 className={styles.name}>{member.fullname}</h3>
                 <p className={styles.role}>{member.position}</p>
+                <span className={styles.categoryTag}>{member._categoryLabel}</span>
               </Link>
             ))}
           </div>

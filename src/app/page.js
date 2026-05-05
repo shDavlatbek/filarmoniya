@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSlider />
       <NewsSection />
       <EventList />
-      <TeamList />
+      <TeamList limit={3} hideFilters={true} />
       <Partners />
       <Footer />
     </main>
