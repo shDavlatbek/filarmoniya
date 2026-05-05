@@ -271,7 +271,7 @@ export default function EventList() {
                       <p className={styles.eventExcerpt}>{evt.excerpt}</p>
                       <div className={styles.eventFooter}>
                         <span className={styles.eventCategory}>{evt.categoryLabel}</span>
-                        <span className={styles.eventPrice}>{evt.price}</span>
+                        {/* <span className={styles.eventPrice}>{evt.price}</span> */}
                       </div>
                     </div>
                   </Link>

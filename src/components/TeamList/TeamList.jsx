@@ -46,22 +46,21 @@ export default function TeamList({ limit, hideFilters = false }) {
         <h2 className={styles.title}>Bizning Jamoamiz bilan tanishing</h2>
       </div>
 
-      {!hideFilters && (
-        <div className={styles.filtersContainer}>
-          <div className={styles.filters}>
-            {FILTERS.map((filter) => (
-              <button
-                key={filter.value}
-                type="button"
-                onClick={() => setActiveFilter(filter.value)}
-                className={`${styles.filterBtn} ${activeFilter === filter.value ? styles.active : ''}`}
-              >
-                {filter.label}
-              </button>
-            ))}
-          </div>
+      {/* Category filters */}
+      <div className={styles.filtersContainer}>
+        <div className={styles.filters}>
+          {FILTERS.map((filter) => (
+            <button
+              key={filter.value}
+              type="button"
+              onClick={() => setActiveFilter(filter.value)}
+              className={`${styles.filterBtn} ${activeFilter === filter.value ? styles.active : ''}`}
+            >
+              {filter.label}
+            </button>
+          ))}
         </div>
-      )}
+      </div>
 
       <div className={styles.gridArea}>
         {visibleMembers.length === 0 ? (
@@ -87,6 +86,18 @@ export default function TeamList({ limit, hideFilters = false }) {
                 <span className={styles.categoryTag}>{member._categoryLabel}</span>
               </Link>
             ))}
+          </div>
+        )}
+
+        {/* Show All button */}
+        {limit && (
+          <div className={styles.showAllWrapper}>
+            <Link href="/management" className={styles.showAllBtn}>
+              Hammasini ko'rish
+              <span className="material-symbols-outlined" style={{ fontSize: '20px' }}>
+                arrow_forward
+              </span>
+            </Link>
           </div>
         )}
       </div>
