@@ -1,4 +1,5 @@
 export const events = [
+
   {
     id: 1,
     dateValue: '24',
@@ -61,6 +62,15 @@ export const events = [
     title: 'Neural Nocturnes',
     desc: 'An algorithmic symphony where AI-generated structures meet organic orchestration in an evolving soundscape.',
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDZ9NqqKZsO4c-TWoq5NwR311CR5VvmA3W-Zkw1-eb3yulr2Bt5zoJhTInXNQYNpy-iu4__JxcONTGV-4PtQacvaOXNMeV-BeUb4t-5mhQAUoKhGgJfAWVc5WLdUjRZj4_OJyWb2-Rb7vCv6xFEcrbGtd1u6hpnY90rs0PGhSrK8YcIFwbRf9TK2v6QuI49DKNLCHEmoiUijA08lLvXJE1tiD3eG2zBe2AVqMCKTWInyGUWnPbtdBmdc0Kb41OIkrMr0PmIn0p0yA',
+  },
+  {
+    id: 7,
+    dateValue: '15',
+    month: 'MAY',
+    label: 'Main Hall',
+    title: 'Symphonic Singularity',
+    desc: "An immersive journey into high-density orchestral textures, featuring the world premiere of 'Vertex' by A. K. Vasser.",
+    img: 'https://loremflickr.com/cache/resized/7630_16256391063_6876f1d729_b_800_600_nofilter.jpg',
   },
 ];
 
