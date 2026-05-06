@@ -167,7 +167,7 @@ export const newsArticles = [
       'https://lh3.googleusercontent.com/aida-public/AB6AXuD08MNvDphzkuuSAk3b5XQY4zGQQqeCWO2YPXKvIK4rnNq5tKZhGoe5b0vNsc2IOHwhZ0YTu6zlbxonuTG6OX2bG5l560GjcjAWfxXIEXPQ_WtD4nDKHDuokEtoQgWs11Ktf6hsW5wL-6FXFaQSLsW-eh1AtrNAi1ESgQ_y0XDPeyNBBVEeALppTW8-IiJuQ0dakNDe6xHQGDhxH17QhMZoCoRo362cfy1UWl7yU7R6KH6ljBkkYDpay2MpL2FXxRE1rcdeaemhNg',
     author: { name: 'Aziza Karimova', role: 'Matbuot xizmati' },
     body: [
-      "Praga shahrida bo'lib o'tgan an'anaviy xalqaro skripka tanlovida O'zbekiston Davlat Filarmoniyasi konsertmeysteri Aria Vance birinchi o'rinni egalladi. Tanlovda 28 davlatdan 110 ijrochi qatnashgan.",
+      "Praga shahrida bo'lib o'tgan an'anaviy xalqaro skripka tanlovida O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi konsertmeysteri Aria Vance birinchi o'rinni egalladi. Tanlovda 28 davlatdan 110 ijrochi qatnashgan.",
       "Yakuniy bosqichda ijrochi Bramsning skripka uchun konsertini Praga simfonik orkestri bilan ijro etdi. Hakamlar hay'ati uning texnik mahorati va musiqaviy ifodaviyligini yuqori baholadi.",
       "Filarmoniya rahbariyati ushbu yutuq munosabati bilan ijrochini tabriklab, kelajakda yangi xalqaro loyihalarda ishtirok etish imkoniyatlarini muhokama qilmoqda.",
     ],

@@ -4,7 +4,7 @@ import RelationsList from '@/components/RelationsList/RelationsList';
 import { memorandums, memorandumsMeta } from '@/data/international';
 
 export const metadata = {
-  title: "Memorandumlar — O'zbekiston Davlat Filarmoniyasi",
+  title: "Memorandumlar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: memorandumsMeta.description,
 };
 

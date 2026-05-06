@@ -19,7 +19,7 @@ export default function Footer() {
                   loading="lazy"
                 />
               </div>
-              <span className={styles.brandName}>{footerContent.brand}</span>
+              {/* <span className={styles.brandName}>{footerContent.brand}</span> */}
             </Link>
             <div className={styles.contactInfo}>
               <p>{footerContent.address}</p>

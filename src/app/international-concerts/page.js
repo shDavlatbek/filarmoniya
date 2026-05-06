@@ -4,7 +4,7 @@ import RelationsList from '@/components/RelationsList/RelationsList';
 import { intlConcerts, intlConcertsMeta } from '@/data/international';
 
 export const metadata = {
-  title: "Qo'shma konsertlar — O'zbekiston Davlat Filarmoniyasi",
+  title: "Qo'shma konsertlar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: intlConcertsMeta.description,
 };
 

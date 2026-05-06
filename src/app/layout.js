@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "O'ZBEKISTON DAVLAT FILARMONIYASI - Aetheric Resonance",
+  title: "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi - Aetheric Resonance",
   description: "Philharmonic website of Uzbekistan",
 };
 

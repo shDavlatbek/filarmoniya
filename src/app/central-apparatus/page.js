@@ -4,7 +4,7 @@ import StaffList from '@/components/StaffList/StaffList';
 import { centralApparatusContent } from '@/data/centralApparatus';
 
 export const metadata = {
-  title: "Markaziy apparat — O'zbekiston Davlat Filarmoniyasi",
+  title: "Markaziy apparat — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: centralApparatusContent.meta.description,
 };
 

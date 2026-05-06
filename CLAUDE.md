@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-**O'zbekiston Davlat Filarmoniyasi** — Next.js 16 (App Router) website for the Uzbekistan State Philharmonic. Design system: **"Aetheric Resonance"** — futuristic-formal, light surfaces, dark hero.
+**O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi** — Next.js 16 (App Router) website for the Uzbekistan State Philharmonic. Design system: **"Aetheric Resonance"** — futuristic-formal, light surfaces, dark hero.
 
 ## Stack
 

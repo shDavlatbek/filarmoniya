@@ -1,5 +1,5 @@
 export const footerContent = {
-  brand: "O'zbekiston Davlat Filarmoniyasi",
+  brand: "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   address: "Toshkent shahri, Navoiy ko'chasi, 2-uy",
   phone: "+998 71 234 56 78",
   email: "info@filarmoniya.uz",
@@ -14,5 +14,5 @@ export const footerContent = {
     { label: 'Matbuot', href: '/press' },
     { label: 'Aloqa', href: '/contact' },
   ],
-  copyright: "© 2026 O'zbekiston Davlat Filarmoniyasi. Barcha huquqlar himoyalangan.",
+  copyright: "© 2026 O'zbekiston Respublikasi Madaniyat Vazirligi. Barcha huquqlar himoyalangan.",
 };

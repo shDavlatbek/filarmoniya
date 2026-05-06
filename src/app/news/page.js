@@ -4,7 +4,7 @@ import NewsList from '@/components/NewsList/NewsList';
 import { newsArticles, newsMeta } from '@/data/news';
 
 export const metadata = {
-  title: "Yangiliklar — O'zbekiston Davlat Filarmoniyasi",
+  title: "Yangiliklar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: newsMeta.description,
 };
 

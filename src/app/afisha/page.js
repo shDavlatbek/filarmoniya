@@ -4,7 +4,7 @@ import AfishaList from '@/components/AfishaList/AfishaList';
 import { afishaEvents, afishaMeta } from '@/data/afisha';
 
 export const metadata = {
-  title: "Afisha — O'zbekiston Davlat Filarmoniyasi",
+  title: "Afisha — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: afishaMeta.description,
 };
 

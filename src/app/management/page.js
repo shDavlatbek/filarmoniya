@@ -4,7 +4,7 @@ import StaffList from '@/components/StaffList/StaffList';
 import { managementContent } from '@/data/management';
 
 export const metadata = {
-  title: "Rahbariyat — O'zbekiston Davlat Filarmoniyasi",
+  title: "Rahbariyat — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: managementContent.meta.description,
 };
 

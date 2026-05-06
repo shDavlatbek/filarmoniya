@@ -4,7 +4,7 @@ import ContactPage from '@/components/ContactPage/ContactPage';
 import { contactInfo, contactMeta, contactSubjects } from '@/data/contact';
 
 export const metadata = {
-  title: "Aloqa — O'zbekiston Davlat Filarmoniyasi",
+  title: "Aloqa — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: contactMeta.description,
 };
 

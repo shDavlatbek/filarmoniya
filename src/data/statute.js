@@ -3,7 +3,7 @@ export const statuteContent = {
     eyebrow: "Me'yoriy hujjatlar",
     title: "Muassasa nizomi",
     subtitle:
-      "O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston davlat filarmoniyasi to'g'risida nizom",
+      "O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi to'g'risida nizom",
     approvedBy:
       "O'zbekiston Respublikasi Vazirlar Mahkamasining 2018-yil 27-iyundagi PQ-3813-son qaroriga ilova",
     publishedDate: '2018-06-27',
@@ -18,15 +18,15 @@ export const statuteContent = {
         {
           number: '1',
           paragraphs: [
-            "O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston davlat filarmoniyasi (matnda — Filarmoniya) — milliy, mumtoz va zamonaviy musiqa hamda raqs san'atini saqlash, rivojlantirish va targ'ib qilish maqsadida tashkil etilgan davlat muassasasi hisoblanadi.",
+            "O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi (matnda — Filarmoniya) — milliy, mumtoz va zamonaviy musiqa hamda raqs san'atini saqlash, rivojlantirish va targ'ib qilish maqsadida tashkil etilgan davlat muassasasi hisoblanadi.",
             "Filarmoniya o'z faoliyatida O'zbekiston Respublikasi Konstitutsiyasiga, qonunlariga, O'zbekiston Respublikasi Prezidentining farmonlari va qarorlariga, Vazirlar Mahkamasining qarorlari va farmoyishlariga, Madaniyat vazirligining buyruqlari va boshqa me'yoriy-huquqiy hujjatlarga hamda mazkur Nizomga amal qiladi.",
           ],
         },
         {
           number: '2',
           paragraphs: [
-            "Filarmoniyaning to'liq nomi — \"O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston davlat filarmoniyasi\" davlat muassasasi.",
-            "Qisqartirilgan nomi — \"O'zbekiston davlat filarmoniyasi\" DM.",
+            "Filarmoniyaning to'liq nomi — \"O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi\" davlat muassasasi.",
+            "Qisqartirilgan nomi — \"O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi\" DM.",
             "Filarmoniyaning joylashgan manzili: Toshkent shahri, Mustaqillik maydoni, 1-uy.",
           ],
         },

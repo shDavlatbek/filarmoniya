@@ -4,7 +4,7 @@ import VideosGallery from '@/components/VideosGallery/VideosGallery';
 import { videos, videoCategories, videosMeta } from '@/data/videos';
 
 export const metadata = {
-  title: "Videolavhalar — O'zbekiston Davlat Filarmoniyasi",
+  title: "Videolavhalar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: videosMeta.description,
 };
 

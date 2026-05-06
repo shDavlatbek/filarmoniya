@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   const article = newsArticles.find((a) => a.slug === slug);
   if (!article) return {};
   return {
-    title: `${article.title} — O'zbekiston Davlat Filarmoniyasi`,
+    title: `${article.title} — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi`,
     description: article.excerpt,
     openGraph: {
       title: article.title,

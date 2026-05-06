@@ -30,7 +30,7 @@ export const documents = [
   },
   {
     id: 3,
-    title: "O'zbekiston Davlat Filarmoniyasi Nizomi",
+    title: "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi Nizomi",
     type: 'Nizom',
     date: '2023-05-02',
     size: '312 KB',

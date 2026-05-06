@@ -25,7 +25,7 @@ export const managementContent = {
         { platform: 'Facebook', href: 'https://facebook.com/filarmoniya.uz' },
       ],
       description:
-        "Abdulla Nazarov O'zbekiston Davlat Filarmoniyasining bosh direktori sifatida muassasaning strategik, moliyaviy va ma'muriy faoliyatini boshqaradi. 25 yildan ortiq madaniyat sohasidagi tajribasi davomida xalqaro festivallar va milliy konsert dasturlarini muvaffaqiyatli amalga oshirgan.",
+        "Abdulla Nazarov O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasining bosh direktori sifatida muassasaning strategik, moliyaviy va ma'muriy faoliyatini boshqaradi. 25 yildan ortiq madaniyat sohasidagi tajribasi davomida xalqaro festivallar va milliy konsert dasturlarini muvaffaqiyatli amalga oshirgan.",
       img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAq0bTve7jECeanDAWU9h-3AoNrbH3PFUvjC0zXrq8D6caKwDzcbRGNio7WC5kglAn-PlxOrAHMK5okZoQqfOpM0qSglzWOLK-DZz7nqHHKsnx61S78yI6IX79BtM8YMzuiKy5yhX_wR-_aAc-9s-GB0j3qsez9etW9GJ-Dt-qg2hOGcKEJDz5jTBi27XKd9UtXpYf2ZkDaXY33uKvLAjhvBUbBGplcVTOBU9U_wOfzEri5ux2bYP3M3tWtXFe3sDvbQhcVv-_CAg',
     },
     {

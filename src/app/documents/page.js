@@ -4,7 +4,7 @@ import DocumentsList from '@/components/DocumentsList/DocumentsList';
 import { documents, documentsMeta } from '@/data/documents';
 
 export const metadata = {
-  title: "Me'yoriy hujjatlar — O'zbekiston Davlat Filarmoniyasi",
+  title: "Me'yoriy hujjatlar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: documentsMeta.description,
 };
 

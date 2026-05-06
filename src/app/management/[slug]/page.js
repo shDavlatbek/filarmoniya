@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const member = managementContent.members.find((m) => m.slug === slug);
   if (!member) return {};
   return {
-    title: `${member.fullname} — Rahbariyat | O'zbekiston Davlat Filarmoniyasi`,
+    title: `${member.fullname} — Rahbariyat | O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi`,
     description: `${member.position}. ${member.description.slice(0, 150)}`,
   };
 }

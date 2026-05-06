@@ -61,32 +61,17 @@ export default function AfishaDetail({ event, related = [] }) {
 
           <aside className={styles.sidebar}>
             <div className={styles.ticketBox}>
-              <span className={styles.ticketLabel}>Chipta narxi</span>
-              <span className={styles.ticketPrice}>{event.price}</span>
-              <a href="#" className={styles.ticketBtn}>
-                Chiptani band qilish
-                <span className="material-symbols-outlined" aria-hidden="true">
-                  arrow_outward
-                </span>
-              </a>
-            </div>
-
-            <dl className={styles.infoList}>
               {event.conductor && (
-                <div className={styles.infoRow}>
-                  <dt className={styles.infoLabel}>Ijro</dt>
-                  <dd className={styles.infoValue}>{event.conductor}</dd>
-                </div>
+                <>
+                  <span className={styles.ticketLabel}>Ijro</span>
+                  <span className={styles.ticketPrice}>{event.conductor}</span>
+                </>
               )}
-              <div className={styles.infoRow}>
-                <dt className={styles.infoLabel}>Toifa</dt>
-                <dd className={styles.infoValue}>{event.categoryLabel}</dd>
-              </div>
-              <div className={styles.infoRow}>
-                <dt className={styles.infoLabel}>Sahna</dt>
-                <dd className={styles.infoValue}>{event.venue}</dd>
-              </div>
-            </dl>
+              <span className={styles.ticketLabel}>Toifa</span>
+              <span className={styles.ticketPrice}>{event.categoryLabel}</span>
+              <span className={styles.ticketLabel}>Sahna</span>
+              <span className={styles.ticketPrice} style={{ marginBottom: 0 }}>{event.venue}</span>
+            </div>
           </aside>
         </div>
       </section>

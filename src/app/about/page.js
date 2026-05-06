@@ -10,9 +10,9 @@ import AboutCTA from '@/components/AboutCTA/AboutCTA';
 import { aboutContent } from '@/data/about';
 
 export const metadata = {
-  title: "Biz haqimizda — O'zbekiston Davlat Filarmoniyasi",
+  title: "Biz haqimizda — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description:
-    "O'zbekiston Davlat Filarmoniyasi — mumtoz musiqa, milliy meros va zamonaviy sahna san'ati markazi. Tarix, missiya va rahbariyat.",
+    "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi — mumtoz musiqa, milliy meros va zamonaviy sahna san'ati markazi. Tarix, missiya va rahbariyat.",
 };
 
 export default function AboutPage() {

@@ -3,7 +3,7 @@ export const youthPoliticsContent = {
     eyebrow: "Axborot xizmati",
     title: "Yoshlar siyosati",
     subtitle:
-      "O'zbekiston Davlat Filarmoniyasida yoshlarga oid davlat siyosatini amalga oshirish to'g'risida nizom",
+      "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasida yoshlarga oid davlat siyosatini amalga oshirish to'g'risida nizom",
     approvedBy:
       "O'zbekiston Respublikasi Prezidentining 2020-yil 30-iyundagi PQ-4687-son qaroriga muvofiq",
     publishedDate: '2020-06-30',
@@ -18,7 +18,7 @@ export const youthPoliticsContent = {
         {
           number: '1',
           paragraphs: [
-            "Mazkur Nizom O'zbekiston Davlat Filarmoniyasida (matnda — Filarmoniya) yoshlarga oid davlat siyosatini amalga oshirishning huquqiy asoslari, asosiy yo'nalishlari, qo'llab-quvvatlash mexanizmlari va monitoring tizimini belgilaydi.",
+            "Mazkur Nizom O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasida (matnda — Filarmoniya) yoshlarga oid davlat siyosatini amalga oshirishning huquqiy asoslari, asosiy yo'nalishlari, qo'llab-quvvatlash mexanizmlari va monitoring tizimini belgilaydi.",
             "Filarmoniya o'z faoliyatida O'zbekiston Respublikasining \"Yoshlarga oid davlat siyosati to'g'risida\"gi Qonuni, O'zbekiston Respublikasi Prezidentining 2020-yil 30-iyundagi PQ-4687-son qarori va boshqa me'yoriy-huquqiy hujjatlar asosida ish ko'radi.",
           ],
         },

@@ -4,7 +4,7 @@ import TeamsList from '@/components/TeamsList/TeamsList';
 import { teams, teamsMeta } from '@/data/teams';
 
 export const metadata = {
-  title: "Ijodiy jamoalar — O'zbekiston Davlat Filarmoniyasi",
+  title: "Ijodiy jamoalar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: teamsMeta.description,
 };
 

@@ -5,7 +5,7 @@ import StatuteDocument from '@/components/StatuteDocument/StatuteDocument';
 import { youthPoliticsContent } from '@/data/youthPolitics';
 
 export const metadata = {
-  title: "Yoshlar siyosati — O'zbekiston Davlat Filarmoniyasi",
+  title: "Yoshlar siyosati — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description:
     "Filarmoniyada yoshlarga oid davlat siyosatini amalga oshirish, iste'dodli yoshlarni qo'llab-quvvatlash va xalqaro hamkorlik to'g'risida nizom.",
 };

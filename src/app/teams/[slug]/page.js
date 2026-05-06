@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const team = teams.find((t) => t.slug === slug);
   if (!team) return {};
   return {
-    title: `${team.name} — O'zbekiston Davlat Filarmoniyasi`,
+    title: `${team.name} — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi`,
     description: team.excerpt,
     openGraph: {
       title: team.name,

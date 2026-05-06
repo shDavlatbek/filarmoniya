@@ -4,7 +4,7 @@ import DocumentsList from '@/components/DocumentsList/DocumentsList';
 import { openDataItems, openDataMeta } from '@/data/openData';
 
 export const metadata = {
-  title: "Ochiq ma'lumotlar — O'zbekiston Davlat Filarmoniyasi",
+  title: "Ochiq ma'lumotlar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: openDataMeta.description,
 };
 

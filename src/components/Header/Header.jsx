@@ -26,7 +26,7 @@ function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, 
     <div className={styles.container}>
       {/* Logo */}
       <Link href="/" className={`${styles.logo} ${menuOpen ? styles.hiddenWhenOpen : ''}`}>
-        <Image src="/images/logo.webp" alt="O'zbekiston Davlat Filarmoniyasi" width={220} height={50} className={styles.logoImage} />
+        <Image src="/images/logo.webp" alt="O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi" width={220} height={50} className={styles.logoImage} />
       </Link>
 
       {/* Inline Nav */}

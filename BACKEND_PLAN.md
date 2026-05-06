@@ -1,4 +1,4 @@
-# Django Backend Plan — O'zbekiston Davlat Filarmoniyasi
+# Django Backend Plan — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi
 
 Planning document for replacing the `src/data/*.js` seed layer with a Django REST API + Django admin backend.
 
@@ -228,17 +228,17 @@ Same schema as `documents`, but kept as a separate model (different admin audien
 
 ## 10. Implementation phases
 
-| Phase | Scope | Deliverable |
-|-------|-------|-------------|
-| **P0** | Project scaffold, core, auth, admin theming, drf + swagger, CORS, S3 | Empty but deployable backend |
-| **P1** | `site_meta` + `about` + `partners` — mostly singletons | Home + About page read from API |
-| **P2** | `news` + `teams` with polymorphic blocks and admin inlines | Rich-content editing works end-to-end |
-| **P3** | `concerts` + retire `apps.events` in favor of `featured=true` filter | Afisha & home card strip live |
-| **P4** | `staff` with the three category proxies | Management / Central / Regional pages |
-| **P5** | `legal_docs` (statute, youth-politics) + `documents` + `open_data` | Document-heavy sections + search |
-| **P6** | `videos` + `international` (memorandums, joint concerts, competitions) | Remaining pages + country normalization |
-| **P7** | i18n — switch all content fields to `TranslatedField`, wire language switcher | Multi-language |
-| **P8** | Contact inbound messages, analytics, cache warming | Ops readiness |
+| Phase  | Scope                                                                         | Deliverable                             |
+| ------ | ----------------------------------------------------------------------------- | --------------------------------------- |
+| **P0** | Project scaffold, core, auth, admin theming, drf + swagger, CORS, S3          | Empty but deployable backend            |
+| **P1** | `site_meta` + `about` + `partners` — mostly singletons                        | Home + About page read from API         |
+| **P2** | `news` + `teams` with polymorphic blocks and admin inlines                    | Rich-content editing works end-to-end   |
+| **P3** | `concerts` + retire `apps.events` in favor of `featured=true` filter          | Afisha & home card strip live           |
+| **P4** | `staff` with the three category proxies                                       | Management / Central / Regional pages   |
+| **P5** | `legal_docs` (statute, youth-politics) + `documents` + `open_data`            | Document-heavy sections + search        |
+| **P6** | `videos` + `international` (memorandums, joint concerts, competitions)        | Remaining pages + country normalization |
+| **P7** | i18n — switch all content fields to `TranslatedField`, wire language switcher | Multi-language                          |
+| **P8** | Contact inbound messages, analytics, cache warming                            | Ops readiness                           |
 
 ## 11. Open decisions before coding
 
@@ -255,93 +255,112 @@ Same schema as `documents`, but kept as a separate model (different admin audien
 One line per file under `src/data/`, listing exported names and the item shape that informed each Django model.
 
 ### `about.js`
+
 - `aboutContent = { hero, intro, stats[], milestones[], mission, leadership{members[]}, cta{primary, secondary} }`
 - Drives `about.AboutPage` singleton + `AboutStat` / `AboutMilestone` / `AboutLeader`
 
 ### `afisha.js`
+
 - `afishaMeta`, `afishaFilters[]`, `afishaEvents[]`
 - Each event: `{id, slug, day, month, monthShort, year, time, venue, category, categoryLabel, title, subtitle, excerpt, image, conductor, price, duration, about[]}` — `about` is plain string paragraphs
 - Drives `concerts.Concert` + `ConcertCategory` + `Venue` + `Conductor`
 
 ### `centralApparatus.js`
+
 - `centralApparatusContent = { meta, members[] }`
 - Member: `{slug, fullname, position, department, schedule, contact{phone, email}, address, social[{platform, href}], description, img}`
 - Drives `staff.StaffMember` (category=`central`)
 
 ### `contact.js`
+
 - `contactMeta`, `contactInfo`, `contactSubjects[]`
 - `contactInfo`: `{address{line1, line2}, phones[], emails[], hours[], social[], mapEmbed, mapLink, coordinates{lat,lng}}`
 - Drives `site_meta.ContactInfo` + child tables
 
 ### `documents.js`
+
 - `documentsMeta`, `documents[]`
 - Item: `{id, title, type, date, size, format, documentNumber, url}`
 - Drives `documents.Document` + `DocumentType`
 
 ### `events.js`
+
 - `events[]`, `eventFilters[]`
 - Item: `{id, dateValue, month, label, title, desc, img?, isTextHeavy?}`
 - **Superseded** — home `EventList` now reads from `afishaEvents`. Retire.
 
 ### `footer.js`
+
 - `footerContent = {brand, links[], copyright}`
 - Drives `site_meta.Footer` + `FooterLink`
 
 ### `hero.js`
+
 - `heroSlides[]`
 - Item: `{id, image, subtext, title}`
 - Drives `site_meta.HeroSlide`
 
 ### `international.js`
+
 - `memorandumsMeta`, `memorandums[]` — `{id, title, partner, country, flagCode, signedAt, validUntil, summary, documentNumber, docUrl}`
 - `intlConcertsMeta`, `intlConcerts[]` — `{id, title, partner, country, flagCode, date, venue, summary, image}`
 - `competitionsMeta`, `competitions[]` — `{id, name, year, city, country, flagCode, category, laureates[{name, award}]}`
 - Drives `international.*` + `geo.Country`
 
 ### `management.js`
+
 - Same shape as `centralApparatus.js`
 - Drives `staff.StaffMember` (category=`management`)
 
 ### `navigation.js`
+
 - `navItems[]` (with optional `children[]`), `languages[]`
 - Drives `site_meta.NavItem` (self-FK) + `site_meta.Language`
 
 ### `news.js`
+
 - `newsMeta`, `newsArticles[]`
 - Item: `{id, slug, date, publishedAt, title, excerpt, image, author{name, role}, body[]}`
 - `body[]` discriminated union: `{type: 'paragraph'|'image'|'quote'|'gallery', ...}` — identical shape to `teams.js`
 - Drives `news.NewsArticle` + `NewsBlock` + `NewsGalleryImage` + `Author`
 
 ### `openData.js`
+
 - `openDataMeta`, `openDataItems[]`
 - Same item shape as `documents.js`
 - Drives `open_data.OpenDataItem` (separate table from documents)
 
 ### `partners.js`
+
 - `partners[]` — `{name, img}`
 - Drives `site_meta.Partner`
 
 ### `regionalDivisions.js`
+
 - Same shape as `centralApparatus.js` + extra `region` field
 - Drives `staff.StaffMember` (category=`regional`) + `geo.Region`
 
 ### `statute.js`
+
 - `statuteContent = { meta, chapters[], attachments[] }`
 - Chapter: `{id, number, title, articles[{number, intro?, paragraphs[]}]}`
 - Drives `legal_docs.LegalDocument` + `Chapter` + `Article` + `Attachment`
 
 ### `teams.js`
+
 - `teamsMeta`, `teams[]`
 - Item: `{id, slug, name, shortName, genre, founded, directedBy, membersCount, homeStage, image, excerpt, body[]}`
 - `body[]` same discriminated union as `news.js`
 - Drives `teams.Team` + `TeamBlock` + `TeamGalleryImage`
 
 ### `videos.js`
+
 - `videosMeta`, `videoCategories[]`, `videos[]`
 - Video: `{id, youtubeId, title, subtitle, category, categoryLabel, duration, views, date, featured?}`
 - Drives `videos.Video` + `VideoCategory`
 
 ### `youthPolitics.js`
+
 - `youthPoliticsContent = { meta, chapters[], attachments[] }` — **identical shape to `statute.js`**
 - Drives `legal_docs.LegalDocument` (second instance, no schema changes needed)
 

@@ -11,7 +11,7 @@ const concertsMeta = {
 };
 
 export const metadata = {
-  title: "Konsertlar — O'zbekiston Davlat Filarmoniyasi",
+  title: "Konsertlar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: concertsMeta.description,
 };
 

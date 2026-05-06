@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   const event = afishaEvents.find((e) => e.slug === slug);
   if (!event) return {};
   return {
-    title: `${event.title} — Konsertlar — O'zbekiston Davlat Filarmoniyasi`,
+    title: `${event.title} — Konsertlar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi`,
     description: event.excerpt,
     openGraph: {
       title: event.title,
