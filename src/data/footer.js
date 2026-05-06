@@ -9,9 +9,9 @@ export const footerContent = {
     { label: 'Facebook', href: '#', icon: 'facebook' },
   ],
   links: [
-    { label: 'Mahfiylik siyosati', href: '/privacy' },
-    { label: "Xizmat ko'rsatish shartlari", href: '/terms' },
-    { label: 'Matbuot', href: '/press' },
+    // { label: 'Mahfiylik siyosati', href: '/privacy' },
+    // { label: "Xizmat ko'rsatish shartlari", href: '/terms' },
+    // { label: 'Matbuot', href: '/press' },
     { label: 'Aloqa', href: '/contact' },
   ],
   copyright: "© 2026 O'zbekiston Respublikasi Madaniyat Vazirligi. Barcha huquqlar himoyalangan.",
