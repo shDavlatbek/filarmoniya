@@ -153,7 +153,9 @@ export default function ConcertsList({ meta, events = [] }) {
                       </dl>
 
                       <div className={styles.cardFooter}>
-                        <span className={styles.priceTag}>{event.price}</span>
+                        <span className={styles.priceTag}>
+                          {/* {event.price} */}
+                        </span>
                         <span className={styles.cta}>
                           Batafsil
                           <span className="material-symbols-outlined" aria-hidden="true">
