@@ -43,6 +43,7 @@ export const navItems = [
     ],
   },
   { label: 'AFISHA', href: '/afisha' },
+  { label: 'PRESS-RELIZ', href: '/press-releases' },
   { label: "ME'YORIY HUJJATLAR", href: '/documents' },
   { label: "OCHIQ MA'LUMOTLAR", href: '/open-data' },
   { label: 'ALOQA', href: '/contact' },
