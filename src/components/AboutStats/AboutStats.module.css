@@ -21,13 +21,13 @@
   transition: background-color 0.3s ease;
 }
 
-.cell + .cell {
+/* .cell + .cell {
   background-color: #14171a;
 }
 
 .cell:nth-child(4n) {
   background-color: #1a1d20;
-}
+} */
 
 .value {
   font-family: var(--font-headline);
