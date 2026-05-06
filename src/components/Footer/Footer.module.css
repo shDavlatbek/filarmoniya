@@ -2,10 +2,8 @@
   background-color: var(--inverse-surface);
   color: var(--inverse-on-surface);
   font-family: var(--font-body);
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 2rem;
   border-top: 1px solid var(--outline-variant);
   position: relative;
   overflow: hidden;
@@ -17,46 +15,135 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  gap: 3rem;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 @media (min-width: 768px) {
-  .container {
+  .topSection {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
-.brand {
-  font-family: var(--font-headline);
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--inverse-on-surface);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.brandSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 300px;
 }
 
-.links {
+.logoLink {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoWrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.linkItem {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-  text-decoration-color: transparent;
-  transition: all 0.3s ease;
-  cursor: pointer;
+.logoImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.linkItem:hover {
+.brandName {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.navSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .navSection {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+.navColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.columnTitle {
+  font-family: var(--font-headline);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--inverse-on-surface);
+  opacity: 0.9;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.navLink {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.875rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  opacity: 1;
   color: var(--primary);
-  text-decoration-color: var(--primary);
+}
+
+.bottomSection {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .bottomSection {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .copyright {

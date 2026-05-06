@@ -5,12 +5,10 @@ import Link from 'next/link';
 import styles from './TeamList.module.css';
 import { managementContent } from '@/data/management';
 import { centralApparatusContent } from '@/data/centralApparatus';
-import { regionalDivisionsContent } from '@/data/regionalDivisions';
 
 const SOURCES = [
   managementContent,
   centralApparatusContent,
-  regionalDivisionsContent,
 ];
 
 const ALL_MEMBERS = SOURCES.flatMap((source) =>

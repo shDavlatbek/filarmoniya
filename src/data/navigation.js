@@ -8,7 +8,6 @@ export const navItems = [
       { label: 'Muassasa nizomi', href: '/statute' },
       { label: 'Rahbariyat', href: '/management' },
       { label: 'Markaziy apparat', href: '/central-apparatus' },
-      { label: "Hududiy bo'linmalar", href: '/regional-divisions' },
     ],
   },
   {
