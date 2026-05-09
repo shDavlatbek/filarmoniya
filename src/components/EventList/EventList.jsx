@@ -3,7 +3,6 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import styles from './EventList.module.css';
-import { afishaEvents } from '@/data/afisha';
 
 const MONTH_NAMES = [
   'Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'Iyun',
@@ -23,18 +22,6 @@ function buildEventMap(events) {
     map[key].push(evt);
   });
   return map;
-}
-
-const EVENT_MAP = buildEventMap(afishaEvents);
-
-/* Get all unique months that have events, sorted */
-function getEventMonths() {
-  const months = new Set();
-  afishaEvents.forEach((evt) => {
-    const monthIndex = MONTH_NAMES.indexOf(evt.month);
-    if (monthIndex !== -1) months.add(`${evt.year}-${String(monthIndex + 1).padStart(2, '0')}`);
-  });
-  return Array.from(months).sort();
 }
 
 /* Generate calendar grid for a given year/month */
@@ -61,7 +48,8 @@ function getCalendarDays(year, month) {
   return days;
 }
 
-export default function EventList() {
+export default function EventList({ events = [] }) {
+  const EVENT_MAP = useMemo(() => buildEventMap(events), [events]);
   // Start with today's month
   const [currentYM, setCurrentYM] = useState(() => {
     const now = new Date();
@@ -104,11 +92,11 @@ export default function EventList() {
       return EVENT_MAP[selectedDate] || [];
     }
     // Show all events for this month
-    return afishaEvents.filter((evt) => {
+    return events.filter((evt) => {
       const mi = MONTH_NAMES.indexOf(evt.month);
       return mi === month && parseInt(evt.year) === year;
     });
-  }, [selectedDate, month, year]);
+  }, [selectedDate, month, year, events, EVENT_MAP]);
 
   /* Find nearest event from today or from selected date */
   const findNearestEvent = () => {

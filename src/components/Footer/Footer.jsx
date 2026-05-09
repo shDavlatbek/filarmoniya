@@ -1,10 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './Footer.module.css';
-import { footerContent } from '@/data/footer';
-import { navItems } from '@/data/navigation';
 
-export default function Footer() {
+const FALLBACK = {
+  brand: '',
+  address: '',
+  phone: '',
+  email: '',
+  socials: [],
+  links: [],
+  copyright: '',
+};
+
+export default function Footer({ footerContent = FALLBACK, navItems = [] }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>

@@ -1,18 +1,19 @@
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import DocumentsList from '@/components/DocumentsList/DocumentsList';
-import { documents, documentsMeta } from '@/data/documents';
+import { documentsMeta, getDocuments } from '@/lib/api';
 
 export const metadata = {
   title: "Me'yoriy hujjatlar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: documentsMeta.description,
 };
 
-export default function DocumentsPage() {
+export default async function DocumentsPage() {
+  const documents = await getDocuments();
   return (
     <main>
       <Header />
-      <DocumentsList meta={documentsMeta} documents={documents} />
+      <DocumentsList meta={documentsMeta} documents={documents || []} />
       <Footer />
     </main>
   );

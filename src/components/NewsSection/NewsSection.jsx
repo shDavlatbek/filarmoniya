@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import styles from './NewsSection.module.css';
 import NewsCard from '../NewsCard/NewsCard';
-import { newsArticles } from '@/data/news';
 
 const HOME_LIMIT = 3;
 
-export default function NewsSection() {
-  const articles = newsArticles.slice(0, HOME_LIMIT);
+export default function NewsSection({ articles: input = [] }) {
+  const articles = input.slice(0, HOME_LIMIT);
 
   return (
     <section className={styles.newsSection}>

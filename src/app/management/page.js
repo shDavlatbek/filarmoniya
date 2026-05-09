@@ -1,18 +1,22 @@
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import StaffList from '@/components/StaffList/StaffList';
-import { managementContent } from '@/data/management';
+import { getManagement } from '@/lib/api';
 
-export const metadata = {
-  title: "Rahbariyat — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
-  description: managementContent.meta.description,
-};
+export async function generateMetadata() {
+  const data = await getManagement();
+  return {
+    title: "Rahbariyat — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
+    description: data?.meta?.description,
+  };
+}
 
-export default function ManagementPage() {
+export default async function ManagementPage() {
+  const data = await getManagement();
   return (
     <main>
       <Header />
-      <StaffList meta={managementContent.meta} members={managementContent.members} />
+      <StaffList meta={data.meta} members={data.members} />
       <Footer />
     </main>
   );

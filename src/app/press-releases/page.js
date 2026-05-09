@@ -1,18 +1,19 @@
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import PressReleasesList from '@/components/PressReleasesList/PressReleasesList';
-import { pressReleases, pressReleasesMeta } from '@/data/pressReleases';
+import { getPressReleases, pressReleasesMeta } from '@/lib/api';
 
 export const metadata = {
   title: "Press-relizlar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: pressReleasesMeta.description,
 };
 
-export default function PressReleasesPage() {
+export default async function PressReleasesPage() {
+  const items = await getPressReleases();
   return (
     <main>
       <Header />
-      <PressReleasesList meta={pressReleasesMeta} documents={pressReleases} />
+      <PressReleasesList meta={pressReleasesMeta} documents={items || []} />
       <Footer />
     </main>
   );

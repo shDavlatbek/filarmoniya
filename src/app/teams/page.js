@@ -1,18 +1,19 @@
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import TeamsList from '@/components/TeamsList/TeamsList';
-import { teams, teamsMeta } from '@/data/teams';
+import { getTeams, teamsMeta } from '@/lib/api';
 
 export const metadata = {
   title: "Ijodiy jamoalar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: teamsMeta.description,
 };
 
-export default function TeamsPage() {
+export default async function TeamsPage() {
+  const teams = await getTeams();
   return (
     <main>
       <Header />
-      <TeamsList meta={teamsMeta} teams={teams} />
+      <TeamsList meta={teamsMeta} teams={teams || []} />
       <Footer />
     </main>
   );

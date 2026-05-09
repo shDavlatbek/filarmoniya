@@ -1,18 +1,19 @@
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import NewsList from '@/components/NewsList/NewsList';
-import { newsArticles, newsMeta } from '@/data/news';
+import { getNewsArticles, newsMeta } from '@/lib/api';
 
 export const metadata = {
   title: "Yangiliklar — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
   description: newsMeta.description,
 };
 
-export default function NewsPage() {
+export default async function NewsPage() {
+  const articles = await getNewsArticles();
   return (
     <main>
       <Header />
-      <NewsList meta={newsMeta} articles={newsArticles} />
+      <NewsList meta={newsMeta} articles={articles || []} />
       <Footer />
     </main>
   );

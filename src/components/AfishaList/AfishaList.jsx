@@ -2,16 +2,19 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { afishaFilters, afishaEvents } from '@/data/afisha';
 import styles from './AfishaList.module.css';
 
-export default function AfishaList({ meta, events = afishaEvents }) {
+export default function AfishaList({ meta, events = [], filters = [] }) {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filtered = useMemo(() => {
     if (activeFilter === 'all') return events;
     return events.filter((e) => e.category === activeFilter);
   }, [events, activeFilter]);
+
+  const afishaFilters = filters.length
+    ? filters
+    : [{ value: 'all', label: 'Hamma' }];
 
   return (
     <>

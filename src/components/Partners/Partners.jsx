@@ -1,12 +1,10 @@
 import React from 'react';
 import styles from './Partners.module.css';
-import { partners as PARTNERS } from '@/data/partners';
 
-export default function Partners() {
+export default function Partners({ partners = [] }) {
+  if (!partners.length) return null;
   // Quadruple the array for seamless infinite loop.
-  // The CSS animation translates from 0 to -25% (one set's worth).
-  // With 4 copies there is always enough content to fill wide screens.
-  const duplicatedPartners = [...PARTNERS, ...PARTNERS, ...PARTNERS, ...PARTNERS];
+  const duplicatedPartners = [...partners, ...partners, ...partners, ...partners];
 
   return (
     <section className={styles.section}>

@@ -1,7 +1,7 @@
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import ConcertsList from '@/components/ConcertsList/ConcertsList';
-import { afishaEvents } from '@/data/afisha';
+import { getAfishaEvents, getAfishaFilters } from '@/lib/api';
 
 const concertsMeta = {
   eyebrow: 'Konsertlar',
@@ -15,11 +15,12 @@ export const metadata = {
   description: concertsMeta.description,
 };
 
-export default function ConcertsPage() {
+export default async function ConcertsPage() {
+  const [events, filters] = await Promise.all([getAfishaEvents(), getAfishaFilters()]);
   return (
     <main>
       <Header />
-      <ConcertsList meta={concertsMeta} events={afishaEvents} />
+      <ConcertsList meta={concertsMeta} events={events || []} filters={filters || []} />
       <Footer />
     </main>
   );

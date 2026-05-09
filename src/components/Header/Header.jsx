@@ -5,7 +5,8 @@ import styles from './Header.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { navItems, languages } from '@/data/navigation';
+
+const DEFAULT_LANGUAGES = ["O'zbek", 'Русский', 'English'];
 
 function isHrefActive(href, pathname) {
   if (!href || href === '#') return false;
@@ -21,7 +22,7 @@ function isItemActive(item, pathname) {
 }
 
 /* Shared inner bar — used in both headers */
-function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, isSticky, pathname }) {
+function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, isSticky, pathname, navItems, languages }) {
   return (
     <div className={styles.container}>
       {/* Logo */}
@@ -124,11 +125,11 @@ function HeaderBar({ menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, 
   );
 }
 
-export default function Header() {
+export default function Header({ navItems = [], languages = DEFAULT_LANGUAGES }) {
   const pathname = usePathname() || '/';
   const [langOpen, setLangOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState('Русский');
+  const [currentLang, setCurrentLang] = useState(() => languages[1] || languages[0] || 'Русский');
   const [stickyState, setStickyState] = useState('hidden'); // 'hidden' | 'visible' | 'leaving'
   const [expandedItem, setExpandedItem] = useState(null);
   const wasScrolled = useRef(false);
@@ -171,7 +172,7 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  const sharedProps = { menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, pathname };
+  const sharedProps = { menuOpen, setMenuOpen, langOpen, setLangOpen, currentLang, setCurrentLang, pathname, navItems, languages };
 
   const stickyClasses = [
     styles.stickyHeader,

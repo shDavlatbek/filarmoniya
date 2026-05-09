@@ -82,15 +82,6 @@ export default function NewsArticle({ article, related = [] }) {
             <h1 className={styles.title}>{article.title}</h1>
             <div className={styles.meta}>
               <span className={styles.metaDate}>{article.date}</span>
-              {article.author && (
-                <span className={styles.metaAuthor}>
-                  <span className={styles.metaSep} aria-hidden="true" />
-                  {article.author.name}
-                  {article.author.role && (
-                    <span className={styles.metaRole}> — {article.author.role}</span>
-                  )}
-                </span>
-              )}
             </div>
           </div>
         </div>

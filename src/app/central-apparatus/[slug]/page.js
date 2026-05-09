@@ -1,32 +1,31 @@
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import StaffDetail from '@/components/StaffDetail/StaffDetail';
-import { centralApparatusContent } from '@/data/centralApparatus';
-
-export async function generateStaticParams() {
-  return centralApparatusContent.members.map((m) => ({ slug: m.slug }));
-}
+import { getCentralApparatus, getCentralApparatusMember } from '@/lib/api';
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const member = centralApparatusContent.members.find((m) => m.slug === slug);
+  const member = await getCentralApparatusMember(slug);
   if (!member) return {};
   return {
     title: `${member.fullname} — Markaziy apparat | O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi`,
-    description: `${member.position}. ${member.description.slice(0, 150)}`,
+    description: `${member.position}. ${(member.description || '').slice(0, 150)}`,
   };
 }
 
 export default async function CentralApparatusMemberPage({ params }) {
   const { slug } = await params;
-  const member = centralApparatusContent.members.find((m) => m.slug === slug);
+  const [member, container] = await Promise.all([
+    getCentralApparatusMember(slug),
+    getCentralApparatus(),
+  ]);
   if (!member) notFound();
 
   return (
     <main>
       <Header />
-      <StaffDetail meta={centralApparatusContent.meta} member={member} />
+      <StaffDetail meta={container.meta} member={member} />
       <Footer />
     </main>
   );

@@ -1,18 +1,14 @@
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import NewsArticle from '@/components/NewsArticle/NewsArticle';
-import { newsArticles } from '@/data/news';
+import { getNewsArticle, getNewsArticles } from '@/lib/api';
 
 const RELATED_LIMIT = 3;
 
-export async function generateStaticParams() {
-  return newsArticles.map((a) => ({ slug: a.slug }));
-}
-
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const article = newsArticles.find((a) => a.slug === slug);
+  const article = await getNewsArticle(slug);
   if (!article) return {};
   return {
     title: `${article.title} — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi`,
@@ -20,7 +16,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: article.title,
       description: article.excerpt,
-      images: [article.image],
+      images: article.image ? [article.image] : [],
       type: 'article',
     },
   };
@@ -28,10 +24,10 @@ export async function generateMetadata({ params }) {
 
 export default async function NewsArticlePage({ params }) {
   const { slug } = await params;
-  const article = newsArticles.find((a) => a.slug === slug);
+  const [article, all] = await Promise.all([getNewsArticle(slug), getNewsArticles()]);
   if (!article) notFound();
 
-  const related = newsArticles
+  const related = (all || [])
     .filter((a) => a.slug !== slug)
     .slice(0, RELATED_LIMIT);
 

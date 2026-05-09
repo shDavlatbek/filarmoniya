@@ -3,29 +3,39 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import styles from './TeamList.module.css';
-import { managementContent } from '@/data/management';
-import { centralApparatusContent } from '@/data/centralApparatus';
 
-const SOURCES = [
+export default function TeamList({
+  limit,
+  hideFilters = false,
   managementContent,
   centralApparatusContent,
-];
-
-const ALL_MEMBERS = SOURCES.flatMap((source) =>
-  source.members.map((m) => ({
-    ...m,
-    _category: source.meta.category,
-    _categoryLabel: source.meta.title,
-  })),
-);
-
-const FILTERS = [
-  { value: 'all', label: 'Hamma' },
-  ...SOURCES.map((s) => ({ value: s.meta.category, label: s.meta.title })),
-];
-
-export default function TeamList({ limit, hideFilters = false }) {
+}) {
   const [activeFilter, setActiveFilter] = useState('all');
+
+  const SOURCES = useMemo(
+    () => [managementContent, centralApparatusContent].filter(Boolean),
+    [managementContent, centralApparatusContent],
+  );
+
+  const ALL_MEMBERS = useMemo(
+    () =>
+      SOURCES.flatMap((source) =>
+        (source.members || []).map((m) => ({
+          ...m,
+          _category: source.meta.category,
+          _categoryLabel: source.meta.title,
+        })),
+      ),
+    [SOURCES],
+  );
+
+  const FILTERS = useMemo(
+    () => [
+      { value: 'all', label: 'Hamma' },
+      ...SOURCES.map((s) => ({ value: s.meta.category, label: s.meta.title })),
+    ],
+    [SOURCES],
+  );
 
   const visibleMembers = useMemo(() => {
     let members = ALL_MEMBERS;
@@ -36,7 +46,7 @@ export default function TeamList({ limit, hideFilters = false }) {
       members = members.slice(0, limit);
     }
     return members;
-  }, [activeFilter, limit]);
+  }, [activeFilter, limit, ALL_MEMBERS]);
 
   return (
     <section className={styles.section}>

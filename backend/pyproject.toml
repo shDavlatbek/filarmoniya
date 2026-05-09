@@ -1,0 +1,20 @@
+[project]
+name = "filarmoniya-backend"
+version = "0.1.0"
+description = "Backend API for O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=5.1,<5.2",
+    "djangorestframework>=3.15",
+    "django-jazzmin>=3.0",
+    "django-cors-headers>=4.4",
+    "django-filter>=24.3",
+    "drf-spectacular>=0.27",
+    "django-ckeditor-5>=0.2.13",
+    "Pillow>=10.4",
+    "python-decouple>=3.8",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.3",
+    "django-mptt>=0.16",
+    "yt-dlp>=2025.1",
+]

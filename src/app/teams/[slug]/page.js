@@ -1,16 +1,12 @@
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import TeamDetail from '@/components/TeamDetail/TeamDetail';
-import { teams } from '@/data/teams';
-
-export async function generateStaticParams() {
-  return teams.map((t) => ({ slug: t.slug }));
-}
+import { getTeam } from '@/lib/api';
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const team = teams.find((t) => t.slug === slug);
+  const team = await getTeam(slug);
   if (!team) return {};
   return {
     title: `${team.name} — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi`,
@@ -18,7 +14,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: team.name,
       description: team.excerpt,
-      images: [team.image],
+      images: team.image ? [team.image] : [],
       type: 'article',
     },
   };
@@ -26,7 +22,7 @@ export async function generateMetadata({ params }) {
 
 export default async function TeamDetailPage({ params }) {
   const { slug } = await params;
-  const team = teams.find((t) => t.slug === slug);
+  const team = await getTeam(slug);
   if (!team) notFound();
 
   return (

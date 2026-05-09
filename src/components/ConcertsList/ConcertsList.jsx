@@ -3,11 +3,14 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import styles from './ConcertsList.module.css';
-import { afishaFilters } from '@/data/afisha';
 
-export default function ConcertsList({ meta, events = [] }) {
+export default function ConcertsList({ meta, events = [], filters = [] }) {
   const [query, setQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState('all');
+
+  const afishaFilters = filters.length
+    ? filters
+    : [{ value: 'all', label: 'Hamma' }];
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();

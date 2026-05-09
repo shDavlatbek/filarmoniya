@@ -10,18 +10,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 
 import styles from './HeroSlider.module.css';
-import { afishaEvents } from '@/data/afisha';
-
-const MONTH_NAMES = [
-  'Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'Iyun',
-  'Iyul', 'Avgust', 'Sentabr', 'Oktabr', 'Noyabr', 'Dekabr',
-];
 
 function parseEventDate(evt) {
-  const mi = MONTH_NAMES.indexOf(evt.month);
-  if (mi === -1) return null;
-  const [hours, minutes] = (evt.time || '19:00').split(':').map(Number);
-  return new Date(parseInt(evt.year), mi, parseInt(evt.day), hours, minutes);
+  if (evt.starts_at) {
+    const d = new Date(evt.starts_at);
+    if (!Number.isNaN(d.getTime())) return d;
+  }
+  return null;
 }
 
 function getCountdown(targetDate) {
@@ -36,9 +31,9 @@ function getCountdown(targetDate) {
   return { days, hours, minutes };
 }
 
-const SLIDES = afishaEvents.slice(0, 5);
+export default function HeroSlider({ events = [] }) {
+  const SLIDES = events.slice(0, 5);
 
-export default function HeroSlider() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -57,7 +52,7 @@ export default function HeroSlider() {
     update();
     const timer = setInterval(update, 60000); // update every minute
     return () => clearInterval(timer);
-  }, []);
+  }, [events]);
 
   const handleSlideChange = useCallback((swiper) => {
     setActiveIndex(swiper.realIndex);

@@ -1,0 +1,2457 @@
+{
+  "about": {
+    "aboutContent": {
+      "hero": {
+        "eyebrow": "FILARMONIYA",
+        "title": "Biz haqimizda",
+        "subtitle": "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi — mumtoz musiqa, milliy meros va zamonaviy sahna san'atining markazi.",
+        "image": "https://admin.filarmoniya.uz/uploads/f23a3fda_5465_4fad_a5a8_0cf6d9f115f6_d56768039b.jpeg"
+      },
+      "intro": {
+        "title": "Bir asrlik rezonans",
+        "paragraphs": [
+          "Oʻzbek davlat filarmoniyasi 1936-yilda tashkil topgan. Tashkilot 1970-yildan Muhiddin Qoriyoqubov nomida, 1996-yildan esa \"Oʻzbeknavo\" birlashmasi tarkibida faoliyat ko'rsatgan. 2000-yildan mazkur tashkilot Muhiddin Qoriyoqubov nomidagi akademik va xalq, badiiy jamoalar direksiyasi, deb atalgan.",
+          "Dastlab tarkibida M. Uzoqov, Yusufjon qiziq, Usta Olim, Ahmadjon qoʻshnay, Tamaraxonim ansambli, shuningdek, milliy ashula va raqs ansambli (1938-yildan Oʻzbek xalq cholgʻulari orkestri), xor kapellasi, simfonik orkestr (1938), \"Dutorchi qizlar ansambli\" (1939), Davlat torli kvarteti (1940) va boshqa, keyinchalik \"Xaytarma\" (1950), \"Lazgi\", \"Zarafshon\", \"Kayagim\" (1960), \"Shodlik\" (1970) kabi ashula va raqs ansambllari faoliyat koʻrsatgan.",
+          "Keng tinglovchilar jamoasi (ayniqsa, maktab oʻquvchilari)ni mumtoz musiqa bilan yaqindan tanishtirish maqsadida Oʻzbek davlat filarmoniyasi tomonidan 1950-yillardan boshlab maʼruzali konsertlar (Ya.Pekker, T. Jumayev, I.Akbarov, T.Gʻafurbekov va boshqalar), maqom kechalari uyushtirilgan. Mahalliy ijodkorlar bilan birga jahonning yirik sanʼat namoyandalari (E.Rode, G.Ginzburg, L.Oborin, M.Rostropovich va boshqalar), taniqli musiqa jamoalari — AQSH jaz orkestri (B. Gudmen), Rossiya simfonik orkestri (Ye. Svetlanov), chex filarmonik orkestri (K.Ancherl) va boshqalarning konsertlari uyushtirilgan.",
+          "O'zbekiston Respublikasi Prezidentining 27.06.2018 yildagi \"O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi faoliyatini tashkil etish chora-tadbirlari to'g'risida\" PQ-3813-son Qaroriga asosan O'zbekiston badiiy jamoalari ijodiy birlashmasi, O'zbekiston milliy simfonik, kamerli va xalq cholg'u asboblari orkestrlari jamoalari birlashmasi hamda \"Turkiston\" san'at saroyi negizida davlat muassasasi shaklida O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi tashkil etildi.",
+          "Qarorga ko'ra, O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasining asosiy vazifalari quyidagilar etib belgilandi: milliy, mumtoz va zamonaviy musiqa hamda raqs san'atini ilg'or yutuqlar asosida rivojlantirish; aholining musiqa va raqs san'atiga bo'lgan ma'naviy ehtiyojini lektoriy, konsert ishlari hamda musiqiy-ma'rifiy ishlar orqali shakllantirish va qondirish; musiqa va raqs san'ati sohasidagi ijodkorlarning samarali ish yuritishi uchun shart-sharoitlar yaratish; musiqa va raqs san'atidagi yutuqlarni O'zbekistonda va xorijda targ'ib qilish; Davlat filarmoniyasi repertuarini milliy va xorijiy mumtoz asarlarning eng sara namunalari bilan to'ldirish; musiqiy-ma'rifiy ishlar orqali barkamol shaxsni shakllantirish, aholini estetik va axloqiy tarbiyalash, iste'dodli yoshlarni qo'llab-quvvatlash va rag'batlantirish; barcha turdagi va janrdagi musiqa hamda raqs san'atini faol targ'ib qilish, ularni radio va televideniye, boshqa ommaviy axborot vositalari orqali, shu jumladan Internet tarmog'ida ommalashtirish; aholini madaniy hayotga jalb etish maqsadida ularning barcha qatlamlari uchun konsert tadbirlariga borish imkoniyatlarini ta'minlash; musiqa va raqs jamoalari hamda ijrochilarining badiiy darajasi va kasb mahoratini takomillashtirish."
+        ]
+      },
+      "stats": [
+        {
+          "value": "85+",
+          "label": "Yillik faoliyat"
+        },
+        {
+          "value": "320",
+          "label": "Musiqachi va artistlar"
+        },
+        {
+          "value": "1500+",
+          "label": "O'tkazilgan konsertlar"
+        },
+        {
+          "value": "40",
+          "label": "Xalqaro gastrollar"
+        }
+      ],
+      "milestones": [
+        {
+          "year": "1938",
+          "title": "Filarmoniya tashkil etildi",
+          "desc": "Toshkent shahrida O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi o'z faoliyatini boshladi. Dastlabki simfonik orkestr tuzildi."
+        },
+        {
+          "year": "1958",
+          "title": "Birinchi xalqaro gastrol",
+          "desc": "Filarmoniya jamoasi Moskva va Leningraddan tashqari, Yevropa davlatlarida ham muvaffaqiyatli chiqishlar qildi."
+        },
+        {
+          "year": "1991",
+          "title": "Mustaqillik davri",
+          "desc": "Mustaqillikdan so'ng filarmoniya milliy musiqa merosini qayta tiklash va zamonaviy asarlar ijro etishga alohida e'tibor qarata boshladi."
+        },
+        {
+          "year": "2010",
+          "title": "Yangi konsert zali",
+          "desc": "Zamonaviy akustik talablarga javob beradigan, 1200 o'rindiqli yangi konsert zali foydalanishga topshirildi."
+        },
+        {
+          "year": "2024",
+          "title": "Aetheric Resonance",
+          "desc": "Yangi ijodiy yo'nalish — mumtoz an'ana va zamonaviy texnologiyalar uyg'unligi asosida shakllangan loyiha ishga tushirildi."
+        }
+      ],
+      "mission": {
+        "title": "Bizning missiya",
+        "text": "Har bir konsert — bu tarix bilan bugun o'rtasidagi ko'prik. Biz mumtoz musiqaning abadiy tilini saqlagan holda, har bir tomoshabin uchun tirik va ta'sirli tajribaga aylantirishga intilamiz."
+      },
+      "leadership": {
+        "title": "Rahbariyat",
+        "description": "Filarmoniyaning ijodiy va boshqaruv faoliyatini yetakchi mutaxassislar va san'atkorlar olib boradi.",
+        "members": [
+          {
+            "id": 1,
+            "name": "Abdulla Nazarov",
+            "role": "Bosh direktor",
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAq0bTve7jECeanDAWU9h-3AoNrbH3PFUvjC0zXrq8D6caKwDzcbRGNio7WC5kglAn-PlxOrAHMK5okZoQqfOpM0qSglzWOLK-DZz7nqHHKsnx61S78yI6IX79BtM8YMzuiKy5yhX_wR-_aAc-9s-GB0j3qsez9etW9GJ-Dt-qg2hOGcKEJDz5jTBi27XKd9UtXpYf2ZkDaXY33uKvLAjhvBUbBGplcVTOBU9U_wOfzEri5ux2bYP3M3tWtXFe3sDvbQhcVv-_CAg"
+          },
+          {
+            "id": 2,
+            "name": "Dilshoda Rahimova",
+            "role": "Badiiy rahbar",
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDaeF2gL94Y8InZrivIopQ4HGWzKUjC-0gjlRVVyyNG_jRH1pPgJpf_geSJ0B-3DDz54S5u0soUgylVMzBCqlJIm4AVfHAKfejISBRXK5TtXe0vBlcscdOG3ORoKcIpSHqhUbk3p8H35mS_jhh2g9uAZIL8GolhoodDxPTXNwsrAu8vvakvbKqJ68MgGuzPF9k7Yj9-3BCeuE1HFrquigNZoTOPgaZDWD6wqT9cZbKQ90aNizsKCdiUrkNTA8VTFd-GyWXbWDZbxw"
+          },
+          {
+            "id": 3,
+            "name": "Rustam Yusupov",
+            "role": "Bosh dirijyor",
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKCHWE6Q1VGxZVPH5Y_5JVeNkWxA9zBwV0-JhGLix1eGqR_NNZNBTtvRxc1jXuMQ8_CjA1KRYzVgLEYdVpo5YWRwocBllLT8Vca8181A78kzGQAQZjchf33VDTucztxoEAeI2_xO8F3vcfNpPjPtzll7hLOClr_PooGrIDWnv0sU9Ton0WXLkTy0q2EEvon2JowwiMzbOJXBrbItAHYw7y8e1bGsgobEC9vZ5ZY-EKmp9oF28t0lQbDgOI1E1QpuDdlmkohQIvGQ"
+          }
+        ]
+      },
+      "cta": {
+        "title": "Sahnamizga tashrif buyuring",
+        "description": "Yaqin orada bo'ladigan konsertlar afishasi bilan tanishing va o'zingizga mos tadbirni tanlang.",
+        "primary": {
+          "label": "Afishani ko'rish",
+          "href": "/events"
+        },
+        "secondary": {
+          "label": "Biz bilan bog'lanish",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "afisha": {
+    "afishaEvents": [
+      {
+        "id": 1,
+        "slug": "mahler-tiriklanish",
+        "day": "24",
+        "month": "Oktabr",
+        "monthShort": "OKT",
+        "year": "2026",
+        "time": "19:00",
+        "venue": "Bosh zal",
+        "category": "symphony",
+        "categoryLabel": "Simfonik",
+        "title": "Mahler — Tiriklanish",
+        "subtitle": "2-simfoniya",
+        "excerpt": "Butun simfonik orkestr va ikki xor ishtirokida bajariladigan monumental asar. Hayot, o'lim va tiriklanish g'oyalarini o'zida mujassam etgan kechlik.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZJMrYVCx4OZLY9l5xVMWOYRcTTxc_3pAlZjEPI3DZrnK0N-Lu6Z_yEYddq3TOcKaUd37hBWc_iKT47BvJF2W89pl8vnooanPV8ByrggTxIWE0esK5JFrKKgKgIMi6QpSuqBDk-DqD-mn_ZfI1i7PjaeZ6f9RHm_aN9kkQrurkzcLED1Ti3e5n3bpkRefhftjLtQmENyuylo5cclPWe8bYtbFJNWI_9sfoUYJhHfKX-n6jICdQ7E_h1MIV9t4hqjy8fbTaZBi_xQ",
+        "conductor": "Maestro Valeriy Xalilov",
+        "price": "150 000 so'mdan",
+        "duration": "1 soat 45 daqiqa (tanaffus bilan)",
+        "about": [
+          "Gustav Mahlerning 2-simfoniyasi — kompozitor merosining markaziy asarlaridan biri. U hayotning mazmuni, o'lim va qayta tug'ilish haqidagi falsafiy savollarga musiqa tilida javob beradi.",
+          "Ushbu kechada sahnada 120 nafardan ortiq musiqachi va 80 nafarlik xor ishtirok etadi. Maestroning talqinida asar ichki kuchi va yorqin finali bilan o'z cho'qqisiga chiqadi."
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "shostakovich-string-kvartetlari",
+        "day": "28",
+        "month": "Oktabr",
+        "monthShort": "OKT",
+        "year": "2026",
+        "time": "20:00",
+        "venue": "Kamera zali",
+        "category": "chamber",
+        "categoryLabel": "Kamerali",
+        "title": "Shostakovich kvartetlari",
+        "subtitle": "O'rta davr asarlari",
+        "excerpt": "Dmitriy Shostakovichning o'rta davrdagi ichki kuch va hissiy dunyolarga boy kvartetlari bilan tanishish kechasi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCvgiDDGKk5kGRy0MjIAfmh-9j1nRSOck6LetUSTuyGkK888nhQp5oK4aD9eVJQGNXaa46LPv_xj5a5SJ4E8u9sWvThFnv1nYnWPfOVJewI4q7i-EH9uNiE_peNqhgCkYo_eSom0M-q7mVleH2MFPvvFcVVYNzBHib1cB1Wj5MRY6s4COkKCBVqKP68HZZMMEcBKG3TGkPOqc0uESFTjhcez91dVUS34aJLbForndX9C6QHYvuQpFxEO6hhQQbTputsitOkb4p6mQ",
+        "conductor": "Aetheric kvarteti",
+        "price": "80 000 so'mdan",
+        "duration": "1 soat 30 daqiqa",
+        "about": [
+          "Shostakovichning 8- va 9-kvartetlari — 20-asr kamer musiqasining eng dramatik sahifalari. Kompozitor ularga o'zining shaxsiy iztiroblarini va zamon haqidagi mulohazalarini singdirgan.",
+          "Aetheric kvarteti — respublikaning yetakchi kamer ansambllaridan biri bo'lib, Shostakovich merosini zamonaviy talqinda taqdim etadi."
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "la-traviata",
+        "day": "05",
+        "month": "Noyabr",
+        "monthShort": "NOY",
+        "year": "2026",
+        "time": "18:30",
+        "venue": "Katta opera sahnasi",
+        "category": "opera",
+        "categoryLabel": "Opera",
+        "title": "La Traviata",
+        "subtitle": "Verdi fojiasi",
+        "excerpt": "Verdining fojiaviy durdonasi zamonaviy, minimalist sahnalashtiruv va jahon darajasidagi solistlar ijrosida jonlanadi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDVSN5pcR-nn9P00SGJDqTjgpcPZhS1FmdM8k_hYOZ0ryOGBdQcwFHLPRfbyl3pQ6uekaVATygGQN68wzLalmrDNRDKd2T9GV2d42X6SzPW5JqQf8Os-gpWSWjylh5huwLbDF4yKSxMzgQnDWLOcInpUIGNuybUzvzNw8IhJZejvbBdr-flXg1uZZ_5ggw_ZeSazZ1tZSF6lf0BP6o8LHUM9AxT2ZMsX0XFsIl3kaOkmeaMeKAslGwn4i7u1YnwMs2lIFef7JqbAg",
+        "conductor": "Dilnoza Yusupova (rejissor)",
+        "price": "200 000 so'mdan",
+        "duration": "2 soat 40 daqiqa (ikki tanaffus bilan)",
+        "about": [
+          "Giuseppe Verdining \"La Traviata\" operasi — jahon opera repertuarining eng ijro etiladigan asarlaridan biri. Bu sevgi, qurbonlik va zamonaviy jamiyatdagi shaxs haqida hikoya.",
+          "Yangi sahnalashtiruv asarning asl dramaturgik chizig'ini saqlagan holda, sahna dizaynida minimalizm va yorug'lik bilan ishlashning zamonaviy uslublaridan foydalanadi."
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "yosh-ijrochilar-tanlovi",
+        "day": "14",
+        "month": "Noyabr",
+        "monthShort": "NOY",
+        "year": "2026",
+        "time": "17:00",
+        "venue": "Bosh zal",
+        "category": "festival",
+        "categoryLabel": "Festival",
+        "title": "Yosh ijrochilar gala-kontserti",
+        "subtitle": "Xalqaro tanlov laureatlari",
+        "excerpt": "Respublika va xalqaro tanlovlar g'oliblarining bir sahnada jamlangan chiqishi. Kelgusi avlod ovozi — bugun.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD-G90sWNr6qVVwQQzt9jBP8kEiOxl-EVBjVDfOGwA7PkG8BvujwQA50gGsaH600dtlMVDQx7v9Ax3eYd4492LojX7G2NUjwU77jzawn8LW6QH2aDWkkBnWOw7DPpfL1RzL7T-_DHAlK6viKSu3iKHu1D2BSC-jufKTnhT-bvTJ7k6C4StxP8rKSbIeFaUlFc7Swgnca-z81WaijV3Jw58DtqM72dkLGeYM3gVVwTaGEXp9uYbJJpSGcgvIjtvs2-DvCpTUS7p9eQ",
+        "conductor": "Orkestr bilan hamkorlikda",
+        "price": "Bepul (oldindan ro'yxatdan o'tish)",
+        "duration": "2 soat",
+        "about": [
+          "Filarmoniyaning \"Yosh avlod\" dasturi doirasida o'tkaziladigan an'anaviy gala-kontsert. Unda oxirgi bir yil davomida xalqaro tanlovlarda muvaffaqiyat qozongan 10 nafar yosh solistlar ishtirok etadi.",
+          "Konsert dasturida klassik repertuar va zamonaviy o'zbek kompozitorlarining asarlari jamlangan."
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "beethoven-9",
+        "day": "21",
+        "month": "Noyabr",
+        "monthShort": "NOY",
+        "year": "2026",
+        "time": "19:00",
+        "venue": "Bosh zal",
+        "category": "symphony",
+        "categoryLabel": "Simfonik",
+        "title": "Beethoven — 9-simfoniya",
+        "subtitle": "\"Shodlikka qasida\"",
+        "excerpt": "Klassik musiqa tarixidagi eng ulug' asarlardan biri. Orkestr, xor va to'rt solist birlikda insoniy birodarlik gimnini yangratadi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBedCx0mrawTHYf9vBohrW30tYgERZ7ZK4dYYKd93w-KrQcqGKArF-t57m5iM0PKGxnzA08uhoTANmoFedNDknhBgxcqZbGGmAsFeODWbSppRIyidVYUf6IGP_AfqxP8omwfkxm9IGFKHeT1aogWyXK7mNKRV6cYld7YPwpkSx1BQIS-HS_dmys64_iBmQc-KrHd3_Uox4w5rsiBsWUTs3-Y1eWsx2XU2jYE57pfPMjddCaQIvGlRmtxVfjltokUFYdv1MP7WpCEQ",
+        "conductor": "Maestro Valeriy Xalilov",
+        "price": "180 000 so'mdan",
+        "duration": "1 soat 15 daqiqa",
+        "about": [
+          "Ludwig van Beethovenning 9-simfoniyasi — insoniyat musiqa merosining eng muhim asarlaridan biri bo'lib, finalidagi Shiller matniga asoslangan \"Shodlikka qasida\" qismi bugungi kunda Yevropaning rasmiy madhiyasiga aylangan.",
+          "Asar birinchi marta 1824-yilda Vena shahrida ijro etilganidan beri u konsert sahnalarining eng kutib olinadigan dasturlari qatoridan o'rin oladi."
+        ]
+      },
+      {
+        "id": 6,
+        "slug": "piano-trio-kechasi",
+        "day": "02",
+        "month": "Dekabr",
+        "monthShort": "DEK",
+        "year": "2026",
+        "time": "20:00",
+        "venue": "Kamera zali",
+        "category": "chamber",
+        "categoryLabel": "Kamerali",
+        "title": "Piano trio kechasi",
+        "subtitle": "Brahms va Ravel",
+        "excerpt": "Ikki davr, ikki estetika — Brahmsning romantik kengligi va Ravelning frantsuz oydinligi bir kechada uchrashadi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCgt5xfwWRGqbz126udnrIgNPmAfyJvWIoCIV7qWEzqhzySI6ZV_W517SKi--RsZbHLL3jjcgA2S7vm3RnXST_4fqdxyPKzngm7OJn2gLo9M1H7unlTIioG23Xzx38GxvCa9wORqPZhOAlHSKa34vGpdRxQ20QI_R7Gy4qwdmgUR49RpJQc_rsCi3wdEdxNBPn9WQhMBnOLJKgJJhryiDxNW_QXcrkHLQ-8AyYuY4Y8UVwwyWrVqHT-1EebnAAAe_2FCmVf1pu9dQ",
+        "conductor": "Aetheric trio",
+        "price": "90 000 so'mdan",
+        "duration": "1 soat 20 daqiqa",
+        "about": [
+          "Johannes Brahmsning si-major trios va Maurice Ravelning la-minor triosi — piano-trio janrining ikki cho'qqisi. Ular birga bir kechada jaranglashining o'zi — katta voqea.",
+          "Aetheric trio — respublika va xalqaro sahnalarda faol ishtirok etayotgan kamer-ansambli. Ularning repertuarida mumtoz va zamonaviy asarlar muvozanatda."
+        ]
+      },
+      {
+        "id": 8,
+        "slug": "piano-trio-kechasi1",
+        "day": "25",
+        "month": "May",
+        "monthShort": "MAY",
+        "year": "2026",
+        "time": "19:00",
+        "venue": "Bosh zal",
+        "category": "symphony",
+        "categoryLabel": "Simfonik",
+        "title": "Simfonik yangilik",
+        "subtitle": "Brahms va Ravel",
+        "excerpt": "Ikki davr, ikki estetika — Brahmsning romantik kengligi va Ravelning frantsuz oydinligi bir kechada uchrashadi.",
+        "image": "https://loremflickr.com/cache/resized/7630_16256391063_6876f1d729_b_800_600_nofilter.jpg",
+        "conductor": "Aetheric trio",
+        "price": "90 000 so'mdan",
+        "duration": "1 soat 20 daqiqa",
+        "about": [
+          "Johannes Brahmsning si-major trios va Maurice Ravelning la-minor triosi — piano-trio janrining ikki cho'qqisi. Ular birga bir kechada jaranglashining o'zi — katta voqea.",
+          "Aetheric trio — respublika va xalqaro sahnalarda faol ishtirok etayotgan kamer-ansambli. Ularning repertuarida mumtoz va zamonaviy asarlar muvozanatda."
+        ]
+      },
+      {
+        "id": 9,
+        "slug": "piano-trio-kechasi12",
+        "day": "15",
+        "month": "May",
+        "monthShort": "MAY",
+        "year": "2026",
+        "time": "19:00",
+        "venue": "Bosh zal",
+        "category": "symphony",
+        "categoryLabel": "Simfonik",
+        "title": "Simfonik yangilik",
+        "subtitle": "Brahms va Ravel",
+        "excerpt": "Ikki davr, ikki estetika — Brahmsning romantik kengligi va Ravelning frantsuz oydinligi bir kechada uchrashadi.",
+        "image": "https://loremflickr.com/cache/resized/65535_54226659313_8fd5ffc5e7_h_800_600_nofilter.jpg",
+        "conductor": "Aetheric trio",
+        "price": "90 000 so'mdan",
+        "duration": "1 soat 20 daqiqa",
+        "about": [
+          "Johannes Brahmsning si-major trios va Maurice Ravelning la-minor triosi — piano-trio janrining ikki cho'qqisi. Ular birga bir kechada jaranglashining o'zi — katta voqea.",
+          "Aetheric trio — respublika va xalqaro sahnalarda faol ishtirok etayotgan kamer-ansambli. Ularning repertuarida mumtoz va zamonaviy asarlar muvozanatda."
+        ]
+      }
+    ],
+    "afishaFilters": [
+      {
+        "value": "all",
+        "label": "Hamma"
+      },
+      {
+        "value": "symphony",
+        "label": "Simfonik"
+      },
+      {
+        "value": "chamber",
+        "label": "Kamerali"
+      },
+      {
+        "value": "opera",
+        "label": "Opera"
+      },
+      {
+        "value": "festival",
+        "label": "Festival"
+      }
+    ],
+    "afishaMeta": {
+      "eyebrow": "Afisha",
+      "title": "Afisha",
+      "description": "Yaqinlashib kelayotgan konsert va tomoshalarning tanlab olingan dasturi. Mumtoz klassik va zamonaviy avangard sadolarining uyg'unligini his eting.",
+      "category": "afisha"
+    }
+  },
+  "centralApparatus": {
+    "centralApparatusContent": {
+      "meta": {
+        "eyebrow": "Filarmoniya",
+        "title": "Markaziy apparat",
+        "description": "Filarmoniyaning kundalik faoliyatini muvofiqlashtiradigan bosh ofis xodimlari va bo'limlar boshliqlari.",
+        "backHref": "/about",
+        "backLabel": "Filarmoniya haqida",
+        "category": "central-apparatus"
+      },
+      "members": [
+        {
+          "slug": "sherzod-mirzayev",
+          "fullname": "Sherzod Mirzayev",
+          "position": "Konsert dasturlari bo'limi boshlig'i",
+          "department": "Konsert dasturlari bo'limi",
+          "schedule": "Du–Ju: 10:00 – 17:00",
+          "contact": {
+            "phone": "+998 71 233 46 11",
+            "email": "sherzod.mirzayev@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, 4-qavat, 401-xona",
+          "social": [
+            {
+              "platform": "Telegram",
+              "href": "https://t.me/sherzod_mirzayev"
+            }
+          ],
+          "description": "Konsert dasturlari bo'limini boshqaradi: mavsumiy repertuar, gastrol marshrutlari va xalqaro mehmonlar bilan ishlash uchun mas'ul. 12 yillik tajriba.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBDREi64Zw9c5XGm4uXv1VLx6M3WL2R8iPwjWciohp2V3XHFFwOmd-KftXtuWY4mUU9G5eZ1S1cq_2w01wPMy3D8V9frA-OGc11qVlTxzFp9lv7tkOiUSBaoAAsb61eVCcuI7gIvu_i-xX2LZ_ih1Ial8WwLaGK1CpaVGN6f3J_GMpqeRXjzYYUe8aYBU6gHR7JEkOSMJpZU4PsGacVMOcVLXmQp3CVca-SzpJu1IEFd2ZZhhy6Rhj-YHufZ5F5Aaazx8fcGn821A"
+        },
+        {
+          "slug": "aziza-karimova",
+          "fullname": "Aziza Karimova",
+          "position": "Matbuot xizmati boshlig'i",
+          "department": "Matbuot va PR bo'limi",
+          "schedule": "Du–Ju: 09:00 – 18:00",
+          "contact": {
+            "phone": "+998 71 233 46 12",
+            "email": "press@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, 4-qavat, 405-xona",
+          "social": [
+            {
+              "platform": "Instagram",
+              "href": "https://instagram.com/aziza.karimova"
+            },
+            {
+              "platform": "LinkedIn",
+              "href": "https://linkedin.com/in/aziza-karimova"
+            }
+          ],
+          "description": "OAV va ijtimoiy tarmoqlar bilan ishlaydi, press-relizlarni tayyorlaydi, yangiliklar va intervyularni muvofiqlashtiradi.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZi56QCfYvx9WOBU6v4-shlBYzpVBUd81Ukt0WjYlRXapbjuE_UT2eedLuBe5fjUduRkzX5RD_nh_NeGGcwkWnQvmhL9eo8CowIuTe-fcVXinwzb_nTBQfrqLqS4JemAoNl1D9zgvwejR0tODfoTld7vHjJTMjmH5pkBSDCiKcE5TeBjV3j7QYZnagFQsvQxlTJj_Nf04Pz9sChf96UACinMlzm82FbSUKDMhoCwpKO2c0pQ1gfoQSTRHBjaePrDtasTbOWNaOBA"
+        },
+        {
+          "slug": "olim-saidov",
+          "fullname": "Olim Saidov",
+          "position": "Texnik xizmat boshlig'i",
+          "department": "Texnik xizmat",
+          "schedule": "Du–Sha: 08:00 – 20:00",
+          "contact": {
+            "phone": "+998 71 233 46 13",
+            "email": "tech@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, yerto'la qavati",
+          "social": [],
+          "description": "Sahna texnikasi, akustika va yorug'lik tizimlari uchun mas'ul. Konsert tadbirlarining texnik nuqtai nazaridan yuqori darajada o'tishini ta'minlaydi.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAq0bTve7jECeanDAWU9h-3AoNrbH3PFUvjC0zXrq8D6caKwDzcbRGNio7WC5kglAn-PlxOrAHMK5okZoQqfOpM0qSglzWOLK-DZz7nqHHKsnx61S78yI6IX79BtM8YMzuiKy5yhX_wR-_aAc-9s-GB0j3qsez9etW9GJ-Dt-qg2hOGcKEJDz5jTBi27XKd9UtXpYf2ZkDaXY33uKvLAjhvBUbBGplcVTOBU9U_wOfzEri5ux2bYP3M3tWtXFe3sDvbQhcVv-_CAg"
+        },
+        {
+          "slug": "feruza-abdullayeva",
+          "fullname": "Feruza Abdullayeva",
+          "position": "Kadrlar bo'limi boshlig'i",
+          "department": "Kadrlar bo'limi",
+          "schedule": "Du, Chor, Ju: 10:00 – 16:00",
+          "contact": {
+            "phone": "+998 71 233 46 14",
+            "email": "hr@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, 1-qavat, 115-xona",
+          "social": [
+            {
+              "platform": "Telegram",
+              "href": "https://t.me/filarmoniya_hr"
+            }
+          ],
+          "description": "Kadrlar tanlovi, malaka oshirish va xodimlarning kasbiy o'sishi bo'yicha jarayonlarni boshqaradi.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDaeF2gL94Y8InZrivIopQ4HGWzKUjC-0gjlRVVyyNG_jRH1pPgJpf_geSJ0B-3DDz54S5u0soUgylVMzBCqlJIm4AVfHAKfejISBRXK5TtXe0vBlcscdOG3ORoKcIpSHqhUbk3p8H35mS_jhh2g9uAZIL8GolhoodDxPTXNwsrAu8vvakvbKqJ68MgGuzPF9k7Yj9-3BCeuE1HFrquigNZoTOPgaZDWD6wqT9cZbKQ90aNizsKCdiUrkNTA8VTFd-GyWXbWDZbxw"
+        },
+        {
+          "slug": "jasur-ergashev",
+          "fullname": "Jasur Ergashev",
+          "position": "Xalqaro aloqalar bo'limi boshlig'i",
+          "department": "Xalqaro aloqalar bo'limi",
+          "schedule": "Se, Pa: 11:00 – 16:00",
+          "contact": {
+            "phone": "+998 71 233 46 15",
+            "email": "international@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, 3-qavat, 320-xona",
+          "social": [
+            {
+              "platform": "LinkedIn",
+              "href": "https://linkedin.com/in/jasur-ergashev"
+            }
+          ],
+          "description": "Xorijiy festivallar, qo'shma loyihalar va memorandum aloqalarini tashkil qiladi. Bir necha tilni biladi: ingliz, rus, nemis va turk.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKCHWE6Q1VGxZVPH5Y_5JVeNkWxA9zBwV0-JhGLix1eGqR_NNZNBTtvRxc1jXuMQ8_CjA1KRYzVgLEYdVpo5YWRwocBllLT8Vca8181A78kzGQAQZjchf33VDTucztxoEAeI2_xO8F3vcfNpPjPtzll7hLOClr_PooGrIDWnv0sU9Ton0WXLkTy0q2EEvon2JowwiMzbOJXBrbItAHYw7y8e1bGsgobEC9vZ5ZY-EKmp9oF28t0lQbDgOI1E1QpuDdlmkohQIvGQ"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "contactInfo": {
+      "address": {
+        "line1": "Toshkent shahri, Mustaqillik maydoni 1-uy",
+        "line2": "100047, O'zbekiston Respublikasi"
+      },
+      "phones": [
+        {
+          "label": "Kotibiyat",
+          "value": "+998 71 123 45 67",
+          "href": "tel:+998711234567"
+        },
+        {
+          "label": "Matbuot xizmati",
+          "value": "+998 71 123 45 68",
+          "href": "tel:+998711234568"
+        },
+        {
+          "label": "Chipta markazi",
+          "value": "+998 71 123 45 69",
+          "href": "tel:+998711234569"
+        }
+      ],
+      "emails": [
+        {
+          "label": "Umumiy savollar",
+          "value": "info@filarmoniya.uz",
+          "href": "mailto:info@filarmoniya.uz"
+        },
+        {
+          "label": "Matbuot",
+          "value": "press@filarmoniya.uz",
+          "href": "mailto:press@filarmoniya.uz"
+        },
+        {
+          "label": "Hamkorlik",
+          "value": "partners@filarmoniya.uz",
+          "href": "mailto:partners@filarmoniya.uz"
+        }
+      ],
+      "hours": [
+        {
+          "days": "Dushanba — Juma",
+          "time": "09:00 — 18:00"
+        },
+        {
+          "days": "Shanba",
+          "time": "10:00 — 16:00"
+        },
+        {
+          "days": "Yakshanba",
+          "time": "Dam olish kuni"
+        }
+      ],
+      "social": [
+        {
+          "platform": "Telegram",
+          "icon": "send",
+          "href": "https://t.me/filarmoniya"
+        },
+        {
+          "platform": "Instagram",
+          "icon": "photo_camera",
+          "href": "https://instagram.com/filarmoniya"
+        },
+        {
+          "platform": "YouTube",
+          "icon": "smart_display",
+          "href": "https://youtube.com/@filarmoniya"
+        },
+        {
+          "platform": "Facebook",
+          "icon": "public",
+          "href": "https://facebook.com/filarmoniya"
+        }
+      ],
+      "mapEmbed": "https://www.openstreetmap.org/export/embed.html?bbox=69.2357%2C41.3070%2C69.2527%2C41.3170&layer=mapnik&marker=41.312000%2C69.244200",
+      "mapLink": "https://www.openstreetmap.org/?mlat=41.312&mlon=69.2442#map=17/41.312/69.2442",
+      "coordinates": {
+        "lat": 41.312,
+        "lng": 69.2442
+      }
+    },
+    "contactMeta": {
+      "eyebrow": "Aloqa",
+      "title": "Biz bilan bog'laning",
+      "description": "Savollaringiz, takliflaringiz yoki hamkorlik bo'yicha murojaatlaringiz uchun quyidagi manzillardan foydalaning. Biz siz bilan bog'lanishdan mamnun bo'lamiz."
+    },
+    "contactSubjects": [
+      "Umumiy savol",
+      "Matbuot so'rovi",
+      "Hamkorlik takliflari",
+      "Ish joyi bo'yicha",
+      "Chipta xaridi",
+      "Boshqa"
+    ]
+  },
+  "documents": {
+    "documents": [
+      {
+        "id": 1,
+        "title": "O'zbekiston Respublikasining 'Madaniyat to'g'risida'gi Qonuni",
+        "type": "Qonun",
+        "date": "2023-06-14",
+        "size": "420 KB",
+        "format": "PDF",
+        "documentNumber": "O'RQ-842",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "title": "O'zbekiston Respublikasi Prezidentining 'Filarmoniya va konsert tashkilotlari faoliyatini takomillashtirish to'g'risida'gi Qarori",
+        "type": "Prezident qarori",
+        "date": "2023-02-17",
+        "size": "680 KB",
+        "format": "PDF",
+        "documentNumber": "PQ-3813",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "title": "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi Nizomi",
+        "type": "Nizom",
+        "date": "2023-05-02",
+        "size": "312 KB",
+        "format": "PDF",
+        "documentNumber": "NZ-015",
+        "url": "#"
+      },
+      {
+        "id": 4,
+        "title": "Vazirlar Mahkamasining 'Ijodiy xodimlar ish haqi to'g'risida'gi Qarori",
+        "type": "VM qarori",
+        "date": "2024-01-22",
+        "size": "245 KB",
+        "format": "PDF",
+        "documentNumber": "VMQ-44",
+        "url": "#"
+      },
+      {
+        "id": 5,
+        "title": "Ichki mehnat tartibi qoidalari",
+        "type": "Ichki hujjat",
+        "date": "2024-03-10",
+        "size": "180 KB",
+        "format": "DOCX",
+        "documentNumber": "ITQ-2024",
+        "url": "#"
+      },
+      {
+        "id": 6,
+        "title": "Korrupsiyaga qarshi kurashish siyosati",
+        "type": "Ichki hujjat",
+        "date": "2023-09-18",
+        "size": "156 KB",
+        "format": "PDF",
+        "documentNumber": "AK-009",
+        "url": "#"
+      },
+      {
+        "id": 7,
+        "title": "Axborot xavfsizligi va shaxsiy ma'lumotlarni himoya qilish reglamenti",
+        "type": "Ichki hujjat",
+        "date": "2024-02-05",
+        "size": "290 KB",
+        "format": "PDF",
+        "documentNumber": "AXR-12",
+        "url": "#"
+      },
+      {
+        "id": 8,
+        "title": "Xodimlarni attestatsiyadan o'tkazish tartibi",
+        "type": "Buyruq",
+        "date": "2024-04-12",
+        "size": "210 KB",
+        "format": "PDF",
+        "documentNumber": "B-178",
+        "url": "#"
+      },
+      {
+        "id": 9,
+        "title": "Jamoaviy shartnoma",
+        "type": "Ichki hujjat",
+        "date": "2024-01-15",
+        "size": "520 KB",
+        "format": "PDF",
+        "documentNumber": "JS-2024",
+        "url": "#"
+      },
+      {
+        "id": 10,
+        "title": "Madaniy tadbirlar rejasi (2024-2025 mavsum)",
+        "type": "Reja",
+        "date": "2024-08-30",
+        "size": "1.2 MB",
+        "format": "PDF",
+        "documentNumber": "MR-2024-25",
+        "url": "#"
+      }
+    ],
+    "documentsMeta": {
+      "eyebrow": "Me'yoriy hujjatlar",
+      "title": "Me'yoriy hujjatlar",
+      "description": "Filarmoniya faoliyatini tartibga soluvchi qonunlar, qarorlar va boshqa rasmiy hujjatlar to'plami.",
+      "category": "documents"
+    }
+  },
+  "events": {
+    "eventFilters": [
+      "Hamma",
+      "Main Hall",
+      "Chamber",
+      "Festival",
+      "Experimental"
+    ],
+    "events": [
+      {
+        "id": 1,
+        "dateValue": "24",
+        "month": "OCT",
+        "label": "Main Hall",
+        "title": "Symphonic Singularity",
+        "desc": "An immersive journey into high-density orchestral textures, featuring the world premiere of 'Vertex' by A. K. Vasser.",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD-G90sWNr6qVVwQQzt9jBP8kEiOxl-EVBjVDfOGwA7PkG8BvujwQA50gGsaH600dtlMVDQx7v9Ax3eYd4492LojX7G2NUjwU77jzawn8LW6QH2aDWkkBnWOw7DPpfL1RzL7T-_DHAlK6viKSu3iKHu1D2BSC-jufKTnhT-bvTJ7k6C4StxP8rKSbIeFaUlFc7Swgnca-z81WaijV3Jw58DtqM72dkLGeYM3gVVwTaGEXp9uYbJJpSGcgvIjtvs2-DvCpTUS7p9eQ"
+      },
+      {
+        "id": 2,
+        "dateValue": "02",
+        "month": "NOV",
+        "label": "Chamber",
+        "title": "Resonant Frequencies",
+        "desc": "A minimalist study in acoustic decay, featuring solo strings and subtle electronic manipulation in an intimate setting.",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCgt5xfwWRGqbz126udnrIgNPmAfyJvWIoCIV7qWEzqhzySI6ZV_W517SKi--RsZbHLL3jjcgA2S7vm3RnXST_4fqdxyPKzngm7OJn2gLo9M1H7unlTIioG23Xzx38GxvCa9wORqPZhOAlHSKa34vGpdRxQ20QI_R7Gy4qwdmgUR49RpJQc_rsCi3wdEdxNBPn9WQhMBnOLJKgJJhryiDxNW_QXcrkHLQ-8AyYuY4Y8UVwwyWrVqHT-1EebnAAAe_2FCmVf1pu9dQ"
+      },
+      {
+        "id": 3,
+        "dateValue": "15",
+        "month": "NOV",
+        "label": "Guest Artist",
+        "title": "Fractal Harmony",
+        "desc": "Pianist Elara Vance interprets complex mathematical structures through the lens of late 20th-century avant-garde.",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdSTssH5sJvXEP_V3LBIQ8xOv-C1-ADDjGuCq-sRZnd90UqGOKK2yjqzkhRkTcdyWmCPBOeeMk_odD10Q2fIfEX2-s6guwLrWaX-1mVFLM93F4A7YmMIT9Rr-yWzuoxrTesaukLtOnZ8YMGol7pno7VVDioNftnuJcB-kT8qOoAPhsZHHNXRpfBqBSU1fSoTM9tYHHxeOZF4oPsvxew1fWyN3p21oLlkh0EJrjtMiIr91yhOgprRt18yOpXsHUKUE-e_LX3VOcpg"
+      },
+      {
+        "id": 4,
+        "dateValue": "05-08",
+        "month": "DEC",
+        "label": "Festival",
+        "title": "The Brutalist Winter Solstice",
+        "desc": "A four-day immersion into cold soundscapes and industrial acoustics. Features three full orchestral performances and site-specific installations throughout the venue.",
+        "isTextHeavy": true
+      },
+      {
+        "id": 5,
+        "dateValue": "12",
+        "month": "DEC",
+        "label": "Chamber",
+        "title": "Aetheric Echoes",
+        "desc": "A sonic exploration of reverberation and space, combining traditional acoustics with modern synthesis techniques.",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBedCx0mrawTHYf9vBohrW30tYgERZ7ZK4dYYKd93w-KrQcqGKArF-t57m5iM0PKGxnzA08uhoTANmoFedNDknhBgxcqZbGGmAsFeODWbSppRIyidVYUf6IGP_AfqxP8omwfkxm9IGFKHeT1aogWyXK7mNKRV6cYld7YPwpkSx1BQIS-HS_dmys64_iBmQc-KrHd3_Uox4w5rsiBsWUTs3-Y1eWsx2XU2jYE57pfPMjddCaQIvGlRmtxVfjltokUFYdv1MP7WpCEQ"
+      },
+      {
+        "id": 6,
+        "dateValue": "05",
+        "month": "JAN",
+        "label": "Main Hall",
+        "title": "The Glass Pavilion",
+        "desc": "A multidisciplinary performance exploring fragility and transparency through contemporary classical composition.",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD08MNvDphzkuuSAk3b5XQY4zGQQqeCWO2YPXKvIK4rnNq5tKZhGoe5b0vNsc2IOHwhZ0YTu6zlbxonuTG6OX2bG5l560GjcjAWfxXIEXPQ_WtD4nDKHDuokEtoQgWs11Ktf6hsW5wL-6FXFaQSLsW-eh1AtrNAi1ESgQ_y0XDPeyNBBVEeALppTW8-IiJuQ0dakNDe6xHQGDhxH17QhMZoCoRo362cfy1UWl7yU7R6KH6ljBkkYDpay2MpL2FXxRE1rcdeaemhNg"
+      },
+      {
+        "id": 7,
+        "dateValue": "22",
+        "month": "JAN",
+        "label": "Experimental",
+        "title": "Neural Nocturnes",
+        "desc": "An algorithmic symphony where AI-generated structures meet organic orchestration in an evolving soundscape.",
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDZ9NqqKZsO4c-TWoq5NwR311CR5VvmA3W-Zkw1-eb3yulr2Bt5zoJhTInXNQYNpy-iu4__JxcONTGV-4PtQacvaOXNMeV-BeUb4t-5mhQAUoKhGgJfAWVc5WLdUjRZj4_OJyWb2-Rb7vCv6xFEcrbGtd1u6hpnY90rs0PGhSrK8YcIFwbRf9TK2v6QuI49DKNLCHEmoiUijA08lLvXJE1tiD3eG2zBe2AVqMCKTWInyGUWnPbtdBmdc0Kb41OIkrMr0PmIn0p0yA"
+      },
+      {
+        "id": 7,
+        "dateValue": "15",
+        "month": "MAY",
+        "label": "Main Hall",
+        "title": "Symphonic Singularity",
+        "desc": "An immersive journey into high-density orchestral textures, featuring the world premiere of 'Vertex' by A. K. Vasser.",
+        "img": "https://loremflickr.com/cache/resized/7630_16256391063_6876f1d729_b_800_600_nofilter.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "footerContent": {
+      "brand": "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
+      "address": "Toshkent shahri, Navoiy ko'chasi, 2-uy",
+      "phone": "+998 71 234 56 78",
+      "email": "info@filarmoniya.uz",
+      "socials": [
+        {
+          "label": "Telegram",
+          "href": "#",
+          "icon": "telegram"
+        },
+        {
+          "label": "Instagram",
+          "href": "#",
+          "icon": "instagram"
+        },
+        {
+          "label": "Facebook",
+          "href": "#",
+          "icon": "facebook"
+        }
+      ],
+      "links": [],
+      "copyright": "© 2026 O'zbekiston Respublikasi Madaniyat Vazirligi. Barcha huquqlar himoyalangan."
+    }
+  },
+  "hero": {
+    "heroSlides": [
+      {
+        "id": 1,
+        "image": "/images/hero_slider_1.png",
+        "subtext": "UT IPSUM AUTEM QUI VOLUPTATEM",
+        "title": "DOLOREM EOS SED OPTIO NEQUE"
+      },
+      {
+        "id": 2,
+        "image": "/images/hero_slider_2.png",
+        "subtext": "SYMPHONIC INNOVATIONS SERIES",
+        "title": "THE 2024 AUTUMN PREMIERE"
+      }
+    ]
+  },
+  "international": {
+    "competitions": [
+      {
+        "id": 1,
+        "name": "P.I. Chaykovskiy nomidagi Xalqaro tanlov",
+        "year": "2024",
+        "city": "Moskva",
+        "country": "Rossiya",
+        "flagCode": "ru",
+        "category": "Skripka",
+        "laureates": [
+          {
+            "name": "Malika Rahimova",
+            "award": "II o'rin, kumush medal"
+          },
+          {
+            "name": "Sarvar Xolmatov",
+            "award": "Finalist, diplom"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "ARD Internationaler Musikwettbewerb",
+        "year": "2024",
+        "city": "Myunxen",
+        "country": "Germaniya",
+        "flagCode": "de",
+        "category": "Piano",
+        "laureates": [
+          {
+            "name": "Zuhra Karimova",
+            "award": "III o'rin, bronza medal"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Xalqaro yosh dirijyorlar tanlovi",
+        "year": "2023",
+        "city": "Parij",
+        "country": "Fransiya",
+        "flagCode": "fr",
+        "category": "Dirijyorlik",
+        "laureates": [
+          {
+            "name": "Aziz Usmonov",
+            "award": "I o'rin, Oltin dirijyor tayyoqi"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Queen Elisabeth Competition",
+        "year": "2023",
+        "city": "Bryussel",
+        "country": "Belgiya",
+        "flagCode": "be",
+        "category": "Vokal",
+        "laureates": [
+          {
+            "name": "Dilnoza Sodiqova",
+            "award": "V o'rin, laureat diplomi"
+          },
+          {
+            "name": "Otabek Rashidov",
+            "award": "Finalist"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Arthur Rubinstein Piano Competition",
+        "year": "2023",
+        "city": "Tel-Aviv",
+        "country": "Isroil",
+        "flagCode": "il",
+        "category": "Piano",
+        "laureates": [
+          {
+            "name": "Bobur Mirzayev",
+            "award": "III o'rin, bronza"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Osiyo Filarmoniyalari Yosh Solistlar tanlovi",
+        "year": "2024",
+        "city": "Seul",
+        "country": "Janubiy Koreya",
+        "flagCode": "kr",
+        "category": "Kamera musiqasi",
+        "laureates": [
+          {
+            "name": "Aetheric trio",
+            "award": "I o'rin, oltin medal"
+          },
+          {
+            "name": "Navbahor kvarteti",
+            "award": "Maxsus mukofot"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Shopen nomidagi xalqaro tanlov",
+        "year": "2022",
+        "city": "Varshava",
+        "country": "Polsha",
+        "flagCode": "pl",
+        "category": "Piano",
+        "laureates": [
+          {
+            "name": "Zuhra Karimova",
+            "award": "Yarim-final ishtirokchisi"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Astana Piano Passion",
+        "year": "2024",
+        "city": "Astana",
+        "country": "Qozog'iston",
+        "flagCode": "kz",
+        "category": "Piano (yoshlar)",
+        "laureates": [
+          {
+            "name": "Kamila Tojiyeva",
+            "award": "I o'rin"
+          },
+          {
+            "name": "Umid Yuldashev",
+            "award": "II o'rin"
+          }
+        ]
+      }
+    ],
+    "competitionsMeta": {
+      "eyebrow": "Xalqaro aloqalar",
+      "title": "Xalqaro tanlovlar",
+      "description": "Filarmoniya yosh ijrochilari xalqaro tanlovlarda qatnashib, yutuqlar bilan qaytishmoqda. Bu sahifada oxirgi yillar muvaffaqiyatlari jamlangan."
+    },
+    "intlConcerts": [
+      {
+        "id": 1,
+        "title": "Mahler — 8-simfoniya (O'zbekiston premyerasi)",
+        "partner": "Berliner Philharmoniker xor guruhi",
+        "country": "Germaniya",
+        "flagCode": "de",
+        "date": "2024-09-22",
+        "venue": "Bosh zal, Toshkent",
+        "summary": "1000 ovozli xor va kengaytirilgan orkestr ishtirokidagi monumental asarning respublikada ilk ijrosi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZJMrYVCx4OZLY9l5xVMWOYRcTTxc_3pAlZjEPI3DZrnK0N-Lu6Z_yEYddq3TOcKaUd37hBWc_iKT47BvJF2W89pl8vnooanPV8ByrggTxIWE0esK5JFrKKgKgIMi6QpSuqBDk-DqD-mn_ZfI1i7PjaeZ6f9RHm_aN9kkQrurkzcLED1Ti3e5n3bpkRefhftjLtQmENyuylo5cclPWe8bYtbFJNWI_9sfoUYJhHfKX-n6jICdQ7E_h1MIV9t4hqjy8fbTaZBi_xQ"
+      },
+      {
+        "id": 2,
+        "title": "Shi'lay Liang violonchel kechasi",
+        "partner": "Shi'lay Liang, Xitoy",
+        "country": "Xitoy",
+        "flagCode": "cn",
+        "date": "2024-06-14",
+        "venue": "Kamera zali, Toshkent",
+        "summary": "Xitoyning yetakchi yosh violonchelisti bilan birgalikdagi solo-kontsert. Dasturda Schumann, Elgar va Tan Dun asarlari.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCvgiDDGKk5kGRy0MjIAfmh-9j1nRSOck6LetUSTuyGkK888nhQp5oK4aD9eVJQGNXaa46LPv_xj5a5SJ4E8u9sWvThFnv1nYnWPfOVJewI4q7i-EH9uNiE_peNqhgCkYo_eSom0M-q7mVleH2MFPvvFcVVYNzBHib1cB1Wj5MRY6s4COkKCBVqKP68HZZMMEcBKG3TGkPOqc0uESFTjhcez91dVUS34aJLbForndX9C6QHYvuQpFxEO6hhQQbTputsitOkb4p6mQ"
+      },
+      {
+        "id": 3,
+        "title": "Verdi \"Requiem\" — xalqaro kecha",
+        "partner": "La Scala opera solistlari",
+        "country": "Italiya",
+        "flagCode": "it",
+        "date": "2024-04-18",
+        "venue": "Bosh zal, Toshkent",
+        "summary": "Italyan solistlar, o'zbek simfonik orkestri va xori ishtirokida Verdining \"Requiem\" asarining dramatik ijrosi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDVSN5pcR-nn9P00SGJDqTjgpcPZhS1FmdM8k_hYOZ0ryOGBdQcwFHLPRfbyl3pQ6uekaVATygGQN68wzLalmrDNRDKd2T9GV2d42X6SzPW5JqQf8Os-gpWSWjylh5huwLbDF4yKSxMzgQnDWLOcInpUIGNuybUzvzNw8IhJZejvbBdr-flXg1uZZ_5ggw_ZeSazZ1tZSF6lf0BP6o8LHUM9AxT2ZMsX0XFsIl3kaOkmeaMeKAslGwn4i7u1YnwMs2lIFef7JqbAg"
+      },
+      {
+        "id": 4,
+        "title": "Kim Mun-Su dirijyorligida Beethoven kechasi",
+        "partner": "Seoul Philharmonic",
+        "country": "Janubiy Koreya",
+        "flagCode": "kr",
+        "date": "2024-03-08",
+        "venue": "Bosh zal, Toshkent",
+        "summary": "Koreya orkestrining bosh dirijyori Kim Mun-Su \"Egmont\", 5- va 7-simfoniyalarni talqin qildi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD-G90sWNr6qVVwQQzt9jBP8kEiOxl-EVBjVDfOGwA7PkG8BvujwQA50gGsaH600dtlMVDQx7v9Ax3eYd4492LojX7G2NUjwU77jzawn8LW6QH2aDWkkBnWOw7DPpfL1RzL7T-_DHAlK6viKSu3iKHu1D2BSC-jufKTnhT-bvTJ7k6C4StxP8rKSbIeFaUlFc7Swgnca-z81WaijV3Jw58DtqM72dkLGeYM3gVVwTaGEXp9uYbJJpSGcgvIjtvs2-DvCpTUS7p9eQ"
+      },
+      {
+        "id": 5,
+        "title": "\"Ipak yo'li\" festivali — yakuniy gala",
+        "partner": "Markaziy Osiyo orkestrlari jamoasi",
+        "country": "Mintaqa",
+        "flagCode": null,
+        "date": "2024-11-02",
+        "venue": "Katta opera sahnasi",
+        "summary": "Qozog'iston, Qirg'iziston, Tojikiston va Turkmaniston jamoalari ishtirokidagi yakuniy gala-kontsert.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBedCx0mrawTHYf9vBohrW30tYgERZ7ZK4dYYKd93w-KrQcqGKArF-t57m5iM0PKGxnzA08uhoTANmoFedNDknhBgxcqZbGGmAsFeODWbSppRIyidVYUf6IGP_AfqxP8omwfkxm9IGFKHeT1aogWyXK7mNKRV6cYld7YPwpkSx1BQIS-HS_dmys64_iBmQc-KrHd3_Uox4w5rsiBsWUTs3-Y1eWsx2XU2jYE57pfPMjddCaQIvGlRmtxVfjltokUFYdv1MP7WpCEQ"
+      },
+      {
+        "id": 6,
+        "title": "Elena Bashkirova bilan piano resital",
+        "partner": "Elena Bashkirova (Germaniya-Rossiya)",
+        "country": "Germaniya",
+        "flagCode": "de",
+        "date": "2023-12-15",
+        "venue": "Kamera zali, Toshkent",
+        "summary": "Xalqaro pianistkaning chang, Schumann va Rahmaninov asarlari bilan solo-kontserti.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDZ9NqqKZsO4c-TWoq5NwR311CR5VvmA3W-Zkw1-eb3yulr2Bt5zoJhTInXNQYNpy-iu4__JxcONTGV-4PtQacvaOXNMeV-BeUb4t-5mhQAUoKhGgJfAWVc5WLdUjRZj4_OJyWb2-Rb7vCv6xFEcrbGtd1u6hpnY90rs0PGhSrK8YcIFwbRf9TK2v6QuI49DKNLCHEmoiUijA08lLvXJE1tiD3eG2zBe2AVqMCKTWInyGUWnPbtdBmdc0Kb41OIkrMr0PmIn0p0yA"
+      }
+    ],
+    "intlConcertsMeta": {
+      "eyebrow": "Xalqaro aloqalar",
+      "title": "Qo'shma konsertlar",
+      "description": "Xorijiy orkestrlar, solistlar va jamoalar bilan birgalikda olib borilgan konsertlar va qo'shma loyihalar tarixi."
+    },
+    "memorandums": [
+      {
+        "id": 1,
+        "title": "Vena Konsert Uyi bilan hamkorlik memorandumi",
+        "partner": "Wiener Konzerthaus",
+        "country": "Avstriya",
+        "flagCode": "at",
+        "signedAt": "2024-05-12",
+        "validUntil": "2027-05-12",
+        "summary": "Yosh dirijyor va solistlar almashinuvi, qo'shma konsert dasturlari va repertuar almashinuvi bo'yicha uch yillik strategik hamkorlik.",
+        "documentNumber": "MM-2024-08",
+        "docUrl": "#"
+      },
+      {
+        "id": 2,
+        "title": "Berlin Filarmoniyasi bilan ijodiy kelishuv",
+        "partner": "Berliner Philharmoniker",
+        "country": "Germaniya",
+        "flagCode": "de",
+        "signedAt": "2023-11-04",
+        "validUntil": "2026-11-04",
+        "summary": "Mahorat darslari, xalqaro ustozlar bilan seminar-treninglar va xalqaro tur loyihalari.",
+        "documentNumber": "MM-2023-14",
+        "docUrl": "#"
+      },
+      {
+        "id": 3,
+        "title": "Moskva Konservatoriyasi bilan akademik hamkorlik",
+        "partner": "P.I. Chaykovskiy nomidagi Moskva Konservatoriyasi",
+        "country": "Rossiya",
+        "flagCode": "ru",
+        "signedAt": "2023-09-20",
+        "validUntil": "2028-09-20",
+        "summary": "Yosh ijrochilar almashinuvi, repertuar konsultatsiyalari va qo'shma konsertlar loyihasi.",
+        "documentNumber": "MM-2023-11",
+        "docUrl": "#"
+      },
+      {
+        "id": 4,
+        "title": "Seul Filarmoniyasi bilan memorandum",
+        "partner": "Seoul Philharmonic Orchestra",
+        "country": "Janubiy Koreya",
+        "flagCode": "kr",
+        "signedAt": "2024-02-18",
+        "validUntil": "2027-02-18",
+        "summary": "Osiyo yo'nalishi bo'yicha qo'shma dasturlar, gastrollar va yangi asarlarning premyerasi.",
+        "documentNumber": "MM-2024-03",
+        "docUrl": "#"
+      },
+      {
+        "id": 5,
+        "title": "Santa Cecilia Akademiyasi bilan hamkorlik memorandumi",
+        "partner": "Accademia Nazionale di Santa Cecilia",
+        "country": "Italiya",
+        "flagCode": "it",
+        "signedAt": "2022-10-07",
+        "validUntil": "2025-10-07",
+        "summary": "Italyan opera repertuari sohasidagi amaliy qo'llanmalar, opera solistlari uchun mahorat darslari.",
+        "documentNumber": "MM-2022-09",
+        "docUrl": "#"
+      },
+      {
+        "id": 6,
+        "title": "Astana Opera bilan qo'shma loyiha kelishuvi",
+        "partner": "Astana Opera",
+        "country": "Qozog'iston",
+        "flagCode": "kz",
+        "signedAt": "2024-07-30",
+        "validUntil": "2026-07-30",
+        "summary": "Mintaqaviy hamkorlik, operalarning qo'shma sahnalashtiruvlari va festival loyihalarida ishtirok.",
+        "documentNumber": "MM-2024-11",
+        "docUrl": "#"
+      }
+    ],
+    "memorandumsMeta": {
+      "eyebrow": "Xalqaro aloqalar",
+      "title": "Memorandumlar",
+      "description": "Filarmoniya xorijiy madaniyat muassasalari va san'at jamg'armalari bilan imzolagan hamkorlik memorandumlari va kelishuvlari."
+    }
+  },
+  "management": {
+    "managementContent": {
+      "meta": {
+        "eyebrow": "Filarmoniya",
+        "title": "Rahbariyat",
+        "description": "Filarmoniyaning strategik va ijodiy yo'nalishini belgilaydigan rahbariyat tarkibi. Rasmiy qabul kunlari va aloqa ma'lumotlari.",
+        "backHref": "/about",
+        "backLabel": "Filarmoniya haqida",
+        "category": "management"
+      },
+      "members": [
+        {
+          "slug": "abdulla-nazarov",
+          "fullname": "Abdulla Nazarov",
+          "position": "Bosh direktor",
+          "department": "Rahbariyat",
+          "schedule": "Dushanba, Payshanba: 15:00 – 17:00",
+          "contact": {
+            "phone": "+998 71 233 45 67",
+            "email": "rahbar@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, 2-qavat, 201-xona",
+          "social": [
+            {
+              "platform": "Telegram",
+              "href": "https://t.me/filarmoniya_uz"
+            },
+            {
+              "platform": "Facebook",
+              "href": "https://facebook.com/filarmoniya.uz"
+            }
+          ],
+          "description": "Abdulla Nazarov O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasining bosh direktori sifatida muassasaning strategik, moliyaviy va ma'muriy faoliyatini boshqaradi. 25 yildan ortiq madaniyat sohasidagi tajribasi davomida xalqaro festivallar va milliy konsert dasturlarini muvaffaqiyatli amalga oshirgan.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAq0bTve7jECeanDAWU9h-3AoNrbH3PFUvjC0zXrq8D6caKwDzcbRGNio7WC5kglAn-PlxOrAHMK5okZoQqfOpM0qSglzWOLK-DZz7nqHHKsnx61S78yI6IX79BtM8YMzuiKy5yhX_wR-_aAc-9s-GB0j3qsez9etW9GJ-Dt-qg2hOGcKEJDz5jTBi27XKd9UtXpYf2ZkDaXY33uKvLAjhvBUbBGplcVTOBU9U_wOfzEri5ux2bYP3M3tWtXFe3sDvbQhcVv-_CAg"
+        },
+        {
+          "slug": "dilshoda-rahimova",
+          "fullname": "Dilshoda Rahimova",
+          "position": "Bosh direktor o'rinbosari — Badiiy rahbar",
+          "department": "Rahbariyat",
+          "schedule": "Seshanba, Juma: 10:00 – 13:00",
+          "contact": {
+            "phone": "+998 71 233 45 68",
+            "email": "badiiy@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, 2-qavat, 205-xona",
+          "social": [
+            {
+              "platform": "Instagram",
+              "href": "https://instagram.com/filarmoniya"
+            },
+            {
+              "platform": "Telegram",
+              "href": "https://t.me/filarmoniya_uz"
+            }
+          ],
+          "description": "Dilshoda Rahimova badiiy rahbar lavozimida konsert dasturlari va repertuar shakllantirish bo'yicha ijodiy qarorlarni boshqaradi. Konservatoriyani qizil diplom bilan tugatgan, Yevropa va Osiyo davlatlarida malaka oshirgan.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDaeF2gL94Y8InZrivIopQ4HGWzKUjC-0gjlRVVyyNG_jRH1pPgJpf_geSJ0B-3DDz54S5u0soUgylVMzBCqlJIm4AVfHAKfejISBRXK5TtXe0vBlcscdOG3ORoKcIpSHqhUbk3p8H35mS_jhh2g9uAZIL8GolhoodDxPTXNwsrAu8vvakvbKqJ68MgGuzPF9k7Yj9-3BCeuE1HFrquigNZoTOPgaZDWD6wqT9cZbKQ90aNizsKCdiUrkNTA8VTFd-GyWXbWDZbxw"
+        },
+        {
+          "slug": "rustam-yusupov",
+          "fullname": "Rustam Yusupov",
+          "position": "Bosh dirijyor",
+          "department": "Rahbariyat",
+          "schedule": "Chorshanba: 14:00 – 16:00",
+          "contact": {
+            "phone": "+998 71 233 45 69",
+            "email": "dirijyor@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, 3-qavat, 312-xona",
+          "social": [
+            {
+              "platform": "Instagram",
+              "href": "https://instagram.com/r.yusupov"
+            },
+            {
+              "platform": "YouTube",
+              "href": "https://youtube.com/@yusupov"
+            }
+          ],
+          "description": "Rustam Yusupov simfonik orkestrning bosh dirijyori sifatida har mavsumda 40 dan ortiq konsertni boshqaradi. Uning ijrosida Mahler, Shostakovich va o'zbek bastakorlarining asarlari yangi qiyofada ochiladi.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKCHWE6Q1VGxZVPH5Y_5JVeNkWxA9zBwV0-JhGLix1eGqR_NNZNBTtvRxc1jXuMQ8_CjA1KRYzVgLEYdVpo5YWRwocBllLT8Vca8181A78kzGQAQZjchf33VDTucztxoEAeI2_xO8F3vcfNpPjPtzll7hLOClr_PooGrIDWnv0sU9Ton0WXLkTy0q2EEvon2JowwiMzbOJXBrbItAHYw7y8e1bGsgobEC9vZ5ZY-EKmp9oF28t0lQbDgOI1E1QpuDdlmkohQIvGQ"
+        },
+        {
+          "slug": "gulnora-tursunova",
+          "fullname": "Gulnora Tursunova",
+          "position": "Bosh direktor o'rinbosari — Moliyaviy ishlar",
+          "department": "Rahbariyat",
+          "schedule": "Dushanba, Chorshanba: 09:00 – 12:00",
+          "contact": {
+            "phone": "+998 71 233 45 70",
+            "email": "moliya@filarmoniya.uz"
+          },
+          "address": "Toshkent sh., Mustaqillik maydoni, 1-uy, 1-qavat, 108-xona",
+          "social": [],
+          "description": "Gulnora Tursunova muassasaning byudjet, hisobot va xo'jalik faoliyatini muvofiqlashtiradi. 18 yillik moliyaviy boshqaruv tajribasiga ega.",
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuB8GFukjEXrNHV7uEsEvG7MrVPE9PPWzu5ACT3DrNiGeVtvN2lrgbdFbYc8hLcxhat0SPD2pZcH-sUzLfcam_xg0MaoeujskGGFGxH_Ef-DY2Y9ov3YEq-8vkW01pQ0vrN4cz9-spKgSgTPrSdgtActBWOoUQ_6jsU2ZeO9t_pt2DZUPvb8EX44JpywpBs7AIHG6eAtK_npPHm862QkE-COP_fXl1eT7crowpkEmR3-emoPxXBRAgBfPqDk0s2UdWy0buFMG1W99g"
+        }
+      ]
+    }
+  },
+  "navigation": {
+    "languages": [
+      "O'zbek",
+      "Русский",
+      "English"
+    ],
+    "navItems": [
+      {
+        "label": "BOSH SAHIFA",
+        "href": "/"
+      },
+      {
+        "label": "FILARMONIYA",
+        "href": "#",
+        "children": [
+          {
+            "label": "Muassasa haqida",
+            "href": "/about"
+          },
+          {
+            "label": "Muassasa nizomi",
+            "href": "/statute"
+          },
+          {
+            "label": "Rahbariyat",
+            "href": "/management"
+          },
+          {
+            "label": "Markaziy apparat",
+            "href": "/central-apparatus"
+          }
+        ]
+      },
+      {
+        "label": "AXBOROT XIZMATI",
+        "href": "#",
+        "children": [
+          {
+            "label": "Yangiliklar",
+            "href": "/news"
+          },
+          {
+            "label": "Konsertlar",
+            "href": "/concerts"
+          },
+          {
+            "label": "Yoshlar siyosati",
+            "href": "/youth-politics"
+          },
+          {
+            "label": "Videolavhalar",
+            "href": "/videos"
+          }
+        ]
+      },
+      {
+        "label": "IJODIY JAMOALAR",
+        "href": "/teams",
+        "children": [
+          {
+            "label": "Barcha jamoalar",
+            "href": "/teams"
+          },
+          {
+            "label": "Simfonik orkestr",
+            "href": "/teams/simfonik-orkestr"
+          },
+          {
+            "label": "Kamer orkestri",
+            "href": "/teams/kamer-orkestri"
+          },
+          {
+            "label": "Xalq cholg'ulari",
+            "href": "/teams/xalq-cholgulari-jamoasi"
+          },
+          {
+            "label": "Davlat xori",
+            "href": "/teams/davlat-xori"
+          },
+          {
+            "label": "Opera solistlari",
+            "href": "/teams/opera-solistlari"
+          }
+        ]
+      },
+      {
+        "label": "XALQARO ALOQALAR",
+        "href": "#",
+        "children": [
+          {
+            "label": "Memorandumlar",
+            "href": "/memorandums"
+          },
+          {
+            "label": "Qo'shma konsertlar",
+            "href": "/international-concerts"
+          },
+          {
+            "label": "Xalqaro tanlovlar",
+            "href": "/competitions"
+          }
+        ]
+      },
+      {
+        "label": "AFISHA",
+        "href": "/afisha"
+      },
+      {
+        "label": "PRESS-RELIZ",
+        "href": "/press-releases"
+      },
+      {
+        "label": "ME'YORIY HUJJATLAR",
+        "href": "/documents"
+      },
+      {
+        "label": "OCHIQ MA'LUMOTLAR",
+        "href": "/open-data"
+      },
+      {
+        "label": "ALOQA",
+        "href": "/contact"
+      }
+    ]
+  },
+  "news": {
+    "newsArticles": [
+      {
+        "id": 1,
+        "slug": "maestro-valeriy-bilan-suhbat",
+        "date": "Oktabr 08, 2024",
+        "publishedAt": "2024-10-08",
+        "title": "Maestro Valeriy bilan suhbat: Maler va konsert sahnasidagi izlanishlar",
+        "excerpt": "Mahler 5-simfoniyasini talqin qilish va katta hajmli asarlarni boshqarish jarayonida his etilgan ijodiy ko'tarilishlar haqida eksklyuziv suhbat.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBzF-omxrKlQE-OfrSygmLyszIGzsTI3lxu4xxCU7eSANRlZb-lIp7naq5iXpZWrF-03U_XQMDcV00fVb4nJFTklBq44ar4jB6-vq1-bmyg-XQULESBCtcPdzM_cydcqF-U-GQW4QLE2N_QubeGIOdhnl5Z2nB3n7jwnMUDoEXpwW3onCmENvvewFzoDrJjQ-zE1itTs5ktLIlQYzXD_cqpp7ZGSfSZTLzgJuROn9DFQHD0WBd4seFUobh-fBmH4KsAkt84emreQQ",
+        "author": {
+          "name": "Aziza Karimova",
+          "role": "Matbuot xizmati"
+        },
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Maestro Valeriy bilan o'tkazilgan ushbu suhbat oktabr oyining boshida, simfonik orkestrning yangi mavsumini ochish arafasida bo'lib o'tdi. Suhbat davomida u Mahler 5-simfoniyasini sahnaga olib chiqishdagi o'ziga xos yondashuvlari, ijro jarayonida his etgan ichki tuyg'ulari va orkestr a'zolari bilan birga olib borgan tayyorgarlik haqida fikr bildirdi."
+          },
+          {
+            "type": "image",
+            "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCEKaVxM31zmORCJZfSrkhiTPMKdz9qbsM0owp_cbGXX744EG_mxwKUoORnTUAV9LYnSG55Ce3SRqNyAHxIXuSEXjs7gMgMOj2fOFhakpqmgE_gnjwrydgspKzKBzaEpdvVTTiznF1RyLSHMo_NZlIzzo2Dw2uulJTt8gt4J_XRxQz04u96ySDj0JhLbWc1BrgeitpmkzkYOYjGH0qpE_UgXdsItWAi0xmxAPcbVbK10yugNj0UabUGCeZmidBhRiKHRxBQj7EpYw",
+            "alt": "Maestro Valeriy repetitsiya paytida",
+            "caption": "Maestro Valeriy yangi mavsum ochilishi arafasidagi repetitsiyada."
+          },
+          {
+            "type": "quote",
+            "text": "Mahler asarlari — bu nafaqat partituradagi notalar majmui, balki yashirin hikoya. Har bir takt, har bir pauza alohida ma'noga ega.",
+            "cite": "Maestro Valeriy"
+          },
+          {
+            "type": "paragraph",
+            "text": "Uning so'zlariga ko'ra, yangi mavsumda orkestr Mahler trilogiyasini bosqichma-bosqich namoyish etishni rejalashtirgan."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuD-G90sWNr6qVVwQQzt9jBP8kEiOxl-EVBjVDfOGwA7PkG8BvujwQA50gGsaH600dtlMVDQx7v9Ax3eYd4492LojX7G2NUjwU77jzawn8LW6QH2aDWkkBnWOw7DPpfL1RzL7T-_DHAlK6viKSu3iKHu1D2BSC-jufKTnhT-bvTJ7k6C4StxP8rKSbIeFaUlFc7Swgnca-z81WaijV3Jw58DtqM72dkLGeYM3gVVwTaGEXp9uYbJJpSGcgvIjtvs2-DvCpTUS7p9eQ",
+                "alt": "Bosh zalda repetitsiya",
+                "caption": "1-skripka guruhi"
+              },
+              {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCgt5xfwWRGqbz126udnrIgNPmAfyJvWIoCIV7qWEzqhzySI6ZV_W517SKi--RsZbHLL3jjcgA2S7vm3RnXST_4fqdxyPKzngm7OJn2gLo9M1H7unlTIioG23Xzx38GxvCa9wORqPZhOAlHSKa34vGpdRxQ20QI_R7Gy4qwdmgUR49RpJQc_rsCi3wdEdxNBPn9WQhMBnOLJKgJJhryiDxNW_QXcrkHLQ-8AyYuY4Y8UVwwyWrVqHT-1EebnAAAe_2FCmVf1pu9dQ",
+                "alt": "Puflama cholg'ular",
+                "caption": "Puflama cholg'ular"
+              },
+              {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdSTssH5sJvXEP_V3LBIQ8xOv-C1-ADDjGuCq-sRZnd90UqGOKK2yjqzkhRkTcdyWmCPBOeeMk_odD10Q2fIfEX2-s6guwLrWaX-1mVFLM93F4A7YmMIT9Rr-yWzuoxrTesaukLtOnZ8YMGol7pno7VVDioNftnuJcB-kT8qOoAPhsZHHNXRpfBqBSU1fSoTM9tYHHxeOZF4oPsvxew1fWyN3p21oLlkh0EJrjtMiIr91yhOgprRt18yOpXsHUKUE-e_LX3VOcpg",
+                "alt": "Zarbli cholg'ular",
+                "caption": "Litavralar va zarbli guruh"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Suhbat oxirida maestro yosh dirijyorlar uchun maslahatlar berdi: kundalik mashq, partiturani chuqur o'rganish va o'z ovozingizni topishga sabr — bu uchta narsa har qanday ijrochi uchun asosiy poydevor bo'lishi kerak."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "akustik-landshaftlar",
+        "date": "Sentabr 29, 2024",
+        "publishedAt": "2024-09-29",
+        "title": "Akustik landshaftlar: ideal tovush uchun loyihalash",
+        "excerpt": "Yangi Aetheric Resonance konsert zali turli simfonik talablarga moslashish uchun o'zgaruvchan akustik geometriyadan qanday foydalanadi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCEKaVxM31zmORCJZfSrkhiTPMKdz9qbsM0owp_cbGXX744EG_mxwKUoORnTUAV9LYnSG55Ce3SRqNyAHxIXuSEXjs7gMgMOj2fOFhakpqmgE_gnjwrydgspKzKBzaEpdvVTTiznF1RyLSHMo_NZlIzzo2Dw2uulJTt8gt4J_XRxQz04u96ySDj0JhLbWc1BrgeitpmkzkYOYjGH0qpE_UgXdsItWAi0xmxAPcbVbK10yugNj0UabUGCeZmidBhRiKHRxBQj7EpYw",
+        "author": {
+          "name": "Sherzod Mirzayev",
+          "role": "Konsert dasturlari"
+        },
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Aetheric Resonance konsert zali zamonaviy akustik muhandislik yutuqlari asosida loyihalashtirilgan. Zal devorlari turli o'lchamdagi panellar bilan qoplangan bo'lib, ular ovozni aks ettirish va yutish darajasini boshqarishga imkon beradi."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBedCx0mrawTHYf9vBohrW30tYgERZ7ZK4dYYKd93w-KrQcqGKArF-t57m5iM0PKGxnzA08uhoTANmoFedNDknhBgxcqZbGGmAsFeODWbSppRIyidVYUf6IGP_AfqxP8omwfkxm9IGFKHeT1aogWyXK7mNKRV6cYld7YPwpkSx1BQIS-HS_dmys64_iBmQc-KrHd3_Uox4w5rsiBsWUTs3-Y1eWsx2XU2jYE57pfPMjddCaQIvGlRmtxVfjltokUFYdv1MP7WpCEQ",
+                "alt": "Zal panellari",
+                "caption": "Akustik panellar konfiguratsiyasi"
+              },
+              {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuD08MNvDphzkuuSAk3b5XQY4zGQQqeCWO2YPXKvIK4rnNq5tKZhGoe5b0vNsc2IOHwhZ0YTu6zlbxonuTG6OX2bG5l560GjcjAWfxXIEXPQ_WtD4nDKHDuokEtoQgWs11Ktf6hsW5wL-6FXFaQSLsW-eh1AtrNAi1ESgQ_y0XDPeyNBBVEeALppTW8-IiJuQ0dakNDe6xHQGDhxH17QhMZoCoRo362cfy1UWl7yU7R6KH6ljBkkYDpay2MpL2FXxRE1rcdeaemhNg",
+                "alt": "Zal ko'rinishi",
+                "caption": "Sahnaga qaragan ko'rinish"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Mavsum davomida zal turli xil ijrolar — simfonik orkestr, kamera ansambli va vokal dasturlar uchun moslashtiriladi. Har bir konfiguratsiya texnik xizmat tomonidan oldindan tayyorlangan ssenariy bo'yicha sozlanadi."
+          },
+          {
+            "type": "paragraph",
+            "text": "Loyihaning bosh muhandisi tomonidan berilgan ma'lumotga ko'ra, zal akustikasi mashhur Yevropa konsert zallarining xususiyatlari bilan taqqoslanganda o'ziga xos balandlik va aniqlikka ega."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "arxiv-topilmalari",
+        "date": "Sentabr 15, 2024",
+        "publishedAt": "2024-09-15",
+        "title": "Arxivlardan: 19-asrga oid yo'qolgan qo'lyozmalar topildi",
+        "excerpt": "Filarmoniyaning yerto'la xonalarida o'tkazilgan tartiblash ishlari natijasida 19-asr bastakorining ilgari noma'lum eskizlari topildi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAKXE3_1RbekgD9Hb_wfEQSlO1x0bYpikbWnBgrZju-PXq6-ri4cEpNjueGsfAG3ASzTuh4GFvvvia06xXwBfuXA-WA275U5Zc9j-_hJs1m9a7XCFdG6_Fsldwra2-cLDYvPMBMa_iGds0KNOdm1AAWaHEf8mzh7bEuLrmuAUCRY3FFxNigLosC26Gzt8GNoHhgve-k6qCiwTuCT5aQHEE3_8pvySAwO6u3C6tb7YPAu6dAWhNS4K9G7H637uS_0A5scvFl-8Sl5g",
+        "author": {
+          "name": "Filarmoniya arxivi",
+          "role": "Tadqiqot bo'limi"
+        },
+        "body": [
+          "Filarmoniya arxivi xodimlari uzoq vaqtdan beri tegilmagan qutilarni tartiblash davomida noyob topilmaga duch kelishdi. Yetti dona qo'lda yozilgan partitura va ijro yo'riqnomalari aniqlanib, ularning aksariyati 19-asrning oxiriga to'g'ri keladi.",
+          "Topilgan hujjatlar hozirda mutaxassislar tomonidan o'rganilmoqda. Dastlabki taxminlarga ko'ra, eskizlar mahalliy bastakorning yangi yo'nalishdagi ishlari bilan bog'liq.",
+          "Filarmoniya rahbariyati ushbu topilmalar asosida maxsus konsert dasturini tashkil qilish va keng jamoatchilikka taqdim etishni rejalashtirmoqda."
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "qishki-festival-eloni",
+        "date": "Sentabr 02, 2024",
+        "publishedAt": "2024-09-02",
+        "title": "Qishki Solstitsiya festivali: 5–8 dekabr kunlari to'rt kunlik dastur",
+        "excerpt": "Filarmoniya navbatdagi xalqaro festivalini e'lon qildi — sovuq tovush manzaralari va sanoat akustikasi mavzusida o'tkaziladi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBedCx0mrawTHYf9vBohrW30tYgERZ7ZK4dYYKd93w-KrQcqGKArF-t57m5iM0PKGxnzA08uhoTANmoFedNDknhBgxcqZbGGmAsFeODWbSppRIyidVYUf6IGP_AfqxP8omwfkxm9IGFKHeT1aogWyXK7mNKRV6cYld7YPwpkSx1BQIS-HS_dmys64_iBmQc-KrHd3_Uox4w5rsiBsWUTs3-Y1eWsx2XU2jYE57pfPMjddCaQIvGlRmtxVfjltokUFYdv1MP7WpCEQ",
+        "author": {
+          "name": "Sherzod Mirzayev",
+          "role": "Konsert dasturlari"
+        },
+        "body": [
+          "Festival davomida uchta to'liq orkestr chiqishlari va zal ichki maydoniga moslashtirilgan installyatsiyalar namoyish etiladi. Tashkilotchilar tomoshabinlarni o'ziga xos akustik tajribalarga taklif qiladi.",
+          "Festivalning yopilish marosimida xalqaro mehmon dirijyorlar va o'zbek bastakorlarining birgalikdagi premerasi rejalashtirilgan.",
+          "Chipta sotuvi 25-noyabrdan boshlanadi. Aksiya doirasida talabalar uchun maxsus chegirmalar ko'zda tutilgan."
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "yoshlar-orkestri-tanlovi",
+        "date": "Avgust 21, 2024",
+        "publishedAt": "2024-08-21",
+        "title": "Yoshlar simfonik orkestri uchun tanlov e'lon qilindi",
+        "excerpt": "Iste'dodli yosh musiqachilar uchun yangi tarkibga qabul. Ariza qabuli 1-sentabrdan boshlanadi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdSTssH5sJvXEP_V3LBIQ8xOv-C1-ADDjGuCq-sRZnd90UqGOKK2yjqzkhRkTcdyWmCPBOeeMk_odD10Q2fIfEX2-s6guwLrWaX-1mVFLM93F4A7YmMIT9Rr-yWzuoxrTesaukLtOnZ8YMGol7pno7VVDioNftnuJcB-kT8qOoAPhsZHHNXRpfBqBSU1fSoTM9tYHHxeOZF4oPsvxew1fWyN3p21oLlkh0EJrjtMiIr91yhOgprRt18yOpXsHUKUE-e_LX3VOcpg",
+        "author": {
+          "name": "Feruza Abdullayeva",
+          "role": "Kadrlar bo'limi"
+        },
+        "body": [
+          "Tanlovda 16–25 yoshdagi musiqachilar ishtirok etishi mumkin. Asosiy maqsad — yangi avlod orkestrini shakllantirish va ularning kasbiy mahoratini xalqaro standartlar darajasiga yetkazish.",
+          "Saralash ikki bosqichda o'tkaziladi: birinchisi tarmoq orqali video tarzda, ikkinchisi esa filarmoniya zalida shaxsiy ijro shaklida. Ariza topshirish va batafsil shartlar filarmoniya rasmiy saytida e'lon qilinadi.",
+          "Tanlov g'oliblari yangi tashkil etilayotgan Yoshlar simfonik orkestriga qabul qilinishi va o'qish davomida stipendiya bilan ta'minlanishi mumkin."
+        ]
+      },
+      {
+        "id": 6,
+        "slug": "kamera-ansambli-yangi-mavsum",
+        "date": "Avgust 12, 2024",
+        "publishedAt": "2024-08-12",
+        "title": "Kamera ansambli yangi mavsumni mumtoz dastur bilan ochadi",
+        "excerpt": "Sentabrdan boshlab kamera zalida har hafta seshanba kechalari bo'lib o'tadigan dasturlar boshlanadi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCgt5xfwWRGqbz126udnrIgNPmAfyJvWIoCIV7qWEzqhzySI6ZV_W517SKi--RsZbHLL3jjcgA2S7vm3RnXST_4fqdxyPKzngm7OJn2gLo9M1H7unlTIioG23Xzx38GxvCa9wORqPZhOAlHSKa34vGpdRxQ20QI_R7Gy4qwdmgUR49RpJQc_rsCi3wdEdxNBPn9WQhMBnOLJKgJJhryiDxNW_QXcrkHLQ-8AyYuY4Y8UVwwyWrVqHT-1EebnAAAe_2FCmVf1pu9dQ",
+        "author": {
+          "name": "Aziza Karimova",
+          "role": "Matbuot xizmati"
+        },
+        "body": [
+          "Kamera ansambli yangi mavsumni mumtoz repertuar bilan ochadi: Bach, Mozart va o'zbek bastakorlarining kichik shakldagi asarlari sahnaga olib chiqiladi.",
+          "Har bir konsert oldidan kichik leksiya tashkil etiladi — tomoshabinlar asar haqida tarixiy va analitik ma'lumotlarga ega bo'lishadi. Bu yondashuv yangi auditoriyani jalb qilish maqsadida tatbiq etilmoqda.",
+          "Ansambl tarkibida torli, puflama va vokal ijrochilar hamkorlikda chiqishlar tashkil qiladilar. Mavsum davomida ko'plab debyutlar kutilmoqda."
+        ]
+      },
+      {
+        "id": 7,
+        "slug": "xalqaro-tanlovda-galaba",
+        "date": "Iyul 30, 2024",
+        "publishedAt": "2024-07-30",
+        "title": "Filarmoniya yakkaxon ijrochisi xalqaro tanlovda 1-o'rinni egalladi",
+        "excerpt": "Skripka ijrochiligi bo'yicha Pragada o'tkazilgan xalqaro tanlovda Aria Vance birinchi o'rinni qo'lga kiritdi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD08MNvDphzkuuSAk3b5XQY4zGQQqeCWO2YPXKvIK4rnNq5tKZhGoe5b0vNsc2IOHwhZ0YTu6zlbxonuTG6OX2bG5l560GjcjAWfxXIEXPQ_WtD4nDKHDuokEtoQgWs11Ktf6hsW5wL-6FXFaQSLsW-eh1AtrNAi1ESgQ_y0XDPeyNBBVEeALppTW8-IiJuQ0dakNDe6xHQGDhxH17QhMZoCoRo362cfy1UWl7yU7R6KH6ljBkkYDpay2MpL2FXxRE1rcdeaemhNg",
+        "author": {
+          "name": "Aziza Karimova",
+          "role": "Matbuot xizmati"
+        },
+        "body": [
+          "Praga shahrida bo'lib o'tgan an'anaviy xalqaro skripka tanlovida O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi konsertmeysteri Aria Vance birinchi o'rinni egalladi. Tanlovda 28 davlatdan 110 ijrochi qatnashgan.",
+          "Yakuniy bosqichda ijrochi Bramsning skripka uchun konsertini Praga simfonik orkestri bilan ijro etdi. Hakamlar hay'ati uning texnik mahorati va musiqaviy ifodaviyligini yuqori baholadi.",
+          "Filarmoniya rahbariyati ushbu yutuq munosabati bilan ijrochini tabriklab, kelajakda yangi xalqaro loyihalarda ishtirok etish imkoniyatlarini muhokama qilmoqda."
+        ]
+      },
+      {
+        "id": 8,
+        "slug": "oyna-pavilon-multidisiplinar",
+        "date": "Iyul 14, 2024",
+        "publishedAt": "2024-07-14",
+        "title": "\"Oyna Pavilon\" — yangi multidisiplinar loyiha sahnaga olib chiqiladi",
+        "excerpt": "Mumtoz musiqa, vizual san'at va zamonaviy raqsni birlashtiradigan loyiha bahorda premerasi taqdim etiladi.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDZ9NqqKZsO4c-TWoq5NwR311CR5VvmA3W-Zkw1-eb3yulr2Bt5zoJhTInXNQYNpy-iu4__JxcONTGV-4PtQacvaOXNMeV-BeUb4t-5mhQAUoKhGgJfAWVc5WLdUjRZj4_OJyWb2-Rb7vCv6xFEcrbGtd1u6hpnY90rs0PGhSrK8YcIFwbRf9TK2v6QuI49DKNLCHEmoiUijA08lLvXJE1tiD3eG2zBe2AVqMCKTWInyGUWnPbtdBmdc0Kb41OIkrMr0PmIn0p0yA",
+        "author": {
+          "name": "Dilshoda Rahimova",
+          "role": "Badiiy rahbar"
+        },
+        "body": [
+          "\"Oyna Pavilon\" — bu mumtoz musiqaning shaffofligi va zamonaviy san'atning erkinligini birlashtiruvchi loyiha. Sahnada vizual installyatsiyalar va jonli musiqa bir vaqtda namoyish etiladi.",
+          "Loyiha bahorgi mavsumda premerasiga tayyorlanmoqda. Repetitsiyalar oktabr oyidan boshlangan va uchta bosqichdan iborat ijodiy jarayon davom etmoqda.",
+          "Tashkilotchilar bu format kelajakda yana bir necha boshqa janrlar bilan kengaytirilishini, jumladan teatr va kino bilan birgalikdagi ishlar olib borilishini bildirishdi."
+        ]
+      }
+    ],
+    "newsMeta": {
+      "eyebrow": "Axborot xizmati",
+      "title": "So'nggi yangiliklar",
+      "description": "Filarmoniyaning ijodiy va madaniy hayotidan eng so'nggi yangiliklar, intervyular, tahlillar va e'lonlar.",
+      "category": "news"
+    }
+  },
+  "openData": {
+    "openDataItems": [
+      {
+        "id": 1,
+        "title": "Filarmoniya xodimlari tarkibi (2024)",
+        "type": "Statistika",
+        "date": "2024-07-01",
+        "size": "45 KB",
+        "format": "XLSX",
+        "documentNumber": "OM-001",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "title": "Konsertlar va tinglovchilar soni — yillik hisobot",
+        "type": "Hisobot",
+        "date": "2024-01-30",
+        "size": "890 KB",
+        "format": "PDF",
+        "documentNumber": "OM-002",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "title": "2023-yil byudjet ijrosi",
+        "type": "Moliyaviy hisobot",
+        "date": "2024-02-14",
+        "size": "720 KB",
+        "format": "PDF",
+        "documentNumber": "OM-003",
+        "url": "#"
+      },
+      {
+        "id": 4,
+        "title": "2024-yil byudjet rejasi",
+        "type": "Moliyaviy hisobot",
+        "date": "2024-01-05",
+        "size": "650 KB",
+        "format": "PDF",
+        "documentNumber": "OM-004",
+        "url": "#"
+      },
+      {
+        "id": 5,
+        "title": "Ijrochi jamoalar va ularning a'zolari ro'yxati",
+        "type": "Ma'lumotnoma",
+        "date": "2024-09-01",
+        "size": "210 KB",
+        "format": "XLSX",
+        "documentNumber": "OM-005",
+        "url": "#"
+      },
+      {
+        "id": 6,
+        "title": "Xalqaro gastrollar va tanlovlar — ochiq hisobot",
+        "type": "Hisobot",
+        "date": "2024-06-12",
+        "size": "1.1 MB",
+        "format": "PDF",
+        "documentNumber": "OM-006",
+        "url": "#"
+      },
+      {
+        "id": 7,
+        "title": "Chipta narxlari va chegirmalar tizimi (joriy)",
+        "type": "Ma'lumotnoma",
+        "date": "2024-09-15",
+        "size": "92 KB",
+        "format": "PDF",
+        "documentNumber": "OM-007",
+        "url": "#"
+      },
+      {
+        "id": 8,
+        "title": "Sotib olingan xizmatlar va davlat xaridlari (2023)",
+        "type": "Davlat xaridlari",
+        "date": "2024-03-28",
+        "size": "560 KB",
+        "format": "XLSX",
+        "documentNumber": "OM-008",
+        "url": "#"
+      },
+      {
+        "id": 9,
+        "title": "Homiylar va xayriyachilar ro'yxati",
+        "type": "Ma'lumotnoma",
+        "date": "2024-08-20",
+        "size": "98 KB",
+        "format": "PDF",
+        "documentNumber": "OM-009",
+        "url": "#"
+      },
+      {
+        "id": 10,
+        "title": "Infratuzilma va moddiy-texnika bazasi holati",
+        "type": "Hisobot",
+        "date": "2024-05-11",
+        "size": "1.4 MB",
+        "format": "PDF",
+        "documentNumber": "OM-010",
+        "url": "#"
+      },
+      {
+        "id": 11,
+        "title": "Fuqarolik murojaatlari bo'yicha yillik sharh",
+        "type": "Hisobot",
+        "date": "2024-02-02",
+        "size": "410 KB",
+        "format": "PDF",
+        "documentNumber": "OM-011",
+        "url": "#"
+      },
+      {
+        "id": 12,
+        "title": "Tadbirlar jadvali (CSV, ochiq format)",
+        "type": "Dataset",
+        "date": "2024-09-25",
+        "size": "32 KB",
+        "format": "CSV",
+        "documentNumber": "OM-012",
+        "url": "#"
+      }
+    ],
+    "openDataMeta": {
+      "eyebrow": "Ochiq ma'lumotlar",
+      "title": "Ochiq ma'lumotlar",
+      "description": "Filarmoniya faoliyatiga oid ochiq ma'lumotlar to'plamlari, hisobotlar va statistik ko'rsatkichlar.",
+      "category": "open-data"
+    }
+  },
+  "partners": {
+    "partners": [
+      {
+        "name": "Tuson",
+        "img": "/images/partners/tuson.png"
+      },
+      {
+        "name": "Ucell",
+        "img": "/images/partners/ucell.png"
+      },
+      {
+        "name": "octobank",
+        "img": "/images/partners/octobank.png"
+      },
+      {
+        "name": "Mastercard",
+        "img": "/images/partners/mastercard.png"
+      },
+      {
+        "name": "Tuson",
+        "img": "/images/partners/tuson.png"
+      }
+    ]
+  },
+  "pressReleases": {
+    "pressReleases": [
+      {
+        "id": 1,
+        "title": "O'zbekiston Davlat Filarmoniyasi Qashqadaryo bo'linmasi 2025-yil konsert mavsuming ochilishi haqida",
+        "type": "Press-reliz",
+        "date": "2025-09-01",
+        "size": "320 KB",
+        "format": "PDF",
+        "documentNumber": "PR-001",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "title": "Xalqaro musiqa festivali — 'Sharq taronalari' ishtirokchilari e'lon qilindi",
+        "type": "Press-reliz",
+        "date": "2025-07-15",
+        "size": "450 KB",
+        "format": "PDF",
+        "documentNumber": "PR-002",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "title": "Simfonik orkestr tarkibiga yangi a'zolar qabul qilish to'g'risida bayonot",
+        "type": "Bayonot",
+        "date": "2025-06-20",
+        "size": "210 KB",
+        "format": "PDF",
+        "documentNumber": "PR-003",
+        "url": "#"
+      },
+      {
+        "id": 4,
+        "title": "Filarmoniya va Koreya madaniyat markazi o'rtasida hamkorlik memorandumi imzolandi",
+        "type": "Matbuot xabari",
+        "date": "2025-05-10",
+        "size": "380 KB",
+        "format": "PDF",
+        "documentNumber": "PR-004",
+        "url": "#"
+      },
+      {
+        "id": 5,
+        "title": "Yosh ijrochilar uchun 'Kelajak yulduzi' tanlovining natijalari e'lon qilindi",
+        "type": "Press-reliz",
+        "date": "2025-04-28",
+        "size": "290 KB",
+        "format": "PDF",
+        "documentNumber": "PR-005",
+        "url": "#"
+      },
+      {
+        "id": 6,
+        "title": "Konsert zali rekonstruksiyasi muvaffaqiyatli yakunlanganligi to'g'risida",
+        "type": "Press-reliz",
+        "date": "2025-03-14",
+        "size": "520 KB",
+        "format": "PDF",
+        "documentNumber": "PR-006",
+        "url": "#"
+      },
+      {
+        "id": 7,
+        "title": "Filarmoniya jamoalari O'zbekiston mustaqillik kuniga bag'ishlangan konsert dasturi haqida",
+        "type": "Matbuot xabari",
+        "date": "2024-08-25",
+        "size": "340 KB",
+        "format": "PDF",
+        "documentNumber": "PR-007",
+        "url": "#"
+      },
+      {
+        "id": 8,
+        "title": "Bolalar uchun musiqiy-ma'rifiy loyiha 'Kichik filarmonia' boshlandi",
+        "type": "Press-reliz",
+        "date": "2024-06-01",
+        "size": "270 KB",
+        "format": "PDF",
+        "documentNumber": "PR-008",
+        "url": "#"
+      }
+    ],
+    "pressReleasesMeta": {
+      "eyebrow": "Press-relizlar",
+      "title": "Press-relizlar",
+      "description": "Filarmoniya faoliyatiga oid rasmiy press-relizlar, bayonotlar va matbuot xabarlari.",
+      "category": "press-releases"
+    }
+  },
+  "statute": {
+    "statuteContent": {
+      "meta": {
+        "eyebrow": "Me'yoriy hujjatlar",
+        "title": "Muassasa nizomi",
+        "subtitle": "O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi to'g'risida nizom",
+        "approvedBy": "O'zbekiston Respublikasi Vazirlar Mahkamasining 2018-yil 27-iyundagi PQ-3813-son qaroriga ilova",
+        "publishedDate": "2018-06-27",
+        "documentNumber": "PQ-3813"
+      },
+      "chapters": [
+        {
+          "id": "i",
+          "number": "I bob",
+          "title": "Umumiy qoidalar",
+          "articles": [
+            {
+              "number": "1",
+              "paragraphs": [
+                "O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi (matnda — Filarmoniya) — milliy, mumtoz va zamonaviy musiqa hamda raqs san'atini saqlash, rivojlantirish va targ'ib qilish maqsadida tashkil etilgan davlat muassasasi hisoblanadi.",
+                "Filarmoniya o'z faoliyatida O'zbekiston Respublikasi Konstitutsiyasiga, qonunlariga, O'zbekiston Respublikasi Prezidentining farmonlari va qarorlariga, Vazirlar Mahkamasining qarorlari va farmoyishlariga, Madaniyat vazirligining buyruqlari va boshqa me'yoriy-huquqiy hujjatlarga hamda mazkur Nizomga amal qiladi."
+              ]
+            },
+            {
+              "number": "2",
+              "paragraphs": [
+                "Filarmoniyaning to'liq nomi — \"O'zbekiston Respublikasi Madaniyat vazirligi huzuridagi O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi\" davlat muassasasi.",
+                "Qisqartirilgan nomi — \"O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi\" DM.",
+                "Filarmoniyaning joylashgan manzili: Toshkent shahri, Mustaqillik maydoni, 1-uy."
+              ]
+            },
+            {
+              "number": "3",
+              "paragraphs": [
+                "Filarmoniya yuridik shaxs bo'lib, mustaqil balansga, hisob raqamlariga, o'z nomi ko'rsatilgan muhrga, blanklarga va davlat ramzlari tasvirlangan timsolga ega.",
+                "Filarmoniya o'z nomidan bitimlar tuzish, mulkiy va shaxsiy nomulkiy huquqlarga ega bo'lish, sudda da'vogar yoki javobgar sifatida ishtirok etish huquqiga ega."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ii",
+          "number": "II bob",
+          "title": "Filarmoniyaning asosiy maqsad va vazifalari",
+          "articles": [
+            {
+              "number": "4",
+              "paragraphs": [
+                "Filarmoniyaning asosiy maqsadi — milliy, mumtoz va zamonaviy musiqa hamda raqs san'atini ilg'or yutuqlar asosida rivojlantirish, aholining ma'naviy ehtiyojlarini qondirish, iste'dodli yoshlarni qo'llab-quvvatlash va O'zbekiston musiqa san'atini xalqaro miqyosda targ'ib qilishdan iborat."
+              ]
+            },
+            {
+              "number": "5",
+              "intro": "Filarmoniyaning asosiy vazifalari quyidagilardan iborat:",
+              "paragraphs": [
+                "milliy, mumtoz va zamonaviy musiqa hamda raqs san'atini ilg'or yutuqlar asosida rivojlantirish;",
+                "aholining musiqa va raqs san'atiga bo'lgan ma'naviy ehtiyojini lektoriy, konsert ishlari hamda musiqiy-ma'rifiy ishlar orqali shakllantirish va qondirish;",
+                "musiqa va raqs san'ati sohasidagi ijodkorlar uchun samarali ish yuritish shart-sharoitlarini yaratish;",
+                "musiqa va raqs san'atidagi yutuqlarni O'zbekistonda va xorijda targ'ib qilish;",
+                "Davlat filarmoniyasi repertuarini milliy va xorijiy mumtoz asarlarning eng sara namunalari bilan to'ldirish;",
+                "musiqiy-ma'rifiy ishlar orqali barkamol shaxsni shakllantirish, aholini estetik va axloqiy tarbiyalash, iste'dodli yoshlarni qo'llab-quvvatlash hamda rag'batlantirish;",
+                "barcha turdagi va janrdagi musiqa hamda raqs san'atini faol targ'ib qilish, ularni radio va televideniye, boshqa ommaviy axborot vositalari, shu jumladan internet tarmog'i orqali ommalashtirish;",
+                "aholini madaniy hayotga jalb etish maqsadida ularning barcha qatlamlari uchun konsert tadbirlariga borish imkoniyatlarini ta'minlash;",
+                "musiqa va raqs jamoalari hamda ijrochilarining badiiy darajasi va kasb mahoratini takomillashtirish."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iii",
+          "number": "III bob",
+          "title": "Filarmoniyaning huquqlari va majburiyatlari",
+          "articles": [
+            {
+              "number": "6",
+              "intro": "Filarmoniya o'ziga yuklatilgan vazifalarni amalga oshirish uchun quyidagi huquqlarga ega:",
+              "paragraphs": [
+                "konsert dasturlarini, festival va tanlovlarni mustaqil ravishda tashkil etish va o'tkazish;",
+                "xorijiy mamlakatlardagi madaniyat muassasalari, ijodiy birlashmalar va alohida ijrochilar bilan bevosita ijodiy aloqalar o'rnatish, qo'shma loyihalar amalga oshirish;",
+                "qonun hujjatlariga muvofiq tadbirkorlik faoliyati bilan shug'ullanish, shu jumladan pullik konsert va xizmatlar ko'rsatish;",
+                "homiylar, jamg'armalar va xorijiy tashkilotlardan moliyaviy hamda moddiy yordamni qabul qilish;",
+                "muassasa nomidan shartnomalar tuzish, kelishuvlarga erishish va boshqa yuridik harakatlarni amalga oshirish."
+              ]
+            },
+            {
+              "number": "7",
+              "intro": "Filarmoniya quyidagi majburiyatlarni o'z zimmasiga oladi:",
+              "paragraphs": [
+                "konsert dasturlarining yuqori badiiy darajada tashkil etilishini ta'minlash;",
+                "tomoshabin va mehmonlar uchun xavfsiz va qulay shart-sharoitlar yaratish;",
+                "moliyaviy mablag'lardan maqsadli va samarali foydalanish;",
+                "xodimlarning mehnat huquqlari va ijtimoiy kafolatlarini ta'minlash;",
+                "hisobotlarni belgilangan tartibda Madaniyat vazirligiga taqdim etish."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv",
+          "number": "IV bob",
+          "title": "Filarmoniyani boshqarish",
+          "articles": [
+            {
+              "number": "8",
+              "paragraphs": [
+                "Filarmoniya faoliyatiga umumiy rahbarlikni Bosh direktor amalga oshiradi. Bosh direktor O'zbekiston Respublikasi Madaniyat vaziri tomonidan lavozimga tayinlanadi va lavozimdan ozod etiladi.",
+                "Bosh direktor Filarmoniyaning butun faoliyati uchun shaxsan javobgardir hamda muassasa nomidan ishonchnomasiz ish yuritadi."
+              ]
+            },
+            {
+              "number": "9",
+              "paragraphs": [
+                "Filarmoniyaning ijodiy faoliyatini Badiiy rahbar va Bosh dirijyor olib boradi. Ular Bosh direktor tomonidan, Madaniyat vazirligi bilan kelishilgan holda lavozimga tayinlanadi.",
+                "Filarmoniya tarkibida Badiiy kengash faoliyat yuritadi. Badiiy kengash repertuar masalalari, yangi ijodiy loyihalar va ko'rgazma dasturlari bo'yicha tavsiyalar beradi."
+              ]
+            },
+            {
+              "number": "10",
+              "paragraphs": [
+                "Filarmoniyaning tuzilmasi, shtatlar jadvali va ish haqi to'lash tartibi qonun hujjatlariga muvofiq belgilangan tartibda tasdiqlanadi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v",
+          "number": "V bob",
+          "title": "Mol-mulki va moliyaviy faoliyati",
+          "articles": [
+            {
+              "number": "11",
+              "paragraphs": [
+                "Filarmoniyaning mol-mulki davlat mulki bo'lib, unga operativ boshqaruv huquqi asosida biriktirilgan.",
+                "Filarmoniyaning mol-mulkini saqlash, ko'paytirish va undan maqsadli foydalanish Bosh direktor tomonidan ta'minlanadi."
+              ]
+            },
+            {
+              "number": "12",
+              "intro": "Filarmoniyaning moliyaviy mablag'lari quyidagi manbalardan shakllanadi:",
+              "paragraphs": [
+                "O'zbekiston Respublikasi Davlat byudjeti mablag'lari;",
+                "konsert tadbirlari va boshqa pullik xizmatlardan tushgan mablag'lar;",
+                "homiylik va xayriya badallari;",
+                "qonun hujjatlarida taqiqlanmagan boshqa manbalardan tushgan mablag'lar."
+              ]
+            },
+            {
+              "number": "13",
+              "paragraphs": [
+                "Filarmoniya buxgalteriya hisobini va moliyaviy hisobotni qonun hujjatlarida belgilangan tartibda yuritadi.",
+                "Yillik moliyaviy hisobotlar Madaniyat vazirligiga taqdim etiladi va belgilangan tartibda nashr etiladi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vi",
+          "number": "VI bob",
+          "title": "Qayta tashkil etish va tugatish",
+          "articles": [
+            {
+              "number": "14",
+              "paragraphs": [
+                "Filarmoniya qonun hujjatlarida belgilangan tartibda qayta tashkil etilishi yoki tugatilishi mumkin.",
+                "Filarmoniya tugatilgan taqdirda, uning mol-mulki davlat mulkiga qaytariladi va belgilangan tartibda taqsimlanadi."
+              ]
+            },
+            {
+              "number": "15",
+              "paragraphs": [
+                "Mazkur Nizom O'zbekiston Respublikasi Madaniyat vazirligi tomonidan tasdiqlanadi va davlat ro'yxatidan o'tkazilgan kundan boshlab kuchga kiradi.",
+                "Nizomga o'zgartirish va qo'shimchalar belgilangan tartibda kiritiladi."
+              ]
+            }
+          ]
+        }
+      ],
+      "attachments": [
+        {
+          "label": "Nizomning to'liq matnini yuklab olish (PDF)",
+          "href": "#",
+          "size": "420 KB"
+        },
+        {
+          "label": "PQ-3813-son qaror matni",
+          "href": "https://lex.uz/docs/-3797686",
+          "size": "lex.uz"
+        }
+      ]
+    }
+  },
+  "teams": {
+    "teams": [
+      {
+        "id": 1,
+        "slug": "simfonik-orkestr",
+        "name": "Davlat Simfonik Orkestri",
+        "shortName": "Simfonik orkestr",
+        "genre": "Simfonik musiqa",
+        "founded": "1938",
+        "directedBy": "Maestro Valeriy Xalilov",
+        "membersCount": "120 nafar musiqachi",
+        "homeStage": "Bosh zal",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZJMrYVCx4OZLY9l5xVMWOYRcTTxc_3pAlZjEPI3DZrnK0N-Lu6Z_yEYddq3TOcKaUd37hBWc_iKT47BvJF2W89pl8vnooanPV8ByrggTxIWE0esK5JFrKKgKgIMi6QpSuqBDk-DqD-mn_ZfI1i7PjaeZ6f9RHm_aN9kkQrurkzcLED1Ti3e5n3bpkRefhftjLtQmENyuylo5cclPWe8bYtbFJNWI_9sfoUYJhHfKX-n6jICdQ7E_h1MIV9t4hqjy8fbTaZBi_xQ",
+        "excerpt": "O'zbekiston musiqa sahnasining asosiy simfonik jamoasi. Mumtoz va zamonaviy asarlar, katta hajmli vokal-simfonik dasturlar jamoaning asosiy repertuarini tashkil etadi.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Davlat Simfonik Orkestri 1938-yilda tashkil etilgan bo'lib, o'shanda respublikaning ilk professional simfonik jamoasi sifatida faoliyatini boshlagan. Yillar davomida orkestr nafaqat O'zbekiston, balki butun Markaziy Osiyo mintaqasining madaniy hayotida markaziy o'rinni egallab kelmoqda."
+          },
+          {
+            "type": "paragraph",
+            "text": "Jamoa repertuarida Yevropa mumtoz merosining barcha yirik namunalari — Bach va Handeldan to Mahler va Shostakovichgacha, shuningdek O'zbekiston kompozitorlarining asarlari keng o'rin egallagan. Har mavsumda orkestr 40 dan ortiq dasturni sahnaga olib chiqadi."
+          },
+          {
+            "type": "image",
+            "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCEKaVxM31zmORCJZfSrkhiTPMKdz9qbsM0owp_cbGXX744EG_mxwKUoORnTUAV9LYnSG55Ce3SRqNyAHxIXuSEXjs7gMgMOj2fOFhakpqmgE_gnjwrydgspKzKBzaEpdvVTTiznF1RyLSHMo_NZlIzzo2Dw2uulJTt8gt4J_XRxQz04u96ySDj0JhLbWc1BrgeitpmkzkYOYjGH0qpE_UgXdsItWAi0xmxAPcbVbK10yugNj0UabUGCeZmidBhRiKHRxBQj7EpYw",
+            "alt": "Orkestr sahnada",
+            "caption": "Bosh zalda simfonik mavsum ochilishi, 2024"
+          },
+          {
+            "type": "quote",
+            "text": "Orkestr — bu yuzta yuraknning bitta nafasga moslashuvi. Bizning vazifamiz shu nafasni auditoriyaga yetkazishdir.",
+            "cite": "Valeriy Xalilov, bosh dirijyor"
+          },
+          {
+            "type": "paragraph",
+            "text": "Orkestr xorijiy gastrollarda faol qatnashadi. So'nggi besh yilda jamoa Yevropa, Janubiy Koreya va Yaqin Sharqning bir qancha davlatlarida konsertlar bergan. Xalqaro festivallardagi ishtiroklari uchun jamoa bir necha bor ko'rkam taqdirlashlarga sazovor bo'lgan."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "slug": "kamer-orkestri",
+        "name": "Aetheric Kamer Orkestri",
+        "shortName": "Kamer orkestri",
+        "genre": "Kamer musiqa",
+        "founded": "1974",
+        "directedBy": "Doniyor Xudoyberganov",
+        "membersCount": "24 nafar solist",
+        "homeStage": "Kamera zali",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCvgiDDGKk5kGRy0MjIAfmh-9j1nRSOck6LetUSTuyGkK888nhQp5oK4aD9eVJQGNXaa46LPv_xj5a5SJ4E8u9sWvThFnv1nYnWPfOVJewI4q7i-EH9uNiE_peNqhgCkYo_eSom0M-q7mVleH2MFPvvFcVVYNzBHib1cB1Wj5MRY6s4COkKCBVqKP68HZZMMEcBKG3TGkPOqc0uESFTjhcez91dVUS34aJLbForndX9C6QHYvuQpFxEO6hhQQbTputsitOkb4p6mQ",
+        "excerpt": "Nafis ovozli jamoa bo'lib, barokko, klassika va zamonaviy kamer asarlarini ijro etadi. Solistik chiqishlar va zamonaviy kompozitorlar asarlarini premyerasi uchun maxsus maskan.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Aetheric Kamer Orkestri 1974-yilda respublikaning yetakchi kamer musiqachilari tashabbusi bilan tuzilgan. Jamoa maxsus repertuarga ega: u barokko va klassik davr asarlarini autentik uslubda ijro etishni asosiy yo'nalish qilib olgan."
+          },
+          {
+            "type": "paragraph",
+            "text": "Orkestrning o'ziga xos xususiyati — har bir musiqachining solist darajasidaligi. Bu jamoaga nafis teksturalarni va tez harakatlanuvchi ovozlarni to'g'ri taqdim etish imkonini beradi."
+          },
+          {
+            "type": "image",
+            "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuD-G90sWNr6qVVwQQzt9jBP8kEiOxl-EVBjVDfOGwA7PkG8BvujwQA50gGsaH600dtlMVDQx7v9Ax3eYd4492LojX7G2NUjwU77jzawn8LW6QH2aDWkkBnWOw7DPpfL1RzL7T-_DHAlK6viKSu3iKHu1D2BSC-jufKTnhT-bvTJ7k6C4StxP8rKSbIeFaUlFc7Swgnca-z81WaijV3Jw58DtqM72dkLGeYM3gVVwTaGEXp9uYbJJpSGcgvIjtvs2-DvCpTUS7p9eQ",
+            "alt": "Kamera zalida ijro",
+            "caption": "Vivaldi kechasi — Aetheric kamer orkestri sahnada"
+          },
+          {
+            "type": "paragraph",
+            "text": "Jamoaning so'nggi yillardagi muhim loyihalari orasida \"Zamonaviy O'zbekiston kompozitorlari\" dasturi alohida o'rin tutadi. Loyiha doirasida har yili 3-4 ta yangi asar dunyo yuzini ko'radi."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "slug": "xalq-cholgulari-jamoasi",
+        "name": "O'zbekiston Xalq Cholg'ulari Orkestri",
+        "shortName": "Xalq cholg'ulari",
+        "genre": "Milliy cholg'u musiqasi",
+        "founded": "1958",
+        "directedBy": "Rustam Yusupov",
+        "membersCount": "65 nafar ijrochi",
+        "homeStage": "Katta zal va sahna xoli",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDVSN5pcR-nn9P00SGJDqTjgpcPZhS1FmdM8k_hYOZ0ryOGBdQcwFHLPRfbyl3pQ6uekaVATygGQN68wzLalmrDNRDKd2T9GV2d42X6SzPW5JqQf8Os-gpWSWjylh5huwLbDF4yKSxMzgQnDWLOcInpUIGNuybUzvzNw8IhJZejvbBdr-flXg1uZZ_5ggw_ZeSazZ1tZSF6lf0BP6o8LHUM9AxT2ZMsX0XFsIl3kaOkmeaMeKAslGwn4i7u1YnwMs2lIFef7JqbAg",
+        "excerpt": "Dutor, rubob, chang, nay va boshqa milliy cholg'ular asosida qurilgan orkestr. Milliy merosimizning sadolarini bugungi sahnaga olib chiqadi.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Xalq cholg'ulari orkestri 1958-yilda milliy musiqa merosini professional sahnada taqdim etish maqsadida tashkil etilgan. Jamoaning asosiy tarkibi o'zbek milliy cholg'ularidan iborat, lekin katta dasturlarda ba'zi yevropa cholg'ulari bilan ham kengaytiriladi."
+          },
+          {
+            "type": "gallery",
+            "images": [
+              {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBedCx0mrawTHYf9vBohrW30tYgERZ7ZK4dYYKd93w-KrQcqGKArF-t57m5iM0PKGxnzA08uhoTANmoFedNDknhBgxcqZbGGmAsFeODWbSppRIyidVYUf6IGP_AfqxP8omwfkxm9IGFKHeT1aogWyXK7mNKRV6cYld7YPwpkSx1BQIS-HS_dmys64_iBmQc-KrHd3_Uox4w5rsiBsWUTs3-Y1eWsx2XU2jYE57pfPMjddCaQIvGlRmtxVfjltokUFYdv1MP7WpCEQ",
+                "alt": "Milliy orkestr repetitsiyada",
+                "caption": "Navro'z dasturiga tayyorgarlik"
+              },
+              {
+                "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCgt5xfwWRGqbz126udnrIgNPmAfyJvWIoCIV7qWEzqhzySI6ZV_W517SKi--RsZbHLL3jjcgA2S7vm3RnXST_4fqdxyPKzngm7OJn2gLo9M1H7unlTIioG23Xzx38GxvCa9wORqPZhOAlHSKa34vGpdRxQ20QI_R7Gy4qwdmgUR49RpJQc_rsCi3wdEdxNBPn9WQhMBnOLJKgJJhryiDxNW_QXcrkHLQ-8AyYuY4Y8UVwwyWrVqHT-1EebnAAAe_2FCmVf1pu9dQ",
+                "alt": "Solistlar",
+                "caption": "Chang va dutor ijrochilari"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Jamoa repertuarida \"Shashmaqom\" turkumlari, Navoiy lirikasiga yaratilgan asarlar, shuningdek Z. Hakimov, M. Bafoyev va boshqa zamonaviy kompozitorlarning milliy cholg'ular uchun yozilgan asarlari o'rin olgan."
+          },
+          {
+            "type": "quote",
+            "text": "Milliy cholg'u — bu zamon ruhi. U bugungi tinglovchiga kechagi ovozlarni yangi qalbda yetkazadi.",
+            "cite": "Rustam Yusupov, badiiy rahbar"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "slug": "davlat-xori",
+        "name": "Davlat Akademik Xori",
+        "shortName": "Davlat xori",
+        "genre": "Xor musiqasi",
+        "founded": "1948",
+        "directedBy": "Dilnoza Yusupova",
+        "membersCount": "80 nafar xorchi",
+        "homeStage": "Bosh zal, kamera zali",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD08MNvDphzkuuSAk3b5XQY4zGQQqeCWO2YPXKvIK4rnNq5tKZhGoe5b0vNsc2IOHwhZ0YTu6zlbxonuTG6OX2bG5l560GjcjAWfxXIEXPQ_WtD4nDKHDuokEtoQgWs11Ktf6hsW5wL-6FXFaQSLsW-eh1AtrNAi1ESgQ_y0XDPeyNBBVEeALppTW8-IiJuQ0dakNDe6xHQGDhxH17QhMZoCoRo362cfy1UWl7yU7R6KH6ljBkkYDpay2MpL2FXxRE1rcdeaemhNg",
+        "excerpt": "A capella va simfonik orkestr bilan birga chiqishlarda faoliyat ko'rsatadigan professional xor. Katta hajmli vokal-simfonik asarlarning asosiy sherigi.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Davlat Akademik Xori 1948-yilda tashkil etilgan bo'lib, bugungi kunda respublikaning yetakchi professional xor jamoasi hisoblanadi. Xor repertuarida Yevropa xor merosi, pravoslav va katolik sakral musiqa, shuningdek milliy xor asarlari o'rin olgan."
+          },
+          {
+            "type": "paragraph",
+            "text": "Xor muntazam ravishda Simfonik orkestr bilan birgalikda katta hajmli asarlarni sahnaga olib chiqadi. Mahler 2- va 8-simfoniyalari, Beethoven 9-simfoniyasi, Verdi va Mozart rekviyemlari jamoaning an'anaviy repertuarining asosini tashkil qiladi."
+          },
+          {
+            "type": "image",
+            "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDZ9NqqKZsO4c-TWoq5NwR311CR5VvmA3W-Zkw1-eb3yulr2Bt5zoJhTInXNQYNpy-iu4__JxcONTGV-4PtQacvaOXNMeV-BeUb4t-5mhQAUoKhGgJfAWVc5WLdUjRZj4_OJyWb2-Rb7vCv6xFEcrbGtd1u6hpnY90rs0PGhSrK8YcIFwbRf9TK2v6QuI49DKNLCHEmoiUijA08lLvXJE1tiD3eG2zBe2AVqMCKTWInyGUWnPbtdBmdc0Kb41OIkrMr0PmIn0p0yA",
+            "alt": "Xor sahnada",
+            "caption": "Mahler 8-simfoniyasi repetitsiyasi"
+          },
+          {
+            "type": "paragraph",
+            "text": "Xorning maxsus loyihalaridan biri — \"Xor voqeligi\" dasturi bo'lib, unda a capella formatida zamonaviy o'zbek kompozitorlarining asarlari ijro etiladi. Loyiha doirasida so'nggi uch yilda 15 dan ortiq yangi asar premyera qilingan."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "slug": "opera-solistlari",
+        "name": "Opera Solistlari Ansambli",
+        "shortName": "Opera solistlari",
+        "genre": "Opera va oratoriya",
+        "founded": "1967",
+        "directedBy": "Gulnora Tursunova",
+        "membersCount": "18 nafar solist",
+        "homeStage": "Katta opera sahnasi",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAdSTssH5sJvXEP_V3LBIQ8xOv-C1-ADDjGuCq-sRZnd90UqGOKK2yjqzkhRkTcdyWmCPBOeeMk_odD10Q2fIfEX2-s6guwLrWaX-1mVFLM93F4A7YmMIT9Rr-yWzuoxrTesaukLtOnZ8YMGol7pno7VVDioNftnuJcB-kT8qOoAPhsZHHNXRpfBqBSU1fSoTM9tYHHxeOZF4oPsvxew1fWyN3p21oLlkh0EJrjtMiIr91yhOgprRt18yOpXsHUKUE-e_LX3VOcpg",
+        "excerpt": "Respublika opera sahnalarida yetakchi o'rin egallagan solistlar jamoasi. Jahon operaining mashhur asarlarini o'zbek zamonaviy talqinida taqdim etadi.",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Opera solistlari ansambli Filarmoniyaning ovoz san'atini rivojlantirish yo'nalishidagi markaziy jamoasidir. Unda turli ovozdagi solistlar — soprano, mezzo-soprano, tenor, bariton va bas — bir ansamblda birlashgan."
+          },
+          {
+            "type": "paragraph",
+            "text": "Ansamblning asosiy repertuari — Verdi, Puccini, Mozart, Bizening operalari, shuningdek oratoriya janridagi yirik asarlar. Har mavsumda ansambl 2-3 ta yangi sahnalashtiruv yoki yangi asarni taqdim etadi."
+          },
+          {
+            "type": "quote",
+            "text": "Opera — bu nafas va matnning yolg'on bo'lmasligi. Bizning vazifamiz her ikkisini ham tabiiy holatda saqlab qolishdir.",
+            "cite": "Gulnora Tursunova, badiiy rahbar"
+          },
+          {
+            "type": "paragraph",
+            "text": "Ansambl xorijiy teatrlar bilan faol hamkorlikda. So'nggi yillarda solistlar Rossiya, Italiya va Qozog'iston opera teatrlari sahnalarida chiqishgan, qo'shma sahnalashtiruvlarda ishtirok etishgan."
+          }
+        ]
+      }
+    ],
+    "teamsMeta": {
+      "eyebrow": "Ijodiy jamoalar",
+      "title": "Filarmoniya jamoalari",
+      "description": "Simfonik orkestr, kamer ansambli, xalq cholg'ular jamoasi va boshqa ijodiy jamoalarimiz o'ziga xos uslub va repertuar bilan chiqadi."
+    }
+  },
+  "videos": {
+    "videoCategories": [
+      {
+        "value": "all",
+        "label": "Barchasi"
+      },
+      {
+        "value": "concert",
+        "label": "Konsertlar"
+      },
+      {
+        "value": "backstage",
+        "label": "Orqa-sahna"
+      },
+      {
+        "value": "interview",
+        "label": "Suhbatlar"
+      },
+      {
+        "value": "documentary",
+        "label": "Hujjatli"
+      }
+    ],
+    "videos": [
+      {
+        "id": "v-01",
+        "youtubeId": "fOk8Tm815lE",
+        "title": "Mahler — Tiriklanish simfoniyasi",
+        "subtitle": "Butun orkestr va ikki xor ishtirokida",
+        "category": "concert",
+        "categoryLabel": "Konsert",
+        "duration": "1:42:30",
+        "views": "124K",
+        "date": "2024-10-24",
+        "featured": true
+      },
+      {
+        "id": "v-02",
+        "youtubeId": "rOjHhS5MtvA",
+        "title": "Beethoven 9-simfoniya — Shodlikka qasida",
+        "subtitle": "Final qismi, solistlar va xor bilan",
+        "category": "concert",
+        "categoryLabel": "Konsert",
+        "duration": "1:15:12",
+        "views": "98K",
+        "date": "2024-11-21"
+      },
+      {
+        "id": "v-03",
+        "youtubeId": "OC83NA5tAGE",
+        "title": "Maestro Valeriy bilan suhbat",
+        "subtitle": "Mahler talqini va yangi mavsum rejalari",
+        "category": "interview",
+        "categoryLabel": "Suhbat",
+        "duration": "24:45",
+        "views": "42K",
+        "date": "2024-10-08"
+      },
+      {
+        "id": "v-04",
+        "youtubeId": "PYs_NfxcBJw",
+        "title": "Shostakovich kvartetlari — kamer kechasi",
+        "subtitle": "Aetheric kvarteti ijrosida",
+        "category": "concert",
+        "categoryLabel": "Konsert",
+        "duration": "1:28:05",
+        "views": "35K",
+        "date": "2024-10-28"
+      },
+      {
+        "id": "v-05",
+        "youtubeId": "_4IRMYuE1hI",
+        "title": "Sahna orqasida: Katta opera repetitsiyasi",
+        "subtitle": "La Traviata premyerasiga tayyorgarlik",
+        "category": "backstage",
+        "categoryLabel": "Orqa-sahna",
+        "duration": "18:22",
+        "views": "27K",
+        "date": "2024-11-02"
+      },
+      {
+        "id": "v-06",
+        "youtubeId": "ZFcs3B9bLeQ",
+        "title": "Filarmoniya 80 yil: Tarix sahifalari",
+        "subtitle": "Hujjatli film, 1-qism",
+        "category": "documentary",
+        "categoryLabel": "Hujjatli",
+        "duration": "52:18",
+        "views": "68K",
+        "date": "2024-09-15"
+      },
+      {
+        "id": "v-07",
+        "youtubeId": "8XsIOVRu3Zw",
+        "title": "Yosh ijrochilar gala-kontserti",
+        "subtitle": "Xalqaro tanlov laureatlari sahnada",
+        "category": "concert",
+        "categoryLabel": "Konsert",
+        "duration": "1:56:40",
+        "views": "21K",
+        "date": "2024-11-14"
+      },
+      {
+        "id": "v-08",
+        "youtubeId": "jOBM6-o8fRI",
+        "title": "Dirijyor Dilnoza Yusupova bilan suhbat",
+        "subtitle": "Yangi opera sahnalashtiruvi haqida",
+        "category": "interview",
+        "categoryLabel": "Suhbat",
+        "duration": "32:10",
+        "views": "19K",
+        "date": "2024-10-30"
+      },
+      {
+        "id": "v-09",
+        "youtubeId": "GRxofEmo3HA",
+        "title": "Vivaldi — To'rt fasl",
+        "subtitle": "Qish va bahor konsertlari",
+        "category": "concert",
+        "categoryLabel": "Konsert",
+        "duration": "44:08",
+        "views": "156K",
+        "date": "2024-08-20"
+      }
+    ],
+    "videosMeta": {
+      "eyebrow": "Videolavhalar",
+      "title": "Kino arxiv",
+      "description": "Filarmoniya sahnasidan konsert yozuvlari, orqa-sahna lavhalari, ijrochi va ustozlar bilan suhbatlar. Har bir asarning o'z hikoyasi bor."
+    }
+  },
+  "youthPolitics": {
+    "youthPoliticsContent": {
+      "meta": {
+        "eyebrow": "Axborot xizmati",
+        "title": "Yoshlar siyosati",
+        "subtitle": "O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasida yoshlarga oid davlat siyosatini amalga oshirish to'g'risida nizom",
+        "approvedBy": "O'zbekiston Respublikasi Prezidentining 2020-yil 30-iyundagi PQ-4687-son qaroriga muvofiq",
+        "publishedDate": "2020-06-30",
+        "documentNumber": "PQ-4687"
+      },
+      "chapters": [
+        {
+          "id": "i",
+          "number": "I bob",
+          "title": "Umumiy qoidalar",
+          "articles": [
+            {
+              "number": "1",
+              "paragraphs": [
+                "Mazkur Nizom O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasida (matnda — Filarmoniya) yoshlarga oid davlat siyosatini amalga oshirishning huquqiy asoslari, asosiy yo'nalishlari, qo'llab-quvvatlash mexanizmlari va monitoring tizimini belgilaydi.",
+                "Filarmoniya o'z faoliyatida O'zbekiston Respublikasining \"Yoshlarga oid davlat siyosati to'g'risida\"gi Qonuni, O'zbekiston Respublikasi Prezidentining 2020-yil 30-iyundagi PQ-4687-son qarori va boshqa me'yoriy-huquqiy hujjatlar asosida ish ko'radi."
+              ]
+            },
+            {
+              "number": "2",
+              "paragraphs": [
+                "Nizomda \"yoshlar\" deganda 14 yoshdan 30 yoshgacha bo'lgan fuqarolar tushuniladi.",
+                "\"Iste'dodli yoshlar\" deganda musiqa, raqs, dirijyorlik, kompozitorlik va ijrochilik sohasida yuqori natijalar ko'rsatgan, milliy va xalqaro tanlovlar laureatlari bo'lgan yoshlar nazarda tutiladi."
+              ]
+            },
+            {
+              "number": "3",
+              "intro": "Filarmoniyada yoshlar siyosatining asosiy maqsadi quyidagilardan iborat:",
+              "paragraphs": [
+                "iste'dodli yoshlarni aniqlash, qo'llab-quvvatlash va ularning kasbiy mahoratini oshirish;",
+                "yosh ijrochilarning milliy va xalqaro konsert sahnalariga chiqishi uchun imkoniyatlar yaratish;",
+                "milliy musiqa merosini saqlash va keyingi avlodlarga yetkazish ishiga yoshlarni jalb etish;",
+                "yoshlarning ma'naviy-axloqiy kamoloti va ijtimoiy faolligini oshirish."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ii",
+          "number": "II bob",
+          "title": "Yoshlar siyosatining asosiy yo'nalishlari",
+          "articles": [
+            {
+              "number": "4",
+              "intro": "Filarmoniyada yoshlar siyosatining asosiy yo'nalishlari quyidagilardan iborat:",
+              "paragraphs": [
+                "iste'dodli yosh ijrochilarni aniqlash va ularni Filarmoniya jamoalariga qabul qilish;",
+                "yosh musiqachilar uchun maxsus konsert dasturlari, gala-kechalar va festivallar tashkil etish;",
+                "yoshlarning ustoz-shogird an'analari asosida malakasini oshirish, mahorat darslari (masterklass) va seminar-treninglarni o'tkazish;",
+                "yosh kadrlarni xorijiy tanlovlar va festivallarga yuborish, ularning xalqaro tajriba orttirishiga ko'maklashish;",
+                "yosh oilalar va farzandli xodimlar uchun ijtimoiy qo'llab-quvvatlash chora-tadbirlarini amalga oshirish."
+              ]
+            },
+            {
+              "number": "5",
+              "paragraphs": [
+                "Filarmoniya har yili \"Yoshlar mavsumi\" dasturi doirasida kamida 12 ta yosh ijrochilar konserti, 4 ta gala-kecha va 1 ta xalqaro festivalni tashkil etadi.",
+                "Yosh dirijyorlar, solistlar va kompozitorlar uchun har yili \"Debyut\" tanlovi o'tkaziladi. Tanlov g'oliblariga Filarmoniya bilan bir yillik ijodiy shartnoma imkoniyati beriladi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iii",
+          "number": "III bob",
+          "title": "Iste'dodli yoshlarni qo'llab-quvvatlash",
+          "articles": [
+            {
+              "number": "6",
+              "intro": "Iste'dodli yoshlarni qo'llab-quvvatlash quyidagi yo'nalishlar bo'yicha amalga oshiriladi:",
+              "paragraphs": [
+                "Filarmoniyaning \"Yosh iste'dodlar\" nomli maxsus stipendiya dasturi orqali yillik moliyaviy rag'batlantirish;",
+                "xorijiy mashhur ustozlar bilan mahorat darslari va ijodiy loyihalar tashkil etish;",
+                "yetakchi xalqaro tanlovlarda ishtirok etish uchun sayohat xarajatlari va kirish to'lovlarini qoplash;",
+                "yosh ijrochilarning birinchi solo-kontsertlari va yozib olinayotgan albomlarini moliyalashtirish."
+              ]
+            },
+            {
+              "number": "7",
+              "paragraphs": [
+                "Filarmoniyaning Badiiy kengashi har yili iste'dodli yoshlar ro'yxatini shakllantiradi. Ro'yxatga kiritish mezonlari va tartibi alohida reglament bilan belgilanadi.",
+                "Ro'yxatdagi yoshlar uchun yillik stipendiya miqdori, ustoz-shogird juftliklari va ijodiy reja Bosh direktor buyrug'i bilan tasdiqlanadi."
+              ]
+            },
+            {
+              "number": "8",
+              "paragraphs": [
+                "Filarmoniya yosh kadrlar uchun ijara asosida turar joy ajratish, transport xizmati va sug'urta masalalarida ko'maklashadi.",
+                "Yosh oilali xodimlar uchun moslashuvchan ish jadvali, bolalar bog'chasi bilan ta'minlashda yordam va qo'shimcha ijtimoiy to'lovlar nazarda tutilgan."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iv",
+          "number": "IV bob",
+          "title": "Ta'lim va kasbiy rivojlanish",
+          "articles": [
+            {
+              "number": "9",
+              "intro": "Filarmoniya yoshlarning uzluksiz ta'limi va kasbiy rivojlanishi uchun quyidagi shakllardan foydalanadi:",
+              "paragraphs": [
+                "konservatoriya va musiqa maktablari bilan doimiy hamkorlik, amaliyot o'tash joylari taqdim etish;",
+                "ichki mahorat darslari, ochiq repetitsiyalar va ijodiy sessiyalar;",
+                "xalqaro mutaxassislarni taklif etgan holda qisqa muddatli malaka oshirish kurslari;",
+                "masofaviy ta'lim platformalari orqali yoshlarga mumtoz musiqa yozuvlari arxiviga erkin kirishni ta'minlash."
+              ]
+            },
+            {
+              "number": "10",
+              "paragraphs": [
+                "Filarmoniya \"Ustoz-shogird\" dasturi doirasida har bir yosh ijrochiga tajribali mentor biriktiradi. Mentor shogirdining ijodiy o'sishini kuzatib boradi va yillik hisobot taqdim etadi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "v",
+          "number": "V bob",
+          "title": "Xalqaro hamkorlik va tajriba almashish",
+          "articles": [
+            {
+              "number": "11",
+              "paragraphs": [
+                "Filarmoniya xorijiy filarmoniya, konservatoriya va musiqa jamg'armalari bilan yoshlarga oid almashinuv dasturlarini tashkil etadi.",
+                "Xalqaro loyihalar doirasida har yili kamida 10 nafar yosh ijrochi xorijga yuboriladi va kamida 5 nafar xorijiy yosh mutaxassis Filarmoniyada amaliyot o'taydi."
+              ]
+            },
+            {
+              "number": "12",
+              "paragraphs": [
+                "Xalqaro tanlovlar laureatlari uchun Filarmoniyada maxsus \"Laureat kechasi\" konserti tashkil etiladi.",
+                "Yoshlarning chet tili va xalqaro repertuar bilan ishlash ko'nikmalarini oshirish uchun doimiy til kurslari tashkil etiladi."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vi",
+          "number": "VI bob",
+          "title": "Monitoring, baholash va hisobdorlik",
+          "articles": [
+            {
+              "number": "13",
+              "paragraphs": [
+                "Yoshlar siyosatining amalga oshirilishi Filarmoniya Bosh direktori zimmasida bo'lgan mas'uliyat hisoblanadi.",
+                "Yillik hisobot tuzib, Madaniyat vazirligiga va O'zbekiston Yoshlar ishlari agentligiga taqdim etiladi."
+              ]
+            },
+            {
+              "number": "14",
+              "intro": "Yoshlar siyosatining samaradorligi quyidagi ko'rsatkichlar bo'yicha baholanadi:",
+              "paragraphs": [
+                "yosh ijrochilarning umumiy sahna chiqishlar sonidagi ulushi;",
+                "xalqaro tanlovlarda qo'lga kiritilgan mukofotlar miqdori;",
+                "Filarmoniyaga yangi qabul qilingan yosh kadrlar soni;",
+                "yosh kadrlarning ish joyida ushlab qolinish darajasi (retention)."
+              ]
+            },
+            {
+              "number": "15",
+              "paragraphs": [
+                "Mazkur Nizomga o'zgartirish va qo'shimchalar belgilangan tartibda kiritiladi.",
+                "Nizom davlat ro'yxatidan o'tkazilgan kundan boshlab kuchga kiradi va Filarmoniyaning barcha bo'linmalari uchun majburiy hisoblanadi."
+              ]
+            }
+          ]
+        }
+      ],
+      "attachments": [
+        {
+          "label": "Yoshlar siyosati nizomining to'liq matnini yuklab olish (PDF)",
+          "href": "#",
+          "size": "380 KB"
+        },
+        {
+          "label": "PQ-4687-son qaror matni",
+          "href": "https://lex.uz/docs/-4891018",
+          "size": "lex.uz"
+        },
+        {
+          "label": "\"Yoshlarga oid davlat siyosati to'g'risida\"gi Qonun",
+          "href": "https://lex.uz/docs/-2462348",
+          "size": "lex.uz"
+        }
+      ]
+    }
+  }
+}

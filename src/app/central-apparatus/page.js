@@ -1,21 +1,22 @@
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/HeaderShell';
+import Footer from '@/components/Footer/FooterShell';
 import StaffList from '@/components/StaffList/StaffList';
-import { centralApparatusContent } from '@/data/centralApparatus';
+import { getCentralApparatus } from '@/lib/api';
 
-export const metadata = {
-  title: "Markaziy apparat — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
-  description: centralApparatusContent.meta.description,
-};
+export async function generateMetadata() {
+  const data = await getCentralApparatus();
+  return {
+    title: "Markaziy apparat — O'zbekiston Davlat Filarmoniyasi Qashqadaryo viloyat bo'linmasi",
+    description: data?.meta?.description,
+  };
+}
 
-export default function CentralApparatusPage() {
+export default async function CentralApparatusPage() {
+  const data = await getCentralApparatus();
   return (
     <main>
       <Header />
-      <StaffList
-        meta={centralApparatusContent.meta}
-        members={centralApparatusContent.members}
-      />
+      <StaffList meta={data.meta} members={data.members} />
       <Footer />
     </main>
   );
