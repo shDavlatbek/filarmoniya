@@ -1,0 +1,25 @@
+node_modules
+.next
+out
+.git
+.gitignore
+.env*
+!.env.example
+npm-debug.log*
+.vscode
+.idea
+.DS_Store
+
+# Backend lives in its own image
+backend
+
+# Docs / planning
+ref
+*.md
+!README.md
+view_image.html
+
+# Tooling
+.cursor
+.claude
+skills-lock.json

@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    image: filarmoniya-backend
+    container_name: filarmoniya-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      DEBUG: "True"
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-django-insecure-dev-key-change-me}
+      ALLOWED_HOSTS: "localhost,127.0.0.1,backend"
+      CORS_ALLOWED_ORIGINS: "http://localhost:3000,http://127.0.0.1:3000"
+      SQLITE_PATH: /app/data/db.sqlite3
+    volumes:
+      - backend-data:/app/data
+      - backend-media:/app/media
+
+  frontend:
+    build:
+      context: .
+    image: filarmoniya-frontend
+    container_name: filarmoniya-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      # Browser-side fetches need a host the user's browser can resolve, not the
+      # docker network alias. The Server Components inside the container also
+      # use this URL — backend is reachable from the host on :8000.
+      NEXT_PUBLIC_API_BASE: ${NEXT_PUBLIC_API_BASE:-http://localhost:8000/api/v1}
+    depends_on:
+      - backend
+
+volumes:
+  backend-data:
+  backend-media:
